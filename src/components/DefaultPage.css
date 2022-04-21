@@ -1,0 +1,8 @@
+.defaultPage {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    background-image: linear-gradient(lightgreen, green);
+}

@@ -1,0 +1,27 @@
+.backgroundColor {
+    background-color: green;
+}
+
+.homeMain {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+.photo {
+    width: 5vw;
+    height: 5vh;
+}
+
+.homepageNav {
+    border: solid;
+    border-radius: 6px;
+    border-color: white;
+}
+
+.navButtonHome {
+    background: none;
+    border: solid;
+    border-color: white;
+    color: white
+}
