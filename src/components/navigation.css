@@ -1,0 +1,15 @@
+.defaultPage {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(lightgreen, green);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: purple;
+}
