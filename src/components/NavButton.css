@@ -1,0 +1,30 @@
+.navButton {
+    height: 2.25vw;
+    background: none;
+    border-radius: 4px;
+    border: 0.15vw solid #ff9400;
+    cursor: pointer;
+    color: #ff9400;
+    font-size: calc(10px + 0.6vh);
+    transition: color #3478bc;
+    transition-duration: 0.5s;
+}
+
+.navButtonHome {
+    background: none;
+    width: 7vw;
+    height: 4vh;
+    border: solid;
+    border-width: 0.25vw;
+    border-radius: 6px;
+    border-color: #3478bc;
+    color: #3478bc;
+    margin-left: 1.5vw;
+    margin-bottom: 1.5vh;
+    transition: color 0.5s, border-color 0.5s;
+}
+
+.navButton:hover {
+    color: #3478bc;
+    border-color: #3478bc;
+}
