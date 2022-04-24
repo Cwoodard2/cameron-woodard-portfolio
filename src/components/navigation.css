@@ -5,10 +5,13 @@
     align-items:center;
     border-bottom: white;
     border-bottom-style: solid;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     gap: 1.5vw;
     width: 100vw;
     height: 10vh;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 20px;
 }
 
 @keyframes colorTurn {

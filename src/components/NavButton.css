@@ -1,13 +1,15 @@
 .navButton {
-    height: 2.25vw;
+    width: calc(12px + 15vw);
+    height: calc(2px + 4vh);;
     background: none;
     border-radius: 4px;
     border: 0.15vw solid #ff9400;
     cursor: pointer;
     color: #ff9400;
-    font-size: calc(10px + 0.6vh);
+    font-size: calc(10px + 0.4vh);
     transition: color #3478bc;
     transition-duration: 0.5s;
+    place-items: center;
 }
 
 .navButtonHome {

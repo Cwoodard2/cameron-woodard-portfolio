@@ -5,7 +5,7 @@ import './NavButton.css';
 export default function NavButton(props) {
     var pagePointer = props.page;
     var toPage = props.thisPage;
-    var style = props. thisStyle;
+    var style = props.thisStyle;
     
     return (
         <Link to={pagePointer}>

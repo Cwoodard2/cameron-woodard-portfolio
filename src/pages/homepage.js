@@ -17,7 +17,7 @@ export default function Homepage() {
                     <div className="navText">
                         <h3>Greetings, my name is Cameron! I've created this portfolio to show off the projects I've worked on and highlight skills I possess. If you'd like to learn a little more about me this is the place to start.</h3>
                     </div>
-                    <h3>Picture Here</h3>
+                    <h3 className="homepageNavPhoto">Picture Here</h3>
                     <NavButton page="AboutMe" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 <div className="homepageNav">
