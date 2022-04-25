@@ -1,0 +1,42 @@
+.perspectiveDiv {
+    perspective: 100px;
+}
+
+.persepctiveItem {
+  padding: 50px;
+  border: 1px solid black;
+  background: rgba(100,100,100,0.5);
+  transform-style: preserve-3d;
+  transform: rotateY(-5deg);
+  width: 10vw;
+  height: 10vw;
+}
+
+.persepctiveItem::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 15px;
+  height: 30%;
+  width: 100%;
+  box-shadow: 40px 70px 10px 0 rgba(0,0,0,0.75);
+  transform: skewX(-60deg);
+}
+
+.portfolioMain {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+    gap: 10vw;
+}
+
+.projectMoreInfo {
+    visibility: hidden;
+    height: 40vh;
+    width: 60vw;
+    z-index: 1;
+    border-radius: 10px;
+    border: solid;
+    border-color: white;
+}
