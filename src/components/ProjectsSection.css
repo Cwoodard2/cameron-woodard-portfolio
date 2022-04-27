@@ -1,0 +1,30 @@
+.projectDiv {
+    padding: 2vw;
+  }
+
+  .persepctiveItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    gap: 5vw;
+    width: 80vw;
+    height: 35vw;
+    overflow: auto;
+  }
+
+/* .additionalInfo {
+  display: none;
+} */
+
+  .textTestDiv {
+    font-size: calc(10px + 0.4vh);
+    text-shadow: 0px 0px 10px grey;
+    color: #ff9400;
+  }
+
+  .infoText {
+    width: 30vw;
+  }

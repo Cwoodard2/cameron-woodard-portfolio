@@ -108,6 +108,12 @@
     gap: 2.5vw;
 }
 
+.cardTitle {
+    justify-self: center;
+    align-self: flex-start;
+    margin: 1vw;
+}
+
 /* .homepageNavPhoto {
     grid-row: 1 / span 3;
 } */

@@ -120,3 +120,33 @@
 /* .overlayWrapper:hover .projectMoreInfo {
   display: block;
 } */
+
+.portfolioButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  width: 20vw;
+}
+
+.portfolioButtons:first-child {
+  text-decoration: underline;
+}
+
+.portfolioButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #ff9400;
+}
+
+.portfolioButton:hover {
+  font-weight: bolder;
+}
+
+.testingLineAnimation {
+  animation-name: lineAnimation;
+  animation-duration: 1s;
+  width: 10vw;
+}

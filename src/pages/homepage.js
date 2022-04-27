@@ -35,29 +35,20 @@ export default function Homepage() {
                 </div>
                 <div className="otherPages">
                 <div className="homepageNav">
-                    <h2>Projects</h2>
-                    <h2></h2>
-                    <div className="navText">
-                        <h3>You can find the projects I've worked on here!</h3>
-                    </div>
+                    <h2 className="cardTitle">Projects</h2>
+                    <h3>You can find the projects I've worked on here!</h3>
                     <h3>Picture Here</h3>
                     <NavButton page="Portfolio" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 <div className="homepageNav">
                     <h2>Resume</h2>
-                    <h2></h2>
-                    <div className="navText">
-                        <h3>The onestop shop for all your resume needs!</h3>
-                    </div>
+                    <h3>The onestop shop for all your resume needs!</h3>
                     <h3>Picture Here</h3>
                     <NavButton page="Resume" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 <div className="homepageNav">
                     <h2>Playground</h2>
-                    <h2></h2>
-                    <div className="navText">
-                        <h3>Channel your inner kid and mess around in The Playground</h3>
-                    </div>
+                    <h3>Channel your inner kid and mess around in The Playground</h3>
                     <h3>Picture Here</h3>
                     <NavButton page="Playground" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
