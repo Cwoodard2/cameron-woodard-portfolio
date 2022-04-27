@@ -4,22 +4,36 @@ import StandardPage from "../components/DefaultPage";
 import '../components/navigation.css';
 import NavButton from "../components/NavButton";
 import './homepage.css';
+import logo from '../Images/Logoforwebsite.png';
 
 export default function Homepage() {
+
+    var previousPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        window.onscroll = function() {
+            var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (previousPosition > currentPosition) {
+                console.log('scrolling up');
+            } else {
+                console.log('scrolling down');
+            }
+
+            previousPosition = currentPosition;
+        };
 
     return (
         <StandardPage>
             <Navigation />
             <div className="homeMain">
                 <div className="homepageNav2">
-                    <h2>About Me</h2>
-                    <h2></h2>
+                    <h2 className="title">Greetings...</h2>
+                    <img src={logo} />
                     <div className="navText">
-                        <h3>Greetings, my name is Cameron! I've created this portfolio to show off the projects I've worked on and highlight skills I possess. If you'd like to learn a little more about me this is the place to start.</h3>
+                       <h2>I'm Cameron</h2>
                     </div>
-                    <h3 className="homepageNavPhoto">Picture Here</h3>
-                    <NavButton page="AboutMe" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
+                <div className="otherPages">
                 <div className="homepageNav">
                     <h2>Projects</h2>
                     <h2></h2>
@@ -46,6 +60,7 @@ export default function Homepage() {
                     </div>
                     <h3>Picture Here</h3>
                     <NavButton page="Playground" thisPage="Learn More" thisStyle="navButtonHome" />
+                </div>
                 </div>
             </div>                                                                                             
         </StandardPage>

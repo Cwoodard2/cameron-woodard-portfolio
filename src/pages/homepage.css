@@ -19,39 +19,52 @@
 }
 
 .homepageNav {
-    width: 40vw;
-    height: 50vh;
+    width: 30vw;
+    height: 60vh;
     animation-name: fadeIn;
     animation-duration: 3s;
-    display: grid;
+    display: flex;
     gap: 1vw;
-    grid-template-columns: auto auto;
+    flex-direction: column;
+    /* grid-template-columns: auto auto; */
     /* grid-template-rows: 7vh 20vh 10vh; */
     place-items: baseline;
     margin-top: 2vw;
-    border: solid;
+    border: none;
+    /* border: solid; */
     border-radius: 6px;
     border-width: 0.75vw;
-    border-color: white;
-    box-shadow: 5px 7px;
+    /* border-color: white; */
+    box-shadow: 0px 0px 10px 4px;
+    background-image: linear-gradient(0deg, #fa8128, #ff9400, #fda172);
+    margin-bottom: 3vh;
+    /* margin-right: 0.4vw; */
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.homepageNav:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px;
 }
 
 .homepageNav2 {
-    width: 80vw;
-    height: 50vh;
+    /* width: 95vw; */
+    height: 80vh;
     animation-name: fadeIn;
     animation-duration: 3s;
-    display: grid;
-    gap: 2vw;
-    grid-template-columns: 50vw auto;
-    grid-template-rows: auto auto auto;
-    place-items: baseline;
+    display: flex;
+    /* gap: 2vw; */
+    flex-direction: row;
+    /* grid-template-columns: 22.5vw 35vw 22.5vw; */
+    /* grid-template-rows: auto auto auto; */
+    place-items: center;
     margin-top: 2vw;
-    border: solid;
-    border-radius: 6px;
-    border-width: 0.75vw;
-    border-color: white;
-    box-shadow: 5px 7px;
+    border: none;
+    /* border-radius: 6px;
+    border-width: 0.75vw; */
+    /* border-color: #3478bc;
+    box-shadow: 5px 7px; */
+    /* background-image: linear-gradient(0deg, #fa8128, #ff9400, #fda172); */
 }
 
 .navButtonHome {
@@ -68,9 +81,31 @@
 }
 
 .navText {
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    /* margin-left: 1.5vw;
+    margin-right: 1.5vw; */
     font-size: calc(10px + 0.6vh);
+    justify-self: flex-start;
+    align-self: flex-end;
+    margin-bottom: 10vw;
+    color: #ff9400;
+}
+
+.title{
+    justify-self: flex-end;
+    align-self: flex-start;
+    margin-top: 15vh;
+    color: #ff9400;
+}
+
+.otherPages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    overflow-x: auto;
+    gap: 2.5vw;
 }
 
 /* .homepageNavPhoto {

@@ -4,5 +4,6 @@
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    background-image: linear-gradient(0deg, #fa8128, #ff9400, #fda172);
+    background: linear-gradient(225deg, hsla(207, 88%, 23%, 1) 0%, hsla(177, 36%, 35%, 1) 54%, hsla(195, 100%, 52%, 1) 100%);
+    /* background-image: linear-gradient(0deg, #fa8128, #ff9400, #fda172); */
 }
