@@ -36,19 +36,19 @@ export default function Homepage() {
                 <div className="otherPages">
                 <div className="homepageNav">
                     <h2 className="cardTitle">Projects</h2>
-                    <h3>You can find the projects I've worked on here!</h3>
+                    <h3>This is probably the thing you're really looking for. </h3>
                     <h3>Picture Here</h3>
                     <NavButton page="Portfolio" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 <div className="homepageNav">
                     <h2>Resume</h2>
-                    <h3>The onestop shop for all your resume needs!</h3>
+                    <h3>For when projects just aren't enough to show skills off. Here's a page long paper that tells you a little more about my skills.</h3>
                     <h3>Picture Here</h3>
                     <NavButton page="Resume" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 <div className="homepageNav">
                     <h2>Playground</h2>
-                    <h3>Channel your inner kid and mess around in The Playground</h3>
+                    <h3>Or maybe you just want  mess around with some random things. Don't worry, The Playground has you covered.</h3>
                     <h3>Picture Here</h3>
                     <NavButton page="Playground" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
