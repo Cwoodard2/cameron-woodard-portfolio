@@ -7,7 +7,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border: 0.75vw solid #3478bc;
   background: white;
   border-radius: 12px;
   gap: 5vw;
@@ -38,6 +37,22 @@
   transform: skewX(-60deg);
 } */
 
+.currentProjects {
+  display: block;
+}
+
+.currentProjects2 {
+  display: none;
+}
+
+.pastProjects {
+  display: block;
+}
+
+.pastProjects2 {
+  display: none;
+}
+
 .portfolioMain {
     display: flex;
     place-items: center;
@@ -49,7 +64,7 @@
     overflow-x: auto;
 }
 
-.projectMoreInfo {
+/* .projectMoreInfo {
     display: none;
     height: 95vh;
     width: 100vw;
@@ -58,7 +73,7 @@
     border: solid;
     border-color: white;
     background-color: aqua;
-}
+} */
 
 .overlayWrapper {
   z-index: 1;
@@ -108,7 +123,7 @@ img {
 }
 
 .textTestDiv {
-  font-size: calc(10px + 0.4vh);
+  font-size: calc(15px + 0.6vh);
   text-shadow: 0px 0px 10px grey;
   color: #ff9400;
 }
@@ -127,7 +142,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1vw;
-  width: 20vw;
+  width: 30vw;
 }
 
 .portfolioButtons:first-child {
@@ -139,6 +154,7 @@ img {
   background: none;
   border: none;
   color: #ff9400;
+  font-size: calc(20px + 0.6vh);
 }
 
 .portfolioButton:hover {
