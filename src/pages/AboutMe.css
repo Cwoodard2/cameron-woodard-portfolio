@@ -1,0 +1,55 @@
+.aboutMeMain {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10vh;
+    width: 100vw;
+    overflow-y: auto;
+    place-items: center;
+    margin-bottom: 3vh;
+}
+
+.leftBottomBorder {
+    padding: 1vw;
+    border-left: solid;
+    border-left-color: #ff9400;
+    border-bottom-left-radius: 6px;
+    border-bottom: solid;
+    border-bottom-color: #ff9400;
+    align-self: flex-end;
+    justify-self: flex-start;
+    color: white;
+    margin-left: 2.5vw;
+}
+
+.imageBottom {
+    border-bottom: solid;
+    border-bottom-color: #ff9400;
+}
+
+.bottomRightBorder {
+    padding: 1vw;
+    border-right: solid;
+    border-right-color: #ff9400;
+    border-bottom-right-radius: 6px;
+    border-bottom: solid;
+    border-bottom-color: #ff9400;
+    align-self: flex-end;
+    color: white;
+    margin-right: 2.5vw;
+}
+
+.title {
+    color: #ff9400;
+}
+
+.topContent {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.aboutMeContent {
+    height: 90vh;
+    overflow-y: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

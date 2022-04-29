@@ -37,19 +37,19 @@ export default function Homepage() {
                 <div className="homepageNav">
                     <h2 className="cardTitle">Projects</h2>
                     <h3>This is probably the thing you're really looking for. </h3>
-                    <h3>Picture Here</h3>
+                    <img src="https://th.bing.com/th/id/R.92a596eab06d400686cd541e68145b3b?rik=k%2fT4IkWsia2ALA&riu=http%3a%2f%2fwww.usnews.com%2fcmsmedia%2f46%2f19%2f5c6c54fb4c6f812dc85c20fc656a%2f141106-portfolio-stock.jpg&ehk=pEOp6RPzMxLzFRliU7hWCEGZlsbFJ%2fkgrdh%2fpBH6Du4%3d&risl=&pid=ImgRaw&r=0"/>
                     <NavButton page="Portfolio" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 <div className="homepageNav">
-                    <h2>Resume</h2>
+                    <h2 className="cardTitle">Resume</h2>
                     <h3>For when projects just aren't enough to show skills off. Here's a page long paper that tells you a little more about my skills.</h3>
-                    <h3>Picture Here</h3>
+                    <img src="https://th.bing.com/th/id/R.92a596eab06d400686cd541e68145b3b?rik=k%2fT4IkWsia2ALA&riu=http%3a%2f%2fwww.usnews.com%2fcmsmedia%2f46%2f19%2f5c6c54fb4c6f812dc85c20fc656a%2f141106-portfolio-stock.jpg&ehk=pEOp6RPzMxLzFRliU7hWCEGZlsbFJ%2fkgrdh%2fpBH6Du4%3d&risl=&pid=ImgRaw&r=0"/>
                     <NavButton page="Resume" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 <div className="homepageNav">
-                    <h2>Playground</h2>
+                    <h2 className="cardTitle">Playground</h2>
                     <h3>Or maybe you just want  mess around with some random things. Don't worry, The Playground has you covered.</h3>
-                    <h3>Picture Here</h3>
+                    <img src="https://th.bing.com/th/id/R.92a596eab06d400686cd541e68145b3b?rik=k%2fT4IkWsia2ALA&riu=http%3a%2f%2fwww.usnews.com%2fcmsmedia%2f46%2f19%2f5c6c54fb4c6f812dc85c20fc656a%2f141106-portfolio-stock.jpg&ehk=pEOp6RPzMxLzFRliU7hWCEGZlsbFJ%2fkgrdh%2fpBH6Du4%3d&risl=&pid=ImgRaw&r=0"/>
                     <NavButton page="Playground" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 </div>

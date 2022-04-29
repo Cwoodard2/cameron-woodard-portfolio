@@ -100,12 +100,12 @@
   align-self: center;
 }
 
-/* img {
-  width: 25vw;
-  height: 50vh;
+img {
+  width: 15vw;
+  height: 30vh;
   border-radius: 6px;
   box-shadow: -10px -10px 4px;
-} */
+}
 
 .textTestDiv {
   font-size: calc(10px + 0.4vh);
