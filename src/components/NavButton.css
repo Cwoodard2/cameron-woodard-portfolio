@@ -25,14 +25,10 @@
     margin-left: 1.5vw;
     margin-bottom: 1.5vh;
     transition: color 0.5s, border-color 0.5s;
+    cursor: pointer;
 }
 
 .navButton:hover {
     color: white;
     border-color: white;
-}
-
-img {
-    width: 30vw;
-    height: 30vh;
 }
