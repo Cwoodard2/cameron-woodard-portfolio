@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navigation from '../components/navigation';
 import StandardPage from "../components/DefaultPage";
 import '../components/navigation.css';
@@ -7,6 +7,12 @@ import './homepage.css';
 import logo from '../Images/Logoforwebsite.png';
 
 export default function Homepage() {
+
+    const [showContact, setContact] = useState("contactForm");
+
+    function changeContact() {
+        setContact("contactForm2");
+    }
 
     var previousPosition = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -31,8 +37,22 @@ export default function Homepage() {
                     <img src={logo} />
                     <div className="navText">
                        <h2>I'm Cameron</h2>
+                       <button className="contactButton" onClick={() => changeContact()}>Contact Me</button>
                     </div>
                 </div>
+                <div className={showContact}>
+                        <form>
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+
+                            <label></label>
+                            <textarea name="subject" placeholder="Write something.."/>
+                            <input type="submit" value="Submit"></input>
+                        </form>
+                    </div>
                 <div className="otherPages">
                 <div className="homepageNav">
                     <h2 className="cardTitle">Projects</h2>
