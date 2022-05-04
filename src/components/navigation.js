@@ -10,7 +10,7 @@ export default function Navigation() {
             <p className="logo">Sample Text</p>
             <NavButton page="/" thisPage="Homepage" thisStyle="navButton" />
             <NavButton page="/AboutMe" thisPage="About Me" thisStyle="navButton" />
-            <NavButton page="/Resume" thisPage="Resume" thisStyle="navButton" />
+            {/* <NavButton page="/Resume" thisPage="Resume" thisStyle="navButton" /> */}
             <NavButton page="/Portfolio" thisPage="Portfolio" thisStyle="navButton" />
             <NavButton page="/Playground" thisPage="Playground" thisStyle="navButton" />
         </div>

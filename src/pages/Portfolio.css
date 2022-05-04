@@ -60,8 +60,6 @@
     /* grid-template-columns: auto auto; */
     /* gap: 5vw; */
     width: 100vw;
-    height: 90vh;
-    overflow-x: auto;
 }
 
 /* .projectMoreInfo {
