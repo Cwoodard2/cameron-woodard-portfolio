@@ -9,11 +9,16 @@ export default function Projects(props) {
     var projectToShow = props.project;
     var projectDecription;
     var projectImage;
+    var projectTime;
 
     switch(projectToShow) {
         case "URCA":
             projectDecription  = (
                 <p className="textTestDiv">This project was built by three students, including me. It was constructed to provide a way to collect data regarding ethnic and racial microaggressions. It utilizes React to build the website and provide functionality. Most design was done by me.</p>
+            );
+
+            projectTime = (
+                <h3>January 2022 - May 2022</h3>
             );
 
             projectImage = (
@@ -24,16 +29,23 @@ export default function Projects(props) {
                         </div>
                         <div className="flipCardBack">
                             <h3>Relevant Skills</h3>
-                            <ul className="skillsList">
-                                <li>JSX</li>
-                                <li>React</li>
-                                <li>CSS</li>
-                                <li>Github Pages</li>
-                                <li>Git</li>
-                                <li>Firebase</li>
-                                <li>Group Collaboration</li>
-                                <li>Scientific Journal Analysis</li>
-                            </ul>
+                            <p>
+                                JSX
+                                <br></br>
+                                React
+                                <br></br>
+                                CSS
+                                <br></br>
+                                Github Pages
+                                <br></br>
+                                Git
+                                <br></br>
+                                Firebase
+                                <br></br>
+                                Group Collaboration
+                                <br></br>
+                                Scientific Journal Analysis
+                            </p>
                             <a href="https://mattaurca-s22.github.io/MicrAgg-WebApp/"><button className="outsideWebButton">Visit The App</button></a>
                         </div>
                     </div>
@@ -45,6 +57,10 @@ export default function Projects(props) {
                 <p className="textTestDiv">As an aspect of a Human Computer Interaction class, 3 classmates and I were tasked with creating a product we felt the product was missing. Our idea was Ultra Note, a notetaking app meant to simplfy note taking. In this project we learned about design research, prototyping, and testing in order to produce a design that enables our vison for Ultra Note</p>
             );
 
+            projectTime = (
+                <h3>January 2022 - May 2022</h3>
+            );
+
             projectImage = (
                 <div className="flipCard">
                     <div className="flipCardInner">
@@ -53,15 +69,21 @@ export default function Projects(props) {
                         </div>
                         <div className="flipCardBack">
                             <h3>Relevant Skills</h3>
-                            <ul className="skillsList">
-                                <li>Writing</li>
-                                <li>Drawing</li>
-                                <li>Data Collection</li>
-                                <li>Presentation Skills</li>
-                                <li>Group Collaboration</li>
-                                <li>Figma</li>
-                                <li>Data Analysis</li>
-                            </ul>
+                            <p>
+                                Writing
+                                <br></br>
+                                Drawing
+                                <br></br>
+                                Data Collection
+                                <br></br>
+                                Presentation Skills
+                                <br></br>
+                                Group Collaboration
+                                <br></br>
+                                Figma
+                                <br></br>
+                                Data Analysis
+                            </p>
                             <a href="https://ultranotes.weebly.com/"><button className="outsideWebButton">View Our Website</button></a>
                         </div>
                     </div>
@@ -73,6 +95,10 @@ export default function Projects(props) {
                 <p className="textTestDiv">As part of web development, students were tasked with creating a database driven website. The database used was mySQL in combination with PHP. Front-end development was done with HTML, JQuery, and CSS. While not the most visually or programmaticly impressive website, it represents the humble beginnings for me in web design. Unfortunately, due to it not being hosted I am only able to provide screenshots.</p>
             );
 
+            projectTime = (
+                <h3>August 2020 - December 2020</h3>
+            );
+
             projectImage = (
                 <div className="flipCard">
                     <div className="flipCardInner">
@@ -81,12 +107,15 @@ export default function Projects(props) {
                         </div>
                         <div className="flipCardBack">
                             <h3>Relevant Skills</h3>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>PHP</li>
-                                <li>MySql</li>
-                            </ul>
+                            <p>
+                                HTML
+                                <br></br>
+                                CSS
+                                <br></br>
+                                PHP
+                                <br></br>
+                                MySql
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -95,6 +124,10 @@ export default function Projects(props) {
         case "Portfolio":
             projectDecription  = (
                 <p className="textTestDiv">This is meta isn't it. You can find the source code to my protfolio here!</p>
+            );
+
+            projectTime = (
+                <h3>May 2022 - Current</h3>
             );
     
             projectImage = (
@@ -105,19 +138,45 @@ export default function Projects(props) {
                         </div>
                         <div className="flipCardBack">
                             <h3>Relevant Skills</h3>
-                            <ul>
-                                <li>JSX</li>
-                                <li>React</li>
-                                <li>CSS</li>
-                                <li>Github Pages</li>
-                                <li>Git</li>
-                            </ul>
+                                <p>JSX
+                                    <br></br>
+                                    React
+                                    <br></br>
+                                    CSS
+                                    <br></br>
+                                    Github Pages
+                                    <br></br>
+                                    Git
+                                </p>
                             <a href="https://github.com/Cwoodard2/Cwoodard2.github.io"><button className="outsideWebButton">Visit My Repository</button></a>
                         </div>
                     </div>
                 </div>
             );
             break;
+        case "Placeholder": 
+            projectDecription  = (
+                <p className="textTestDiv">This item is here for a potential project that will be revealed at a later date.</p>
+            );
+
+            projectTime = (
+                <h3>To be here in the future!</h3>
+            );
+
+            projectImage = (
+                <div className="flipCard">
+                    <div className="flipCardInner">
+                        <div className="flipCardFront">
+                            <img src={portfolioPic} className="portfolioPic"/>
+                        </div>
+                        <div className="flipCardBack">
+                            <h3>Relevant Skills</h3>
+                               <p>To come Soon!</p>
+                            <a href="https://github.com/Cwoodard2/Cwoodard2.github.io"><button className="outsideWebButton">Visit My Repository</button></a>
+                        </div>
+                    </div>
+                </div>
+            );
         default:
 
             break;
@@ -127,7 +186,7 @@ export default function Projects(props) {
                     <div className="persepctiveItem">
                         <div>
                             <div className="additionalInfo">
-                                <h3 className="textTestDiv">{projectToShow}</h3>
+                                <h3 className="textTestDiv">{projectToShow}{projectTime}</h3>
                                 <div className="infoText">
                                     <hr></hr>
                                     {projectDecription}

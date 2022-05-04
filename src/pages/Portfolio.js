@@ -56,6 +56,10 @@ export default function Portfolio() {
                     </div>
                     <div className={currentProjects}>
                         <Projects project = "Portfolio"/>
+                        <Projects project = "Placeholder"/>
+                        <Projects project = "Placeholder"/>
+                        <Projects project = "Placeholder"/>
+                        <Projects project = "Placeholder"/>
                     </div>
                 </div>
             </div>

@@ -1,24 +1,93 @@
 .aboutMeMain {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-row-gap: 10vh;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    overflow-y: auto;
-    place-items: center;
-    margin-bottom: 3vh;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.aboutMeContent {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox {
+    border-radius: 6px;
+    border: solid;
+    border-color: #ff9400;
+    width: 30vw;
+}
+
+.message {
+    border-radius: 6px;
+    border: solid;
+    border-color: #ff9400;
+    width: 30vw;
+    height: 15vh;
+}
+
+.circle {
+    width: 10vw;
+    height: 18vh;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, #fa8128, #ff9400, #fda172);
+    text-align: center;
+}
+
+.dividerLine {
+    width: 80vw;
+    height: 1vh;
+    background-image: linear-gradient(90deg, #fa8128, #ff9400, #fa8128);
+}
+
+.rightItem {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 3vw;
+    margin-top: 0.25vw;
+}
+
+.aboutMeSection {
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+}
+
+.footer {
+    background-image: linear-gradient(90deg, #fa8128, #ff9400, #fa8128);
+    height: 5vh;
+    width: 100vw;
 }
 
 .leftBottomBorder {
     padding: 1vw;
-    border-left: solid;
+    /* border-left: solid;
     border-left-color: #ff9400;
     border-bottom-left-radius: 6px;
     border-bottom: solid;
-    border-bottom-color: #ff9400;
-    align-self: flex-end;
+    border-bottom-color: #ff9400; */
     justify-self: flex-start;
     color: white;
-    margin-left: 2.5vw;
+    /* margin-left: 2.5vw; */
+}
+
+.conciseImages {
+    flex-direction: row;
+    display: flex;
+    gap: 5vw;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.conciseImages2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vw;
 }
 
 .imageBottom {
@@ -26,20 +95,28 @@
     border-bottom-color: #ff9400;
 }
 
+.backgroundContent {
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+
 .bottomRightBorder {
     padding: 1vw;
-    border-right: solid;
+    /* border-right: solid;
     border-right-color: #ff9400;
     border-bottom-right-radius: 6px;
     border-bottom: solid;
-    border-bottom-color: #ff9400;
+    border-bottom-color: #ff9400; */
     align-self: flex-end;
     color: white;
     margin-right: 2.5vw;
 }
 
-.title {
+.titles {
     color: #ff9400;
+    align-self: center;
+    justify-self: center;
 }
 
 .topContent {
@@ -48,8 +125,17 @@
     place-items: center;
 }
 
-.aboutMeContent {
-    height: 90vh;
-    overflow-y: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 100vw;
+    height: 40vw;
+    background-color: darkcyan;
+    color: #ff9400;
+    background-color: white;
+}
+
+.philImage {
+    width: 25vw;
 }
