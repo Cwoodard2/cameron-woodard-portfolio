@@ -103,6 +103,21 @@
     margin: 1vw;
 }
 
+.contactButton {
+    background: none;
+    border: none;
+    color: #ff9400;
+    cursor: pointer;
+}
+
+.contactForm {
+    display: none;
+}
+
+.contactForm2 {
+    display: block;
+}
+
 @keyframes fadeIn{
     0% {
         opacity: 0%;
