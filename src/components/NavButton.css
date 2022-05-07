@@ -1,16 +1,22 @@
+:root {
+    --blueColor: #3fdb92;
+    --burntOrange: #ff6f00;
+}
+
 .navButton {
-    width: calc(12px + 10vw);
-    height: calc(2px + 4vh);;
+    width: calc(14px + 10vw);
+    height: calc(4px + 4vh);;
     background: none;
     border-radius: 4px;
-    border: 0.15vw solid #ff9400;
+    border: 0.15vw solid white;
     cursor: pointer;
-    color: #ff9400;
-    font-size: calc(8px + 0.6vh);
+    color: white;
+    font-size: calc(10px + 0.6vh);
     transition: color white;
     transition-duration: 0.5s;
     place-items: center;
     font-weight: bolder;
+    transition: background-color 0.5s;
 }
 
 .navButtonHome {
@@ -20,15 +26,21 @@
     border: solid;
     border-width: 0.25vw;
     border-radius: 6px;
-    border-color: #3478bc;
-    color: #3478bc;
+    border-color: white;
+    color: white;
     margin-left: 1.5vw;
     margin-bottom: 1.5vh;
-    transition: color 0.5s, border-color 0.5s;
+    /* transition: color 0.5s, border-color 0.5s; */
+    transition: background-color 0.5s;
     cursor: pointer;
 }
 
 .navButton:hover {
-    color: #3478bc;
-    border-color: #3478bc;
+    /* color: #ff9400;
+    border-color: #ff9400; */
+    background-color: hsl(201, 74%, 47%);
+}
+
+.navButtonHome:hover {
+    background-color: hsl(201, 74%, 47%);
 }

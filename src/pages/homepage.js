@@ -5,6 +5,7 @@ import '../components/navigation.css';
 import NavButton from "../components/NavButton";
 import './homepage.css';
 import logo from '../Images/Logoforwebsite.png';
+import cameronPic from '../Images/cameronwoodard.jpg';
 
 export default function Homepage() {
 
@@ -26,13 +27,15 @@ export default function Homepage() {
         <StandardPage>
             <Navigation />
             <div className="homeMain">
-                <div className="homepageNav2">
-                    <h2 className="title">Greetings...</h2>
-                    <img src={logo} />
-                    <div className="navText">
-                       <h2>I'm Cameron</h2>
-                       <button className="contactButton">Contact Me</button>
+                <div className="column">
+                    <div className="homepageNav2">
+                        <h2 className="title">Greetings...</h2>
+                        <img src={logo} />
+                        <div className="navText">
+                            <h2>I'm Cameron</h2>
+                        </div>
                     </div>
+                    <h3>Computer Science // Psychology // Aspiring Web Developer</h3>
                 </div>
                 <div className="otherPages">
                 <div className="homepageNav">
@@ -42,10 +45,10 @@ export default function Homepage() {
                     <NavButton page="Portfolio" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 <div className="homepageNav">
-                    <h2 className="cardTitle">Resume</h2>
-                    <h3>For when projects just aren't enough to show skills off. Here's a page long paper that tells you a little more about my skills.</h3>
-                    <img src="https://th.bing.com/th/id/R.92a596eab06d400686cd541e68145b3b?rik=k%2fT4IkWsia2ALA&riu=http%3a%2f%2fwww.usnews.com%2fcmsmedia%2f46%2f19%2f5c6c54fb4c6f812dc85c20fc656a%2f141106-portfolio-stock.jpg&ehk=pEOp6RPzMxLzFRliU7hWCEGZlsbFJ%2fkgrdh%2fpBH6Du4%3d&risl=&pid=ImgRaw&r=0"/>
-                    <NavButton page="Resume" thisPage="Learn More" thisStyle="navButtonHome" />
+                    <h2 className="cardTitle">About Me</h2>
+                    <h3>Learn a little more about the guy who made this portfolio. Includes my resume, philsophy, and interests</h3>
+                    <img src={cameronPic}/>
+                    <NavButton page="/AboutMe" thisPage="Learn More" thisStyle="navButtonHome" />
                 </div>
                 <div className="homepageNav">
                     <h2 className="cardTitle">Playground</h2>

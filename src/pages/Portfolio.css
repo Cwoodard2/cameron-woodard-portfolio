@@ -148,19 +148,37 @@ img {
 }
 
 .portfolioButton {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
   cursor: pointer;
   background: none;
   border: none;
-  color: #ff9400;
+  color: white;
   font-size: calc(20px + 0.6vh);
+  transition: background-color .5s, border-radius .5s;
 }
 
 .portfolioButton:hover {
-  font-weight: bolder;
+  background-color: #fa665c;
+  border-radius: 6px;
 }
 
 .testingLineAnimation {
   animation-name: lineAnimation;
   animation-duration: 1s;
   width: 10vw;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 1;
+  }
+  25%,
+  75%,
+  100% {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
 }

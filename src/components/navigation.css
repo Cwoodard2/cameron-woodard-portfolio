@@ -15,7 +15,9 @@
     height: 10vh;
     /* background-color: rgb(255, 255, 255);
     box-shadow: 10px 10px 20px; */
-    background-color: #f7f8f5;
+    /* background-color: #f7f8f5; */
+    /* background: linear-gradient(0deg, hsla(207, 88%, 23%, 1) 0%, hsla(177, 36%, 35%, 1) 54%, hsla(195, 100%, 52%, 1) 100%); */
+    background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
 }
 
 .logo {
