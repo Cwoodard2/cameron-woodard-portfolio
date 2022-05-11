@@ -1,11 +1,16 @@
 import React from "react";
 import Navigation from '../components/navigation';
 import StandardPage from "../components/DefaultPage";
+import AddSkillCard from "../components/skillCard";
 import cameronImage from "../Images/cameronwoodard.jpg";
 import "./AboutMe.css";
+import { useEffect } from 'react';
 
 
 export default function AboutMe() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <StandardPage>
@@ -15,22 +20,18 @@ export default function AboutMe() {
                 <div className="aboutMeSection">
                     <div className="aboutMeContent leftItem">
                         <h1 className="titles">Background</h1>
-                        <img src={cameronImage} />
+                        <img src={cameronImage} alt="picture of Cameron Woodard"/>
                         <p>I am a junior computer science student at SIUE also studying psychology. A core idea in my life is to provide for others. I believe in technology as a medium to enhance others lives, while not being a detriment. A focus on simple to use, appealing, and interesting technology is where I plan to focus my efforts.</p>
                     </div>
                     <div className="aboutMeContent rightItem">
                         <h1 className="titles">Skills</h1>
-                        <div>
-                            <p>Skill: React</p>
+                        <div className="skillCards">
+                            <AddSkillCard experience="6" whichSkill="React" howComfort="40" length="months" projects="2" />
+                            <AddSkillCard experience="1" whichSkill="CSS" howComfort="50" length="years" projects="4" />
+                            <AddSkillCard experience="6" whichSkill="Github Pages" howComfort="30" length="months" projects="2" />
+                            <AddSkillCard experience="1" whichSkill="Git" howComfort="30" length="years" projects="2" />
+                            <a href="./ResumeWoodard3.pdf" target="_tab"><button className="aboutMeButton">View Resume</button></a>
                         </div>
-                        <p>Skill: CSS</p>
-                        <p>Skill: Github Pages</p>
-                        <p>Skill: Git</p>
-                        <p>Skill: Visual Studio</p>
-                        <p>Skill: CSS</p>
-                        <p>Skill: React</p>
-                        <p>Skill: CSS</p>
-                        <button className="aboutMeButton">View Resume</button>
                     </div>
                 </div>
                 <br></br>
