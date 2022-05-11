@@ -2,99 +2,41 @@
   --noshow: none;
 }
 
-.persepctiveItem {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background: white;
-  border-radius: 12px;
-  gap: 5vw;
-  /* transform-style: preserve-3d;
-  transform: rotateY(-5deg); */
-  width: 80vw;
-  height: 35vw;
-  transition: width .5s, height .5s, box-shadow .5s;
-  overflow: auto;
-}
-
-/* .persepctiveItem:hover {
-  transform: scale(1.5);
-  width: 40vw;
-  height: 50vh;
-  box-shadow: 0px 0px 10px 5px;
-}  */
-
-/* .persepctiveItem::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 15px;
-  height: 10%;
-  width: 70%;
-  box-shadow: 75px -4px 4px 0 rgba(0,0,0,1);
-  transform: skewX(-60deg);
-} */
-
 .currentProjects {
   display: block;
+  animation-name: slide-in;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
 }
 
 .currentProjects2 {
   display: none;
+  animation-name: slide-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
 .pastProjects {
   display: block;
+  animation-name: slide-in;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
 }
 
 .pastProjects2 {
   display: none;
+  animation-name: slide-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
 .portfolioMain {
     display: flex;
     place-items: center;
     flex-direction: column;
-    /* grid-template-columns: auto auto; */
-    /* gap: 5vw; */
     width: 100vw;
 }
 
-/* .projectMoreInfo {
-    display: none;
-    height: 95vh;
-    width: 100vw;
-    z-index: 2;
-    border-radius: 10px;
-    border: solid;
-    border-color: white;
-    background-color: aqua;
-} */
-
-.overlayWrapper {
-  z-index: 1;
-  border: solid;
-  border-color: aliceblue;
-  height: 30vw;
-}
-
-/* .additionalInfo {
-  display: none;
-} */
-
-.projectDiv {
-  padding: 2vw;
-}
-
-.projectTitle {
-  place-self: center;
-}
-
-.projectDescription {
-  padding: 2vw;
-}
 
 @keyframes fadeIn{
   0% {
@@ -106,33 +48,11 @@
   }
 }
 
-.projectButton {
-  /* background: none; */
-  cursor: pointer;
-  justify-self: flex-end;
-  align-self: center;
-}
-
 img {
-  width: 15vw;
+  width: 20vw;
   height: 30vh;
   border-radius: 6px;
-  box-shadow: -10px -10px 4px;
 }
-
-.textTestDiv {
-  font-size: calc(15px + 0.6vh);
-  text-shadow: 0px 0px 10px grey;
-  color: #ff9400;
-}
-
-.infoText {
-  width: 30vw;
-}
-
-/* .overlayWrapper:hover .projectMoreInfo {
-  display: block;
-} */
 
 .portfolioButtons {
   display: flex;
@@ -141,10 +61,6 @@ img {
   align-items: center;
   gap: 1vw;
   width: 30vw;
-}
-
-.portfolioButtons:first-child {
-  text-decoration: underline;
 }
 
 .portfolioButton {
@@ -159,15 +75,30 @@ img {
   transition: background-color .5s, border-radius .5s;
 }
 
+.portfolioButton2 {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  cursor: pointer;
+  background-color: #fa665c;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: calc(20px + 0.6vh);
+  transition: background-color .5s, border-radius .5s;
+}
+
+.portfolioButtonActive {
+  background-color: #fa665c;
+}
+
+.portfolioButtonActive2 {
+  background-color: #fa665c;
+}
+
 .portfolioButton:hover {
   background-color: #fa665c;
   border-radius: 6px;
-}
-
-.testingLineAnimation {
-  animation-name: lineAnimation;
-  animation-duration: 1s;
-  width: 10vw;
 }
 
 @keyframes slide {
@@ -180,5 +111,27 @@ img {
   100% {
     transform: translateX(0vw);
     opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+      transform: translateY(100vh);
+      opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(0vh);
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0vh);
+  }
+
+  100% {
+    transform: translateY(-100vh);
   }
 }
