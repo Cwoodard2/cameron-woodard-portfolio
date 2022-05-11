@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Navigation from '../components/navigation';
 import StandardPage from "../components/DefaultPage";
 import '../components/navigation.css';
 import NavButton from "../components/NavButton";
 import './homepage.css';
-import logo from '../Images/Logoforwebsite.png';
+import logo from '../Images/logoWithColorBrain.png';
 import cameronPic from '../Images/cameronwoodard.jpg';
 
 export default function Homepage() {
@@ -23,6 +23,10 @@ export default function Homepage() {
             previousPosition = currentPosition;
         };
 
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, []);
+
     return (
         <StandardPage>
             <Navigation />
@@ -30,9 +34,9 @@ export default function Homepage() {
                 <div className="column">
                     <div className="homepageNav2">
                         <h2 className="title">Greetings...</h2>
-                        <img src={logo} />
+                        <img src={logo} className="logo"/>
                         <div className="navText">
-                            <h2>I'm Cameron</h2>
+                            <h2 className="otherTitle">I'm Cameron</h2>
                         </div>
                     </div>
                     <h3>Computer Science // Psychology // Aspiring Web Developer</h3>

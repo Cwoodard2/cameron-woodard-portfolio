@@ -5,14 +5,12 @@
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    /* height: 89.9vh; */
-    /* overflow-y: auto; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.photo {
-    width: 5vw;
-    height: 5vh;
+.logo {
+    width: 40vw;
+    height: auto;
 }
 
 .homepageNav {
@@ -23,20 +21,14 @@
     display: flex;
     gap: 1vw;
     flex-direction: column;
-    /* grid-template-columns: auto auto; */
-    /* grid-template-rows: 7vh 20vh 10vh; */
     place-items: center;
     margin-top: 2vw;
     border: none;
-    /* border: solid; */
     border-radius: 6px;
     border-width: 0.75vw;
-    /* border-color: white; */
     box-shadow: 0px 0px 10px 4px;
-    /* background-image: linear-gradient(0deg, #fa8128, #ff9400, #fda172); */
     background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
     margin-bottom: 3vh;
-    /* margin-right: 0.4vw; */
     transition: transform 0.5s, box-shadow 0.5s;
 }
 
@@ -59,11 +51,15 @@
 }
 
 .navText {
-    font-size: calc(10px + 0.6vh);
+    font-size: calc(6px + 2.25vw);
     justify-self: flex-start;
     align-self: flex-end;
     margin-bottom: 10vw;
     color: white;
+}
+
+.otherTitle {
+    font-size: calc(6px + 2.25vw);
 }
 
 .column {
@@ -76,6 +72,7 @@
     align-self: flex-start;
     margin-top: 15vh;
     color: white;
+    font-size: calc(6px + 2.25vw);
 }
 
 .otherPages {
@@ -89,7 +86,7 @@
     gap: 2.5vw;
     flex-wrap: wrap;
     color: white;
-    background-color: white;
+    background-color: rgb(80, 80 ,80);
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
@@ -98,13 +95,6 @@
     justify-self: center;
     align-self: flex-start;
     margin: 1vw;
-}
-
-.contactButton {
-    background: none;
-    border: none;
-    color: #ff9400;
-    cursor: pointer;
 }
 
 @keyframes fadeIn{

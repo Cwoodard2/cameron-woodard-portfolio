@@ -1,6 +1,7 @@
 :root {
     --blueColor: #3fdb92;
     --burntOrange: #ff6f00;
+    --blueBackgroundColor: hsl(201, 74%, 47%);
 }
 
 .navButton {
@@ -30,17 +31,14 @@
     color: white;
     margin-left: 1.5vw;
     margin-bottom: 1.5vh;
-    /* transition: color 0.5s, border-color 0.5s; */
     transition: background-color 0.5s;
     cursor: pointer;
 }
 
 .navButton:hover {
-    /* color: #ff9400;
-    border-color: #ff9400; */
-    background-color: hsl(201, 74%, 47%);
+    background-color: var(--blueBackgroundColor);
 }
 
 .navButtonHome:hover {
-    background-color: hsl(201, 74%, 47%);
+    background-color: var(--blueBackgroundColor);
 }
