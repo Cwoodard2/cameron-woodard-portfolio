@@ -3,6 +3,7 @@ import Navigation from '../components/navigation';
 import StandardPage from "../components/DefaultPage";
 import Projects from "../components/ProjectsSection";
 import './Portfolio.css';
+import urcaDash from "../Images/urca.png";
 
 
 export default function Portfolio() {
@@ -12,6 +13,7 @@ export default function Portfolio() {
     const [pastButton, setPastButton] = useState("portfolioButton");
     const [currentProjects, setCurrentProjects] = useState("currentProjects");
     const [pastProjects, setPastProjects] = useState("pastProjects2");
+    var descriptionArray = [<p className="textTestDiv">This project was built by three students, including me. It was constructed to provide a way to collect data regarding ethnic and racial microaggressions. It utilizes React to build the website and provide functionality.</p>, <p className="textTestDiv">As an aspect of a Human Computer Interaction class, 3 classmates and I were tasked with creating a product we felt the product was missing. Our idea was Ultra Note, a notetaking app meant to simplfy note taking. In this project we learned about design research, prototyping, and testing in order to produce a design that enables our vison for Ultra Note</p>, <p className="textTestDiv">As part of web development, students were tasked with creating a database driven website. The database used was mySQL in combination with PHP. Front-end development was done with HTML, JQuery, and CSS. While not the most visually or programmaticly impressive website, it represents the humble beginnings for me in web design. Unfortunately, due to it not being hosted I am only able to provide screenshots.</p>, <p className="textTestDiv">This is meta isn't it. You can find the source code to my protfolio here!</p>, <p className="textTestDiv">This item is here for a potential project that will be revealed at a later date.</p>];
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -60,16 +62,16 @@ export default function Portfolio() {
                         <button className={pastButton} onClick={() => changeButton("past")}>Past Projects</button>
                     </div>
                     <div className={pastProjects}>
-                        <Projects project = "URCA"/>
-                        <Projects project = "HCI"/>
-                        <Projects project = "234"/>
+                        <Projects project = "URCA" description = {descriptionArray[0]} image="1" duration="January 2022 - May 2022"/>
+                        <Projects project = "HCI" description = {descriptionArray[1]} image="2" duration="January 2022 - May 2022"/>
+                        <Projects project = "234" description = {descriptionArray[2]} image="3" duration="August 2020 - December 2020"/>
                     </div>
                     <div className={currentProjects}>
-                        <Projects project = "Portfolio"/>
-                        <Projects project = "Placeholder"/>
-                        <Projects project = "Placeholder"/>
-                        <Projects project = "Placeholder"/>
-                        <Projects project = "Placeholder"/>
+                        <Projects project = "Portfolio" description = {descriptionArray[3]} image="4" duration="May 2022 - Current"/>
+                        <Projects project = "Placeholder" description = {descriptionArray[4]} image="5" duration="To be here in the future!"/>
+                        <Projects project = "Placeholder" description = {descriptionArray[4]} image="5" duration="To be here in the future!"/>
+                        <Projects project = "Placeholder" description = {descriptionArray[4]} image="5" duration="To be here in the future!"/>
+                        <Projects project = "Placeholder" description = {descriptionArray[4]} image="5" duration="To be here in the future!"/>
                     </div>
                 </div>
             </div>
