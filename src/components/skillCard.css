@@ -1,23 +1,24 @@
-.topContent:hover {
+/* .topContent:hover {
     display: none;
-}
+} */
 
 .skillCard {
     display: flex;
     width: 15vw;
     height: 20vh;
-    background-color: #fa8128;
     transition: background-color 1s;
     justify-content: center;
+    overflow-y: auto;
+    border-radius: 6px;
 }
 
 .skillCard:hover {
     background-color: rgb(80, 80, 80);
 }
 
-.skillCard:hover .topContent {
+/* .skillCard:hover .topContent {
     display: none;
-}
+} */
 
 .hoverContent {
     display: none;
@@ -26,6 +27,7 @@
 
 .skillCard:hover .hoverContent {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -36,4 +38,10 @@
     animation-name: slide-in-page;
     animation-duration: 1s;
     animation-iteration-count: 1;
+}
+
+.skillPic {
+    width: 15vw;
+    height: 20vh;
+    background: transparent;
 }

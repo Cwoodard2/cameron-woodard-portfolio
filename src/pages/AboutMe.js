@@ -26,12 +26,16 @@ export default function AboutMe() {
                     <div className="aboutMeContent rightItem">
                         <h1 className="titles">Skills</h1>
                         <div className="skillCards">
-                            <AddSkillCard experience="6" whichSkill="React" howComfort="40" length="months" projects="2" />
-                            <AddSkillCard experience="1" whichSkill="CSS" howComfort="50" length="years" projects="4" />
-                            <AddSkillCard experience="6" whichSkill="Github Pages" howComfort="30" length="months" projects="2" />
-                            <AddSkillCard experience="1" whichSkill="Git" howComfort="30" length="years" projects="2" />
-                            <a href="./ResumeWoodard3.pdf" target="_tab"><button className="aboutMeButton">View Resume</button></a>
+                            <AddSkillCard experience="6" whichSkill="1" howComfort="40" length="months" projects="2" />
+                            <AddSkillCard experience="1" whichSkill="2" howComfort="50" length="years" projects="4" />
+                            <AddSkillCard experience="6" whichSkill="3" howComfort="30" length="months" projects="2" />
+                            <AddSkillCard experience="1" whichSkill="4" howComfort="30" length="years" projects="2" />
+                            <AddSkillCard experience="6" whichSkill="5" howComfort="30" length="months" projects="1" />
+                            <AddSkillCard experience="1" whichSkill="6" howComfort="60" length="years" projects="3" />
+                            <AddSkillCard experience="3" whichSkill="7" howComfort="70" length="years" projects="4" />
+                            <AddSkillCard experience="3" whichSkill="8" howComfort="70" length="years" projects="many" />
                         </div>
+                        <a href="./ResumeWoodard3.pdf" target="_tab"><button className="aboutMeButton">View Resume</button></a>
                     </div>
                 </div>
                 <br></br>
@@ -72,7 +76,7 @@ export default function AboutMe() {
                 </div>
                 <div className="contactForm">
                     <h1 className="titles">Contact Me!</h1>
-                    <form className="contactForm">
+                    <form action="http://formspree.io/hanolbuddy1@gmail.com" className="contactForm" method="POST">
                         <input type="text" name="firstname" placeholder="Your name" className="inputBox"/>
                         <br></br>
                         <input type="text" name="email" placeholder="Email" className="inputBox"/>
