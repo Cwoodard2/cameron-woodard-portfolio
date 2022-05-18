@@ -56,7 +56,7 @@ export default function Portfolio() {
             <Navigation />
             <div className="">
                 <div className="portfolioMain">
-                    <h1>Ahh the projects page, where it all begins</h1>
+                    <h1>View the projects I'm working on or see past ones!</h1>
                     <div className="portfolioButtons">
                         <button className={currentButton} onClick={() => changeButton("current")}>Current Projects</button>
                         <button className={pastButton} onClick={() => changeButton("past")}>Past Projects</button>

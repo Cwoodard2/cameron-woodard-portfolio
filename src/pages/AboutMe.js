@@ -20,20 +20,20 @@ export default function AboutMe() {
                 <div className="aboutMeSection">
                     <div className="aboutMeContent leftItem">
                         <h1 className="titles">Background</h1>
-                        <img src={cameronImage} alt="picture of Cameron Woodard"/>
+                        <img src={cameronImage} alt="picture of Cameron Woodard" className="aboutMePicture"/>
                         <p>I am a junior computer science student at SIUE also studying psychology. A core idea in my life is to provide for others. I believe in technology as a medium to enhance others lives, while not being a detriment. A focus on simple to use, appealing, and interesting technology is where I plan to focus my efforts.</p>
                     </div>
                     <div className="aboutMeContent rightItem">
                         <h1 className="titles">Skills</h1>
                         <div className="skillCards">
-                            <AddSkillCard experience="6" whichSkill="1" howComfort="40" length="months" projects="2" />
-                            <AddSkillCard experience="1" whichSkill="2" howComfort="50" length="years" projects="4" />
-                            <AddSkillCard experience="6" whichSkill="3" howComfort="30" length="months" projects="2" />
-                            <AddSkillCard experience="1" whichSkill="4" howComfort="30" length="years" projects="2" />
-                            <AddSkillCard experience="6" whichSkill="5" howComfort="30" length="months" projects="1" />
-                            <AddSkillCard experience="1" whichSkill="6" howComfort="60" length="years" projects="3" />
-                            <AddSkillCard experience="3" whichSkill="7" howComfort="70" length="years" projects="4" />
-                            <AddSkillCard experience="3" whichSkill="8" howComfort="70" length="years" projects="many" />
+                            <AddSkillCard experience="6" whichSkill="React" howComfort="40" length="months" projects="2" />
+                            <AddSkillCard experience="1" whichSkill="HTML" howComfort="50" length="years" projects="4" />
+                            <AddSkillCard experience="6" whichSkill="CSS" howComfort="30" length="months" projects="2" />
+                            <AddSkillCard experience="1" whichSkill="Firebase" howComfort="30" length="years" projects="2" />
+                            <AddSkillCard experience="6" whichSkill="Github Pages" howComfort="30" length="months" projects="1" />
+                            <AddSkillCard experience="1" whichSkill="Git" howComfort="60" length="years" projects="3" />
+                            <AddSkillCard experience="3" whichSkill="Java" howComfort="70" length="years" projects="4" />
+                            <AddSkillCard experience="3" whichSkill="Javascript" howComfort="70" length="years" projects="many" />
                         </div>
                         <a href="./ResumeWoodard3.pdf" target="_tab"><button className="aboutMeButton">View Resume</button></a>
                     </div>

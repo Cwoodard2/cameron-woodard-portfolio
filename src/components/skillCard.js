@@ -19,28 +19,28 @@ export default function AddSkillCard(props) {
     var pluralProjects;
 
     switch(skill) {
-        case "1":
+        case "React":
             imageToUse = <img src={reactLogo} className="topContent skillPic"/>
             break;
-        case "2":
+        case "HTML":
             imageToUse = <img src={htmlLogo} className="topContent skillPic"/>
             break;
-        case "3":
+        case "CSS":
             imageToUse = <img src={cssLogo} className="topContent skillPic"/>
             break;
-        case "4":
+        case "Firebase":
             imageToUse = <img src={firebaseLogo} className="topContent skillPic"/>
             break;
-        case "5":
+        case "Github Pages":
             imageToUse = <img src={githubLogo} className="topContent skillPic"/>
             break;
-        case "6":
+        case "Git":
             imageToUse = <img src={gitLogo} className="topContent skillPic"/>
             break;
-        case "7":
+        case "Java":
             imageToUse = <img src={javaLogo} className="topContent skillPic"/>
             break;
-        case "8":
+        case "Javascript":
             imageToUse = <img src={javascriptLogo} className="topContent skillPic"/>
             break;
         default:
@@ -64,7 +64,7 @@ export default function AddSkillCard(props) {
             {/* <p className="topContent">{skill}</p> */}
             {imageToUse}
             <div className="hoverContent">
-                <p className="hoverDescript">{numExperience} {time} of Experience <br></br> Used on {numProjects} {pluralProjects} <br></br> Comfortability: {comfort}%</p>
+                <p className="hoverDescript">{skill} <br></br> <br></br>{numExperience} {time} of Experience <br></br> Used on {numProjects} {pluralProjects} <br></br> Comfortability: {comfort}%</p>
             </div>
         </div>
     )

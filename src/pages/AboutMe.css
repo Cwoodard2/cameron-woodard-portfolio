@@ -167,6 +167,11 @@
     width: 25vw;
 }
 
+.aboutMePicture {
+    width: 22.5vw;
+    height: auto;
+}
+
 @keyframes slide-in-page {
     0% {
         transform: translateY(20vh);

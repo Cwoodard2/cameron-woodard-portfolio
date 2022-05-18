@@ -8,7 +8,7 @@
     height: 20vh;
     transition: background-color 1s;
     justify-content: center;
-    overflow-y: auto;
+    overflow-y: hidden;
     border-radius: 6px;
 }
 
