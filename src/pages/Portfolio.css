@@ -88,17 +88,13 @@ img {
   transition: background-color .5s, border-radius .5s;
 }
 
-.portfolioButtonActive {
-  background-color: #fa665c;
-}
-
-.portfolioButtonActive2 {
-  background-color: #fa665c;
-}
-
 .portfolioButton:hover {
   background-color: #fa665c;
   border-radius: 6px;
+}
+
+.pageTitle {
+  color: #ffae00;
 }
 
 @keyframes slide {

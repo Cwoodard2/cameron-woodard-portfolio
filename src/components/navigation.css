@@ -19,6 +19,15 @@
     background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
 }
 
+@media screen and (max-width: 600px) {
+    .navbar {
+        height: 7.5vh;
+        gap: 7.5vw;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+}
+
 @keyframes showNavBar{
     0% {
         transform: translateY(-20vh);

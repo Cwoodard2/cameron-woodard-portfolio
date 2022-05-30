@@ -2,13 +2,15 @@ import React from "react";
 import portfolioPic from "../Images/portImage.png";
 import ultraLogo from "../Images/ultranotelogo.jpg";
 import urcaDash from "../Images/urca.png";
+import mindworksHome from "../Images/mindworks_home.png";
 import "./flipCard.css";
 
 export default function FlipCard(props) {
     var whichImage = props.image;
     var showImage;
     var url;
-    var skills = [<p>JSX<br></br>React<br></br>CSS<br></br>Github Pages<br></br>Git<br></br>Firebase<br></br>Group Collaboration<br></br>Scientific Journal Analysis</p>, <p>
+    var skills = [<p className="skillText">JSX<br></br>React<br></br>CSS<br></br>Github Pages<br></br>Git<br></br>Firebase<br></br>Group Collaboration<br></br>Scientific Journal Analysis</p>, 
+    <p className="skillText">
         Writing
         <br></br>
         Drawing
@@ -22,7 +24,7 @@ export default function FlipCard(props) {
         Figma
         <br></br>
         Data Analysis
-    </p>, <p>
+    </p>, <p className="skillText">
         HTML
         <br></br>
         CSS
@@ -30,7 +32,7 @@ export default function FlipCard(props) {
         PHP
         <br></br>
         MySql
-    </p>, <p>JSX
+    </p>, <p className="skillText">JSX
         <br></br>
         React
         <br></br>
@@ -39,7 +41,16 @@ export default function FlipCard(props) {
         Github Pages
         <br></br>
         Git
-    </p>, <p>To come Soon!</p>];
+    </p>, 
+    <p className="skillText">
+        Squarespace
+        <br></br>
+        CSS
+        <br></br>
+        HTML
+        <br></br>
+    </p>, 
+    <p className="skillText">To come Soon!</p>];
 
     switch (whichImage) {
         case "1":
@@ -59,6 +70,10 @@ export default function FlipCard(props) {
             url = "https://github.com/Cwoodard2/Cwoodard2.github.io";
             break;
         case "5":
+            showImage = <img src={mindworksHome} className="portfolioPic" />;
+            url = "https://www.mindworksmentalhealth.net/";
+            break;
+        case "6":
             showImage = <img src={portfolioPic} className="portfolioPic" />;
             url = "https://github.com/Cwoodard2/Cwoodard2.github.io";
             break;

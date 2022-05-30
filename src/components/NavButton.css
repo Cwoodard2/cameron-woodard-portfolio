@@ -12,12 +12,18 @@
     border: 0.15vw solid white;
     cursor: pointer;
     color: white;
-    font-size: calc(10px + 0.6vh);
+    font-size: 1rem;
     transition: color white;
     transition-duration: 0.5s;
     place-items: center;
     font-weight: bolder;
     transition: background-color 0.5s;
+}
+
+@media screen and (max-width: 600) {
+    .navButton {
+        font-size: 0.1rem;
+    }
 }
 
 .navButtonHome {

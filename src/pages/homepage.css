@@ -98,6 +98,30 @@
     justify-self: center;
     align-self: flex-start;
     margin: 1vw;
+    font-size: 1.5rem;
+}
+
+.cardDescript {
+    font-size: 1.2rem;
+}
+
+@media  screen and (max-width: 500px) {
+    .cardTitle {
+        font-size: 1.2rem;
+    }
+
+    .cardDescript {
+        font-size: 0.75rem;
+    }
+
+    .homepageNav {
+        width: 60vw;
+        height: 30vh;
+    }
+
+    /* .otherPages {
+        flex-direction: column;
+    } */
 }
 
 @keyframes fadeIn{

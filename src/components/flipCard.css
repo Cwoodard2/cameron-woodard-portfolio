@@ -71,3 +71,7 @@
     border-radius: 6px;
     transition: transform .5s;
   }
+
+  .skillText {
+    font-size: calc(14px + 0.6vh);
+  }
