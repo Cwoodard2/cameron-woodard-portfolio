@@ -19,6 +19,19 @@
         overflow-y: hidden;
 }
 
+.skillCard2 {
+        display: flex;
+        /* width: 5vw;
+        height: 5vw; */
+        background-color: white;
+        transition: background-color 1s;
+        justify-content: center;
+        overflow-y: hidden;
+        border-radius: 12px;
+        margin: 2vw;
+        gap: 1vw;
+}
+
 .skillCard:hover {
     background-color: rgb(80, 80, 80);
 }
@@ -71,3 +84,16 @@
     height: auto;
     width: 20vw;
 }
+
+.skillPic2 {
+    height: 2vw;
+    width: 2vw;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .skillPic2 {
+      width: 5vw;
+      height: 5vw;
+    }
+  }

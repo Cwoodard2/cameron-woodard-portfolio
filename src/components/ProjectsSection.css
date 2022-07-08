@@ -1,6 +1,18 @@
   .projectDiv {
     padding: 2vw;
+    display: flex;
+    flex-direction: row;
   }
+
+  .persepctiveItem:hover {
+    /* border-color: #ff9400; */
+    border-color: #44D362;
+    /* background-color: rgb(2, 100, 112); */
+    transform: scale(1.05);
+    border-width: 0.25vw;
+    box-shadow: 10px 10px 10px 10px #08AEEA;
+  }
+
   .persepctiveItem {
     display: flex;
     flex-direction: row;
@@ -8,18 +20,27 @@
     align-items: center;
     background-color: rgb(80, 80, 80);
     border-radius: 12px;
-    gap: 5vw;
-    width: 80vw;
-    height: 65vh;
+    gap: 2vw;
+    width: 40vw;
+    height: 35vw;
     overflow: auto;
     flex-wrap: wrap;
+    border: solid;
+    border-color: white;
+    transition: border-color 0.5s, transform 0.5s, background-color 0.5s, box-shadow 0.5s, border-width 0.5s;
   }
 
   .portfolioPic {
-    width: 22.5vw;
-    height: 45vh;
+    width: 16vw;
+    height: 16vw;
     border-radius: 6px;
     transition: transform .5s;
+  }
+
+  .pictureDiv {
+
+    display: flex;
+    justify-content: center;
   }
 
   @media screen and (max-width: 600px) {
@@ -32,10 +53,69 @@
   .textTestDiv {
     font-size: calc(12px + 1vh);
     text-shadow: 0px 0px 10px grey;
-    color: #ff9400;
+    /* color: #ff9400; */
+    /* color: #2AF598; */
+    color: #44D362;
   }
 
   .infoText {
-    width: 30vw;
+    width: 37vw;
     font-size: calc(10px + 0.6vh);
+    color: #44D362;
+  }
+
+  .skillsUsed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+    width: 37vw;
+  }
+
+  .liveSiteButton {
+    display: flex;
+    background: none;
+    height: 2vw;
+    border-radius: 4px;
+    border: 0.15vw solid #44D362;
+    cursor: pointer;
+    color: #44D362;
+    font-size: 1rem;
+    transition: color white;
+    transition-duration: 0.5s;
+    place-items: center;
+    font-weight: bolder;
+    transition: background-color 0.5s;
+    justify-self: flex-end;
+    text-decoration: none;
+  }
+
+  @media  screen and (max-width: 500px) {
+    .persepctiveItem {
+      flex-direction: column;
+      width: 95vw;
+      height: auto;
+    }
+
+    .infoText {
+      width: 95vw;
+    }
+
+    /* .skillsUsed {
+      flex-direction: row;
+      height: 5vw;
+    } */
+
+    .liveSiteButton {
+      font-size: 0.5rem;
+      height: 5vw;
+    }
+
+    .portfolioPic {
+      width: 10vw;
+      height: auto;
+    }
+
+    .additionalItems {
+    }
   }

@@ -1,3 +1,80 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.divTest1 {
+   display: flex;
+   z-index: 2; 
+   transform: skew(20deg);
+   background-color: #2AF598;
+}
+
+.divTest2 {
+    display: flex;
+    z-index: 1;
+    transform: skew(-20deg);
+    background-color: #2AF598;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.allSkillsWrapper {
+    gap: 5vw;
+}
+
+.testNewIdea {
+   
+}
+
+.skillsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 40vw;
+    transition: width 0.5s;
+}
+
+.skillsContent:hover .moreSkillContent {
+    display: flex;
+    flex-direction: row;
+    opacity: 100%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    flex-wrap: wrap;
+}
+
+.skillsContent:hover {
+    width: 40vw;
+}
+
+.skillsContent:hover .testNewIdea{
+    transform: rotate(0deg);
+}
+
+.moreSkillContent {
+    display: flex;
+    flex-direction: row;
+    opacity: 100%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    flex-wrap: wrap;
+}
+
+.skillsWrapper {
+    background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
+    border-radius: 12px;
+}
+
 .homeMain {
     display: flex;
     flex-direction: row;
@@ -11,6 +88,9 @@
 .logo {
     width: 40vw;
     height: auto;
+    display: flex;
+    animation-name: bounce;
+    animation-duration: 2s;
 }
 
 .homepageNav {
@@ -27,7 +107,7 @@
     border-radius: 6px;
     border-width: 0.75vw;
     box-shadow: 0px 0px 10px 4px;
-    background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
+    background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 40%);
     margin-bottom: 3vh;
     transition: transform 0.5s, box-shadow 0.5s;
 }
@@ -37,14 +117,22 @@
     box-shadow: 0px 0px 10px 10px;
 }
 
+.titleText {
+    animation-name: fly-in;
+    animation-duration: 2s;
+    color: white;
+    
+}
+
 .homepageNav2 {
-    width: 100vw;
+    width: 80vw;
     height: 80vh;
-    animation-name: fadeIn;
-    animation-duration: 3s;
+    /* animation-name: fadeIn;
+    animation-duration: 3s; */
     display: flex;
     flex-direction: row;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 2vw;
     border: none;
     flex-wrap: wrap;
@@ -55,17 +143,39 @@
     justify-self: flex-start;
     align-self: flex-end;
     margin-bottom: 10vw;
-    color: white;
+    /* color: white; */
     width: 29vw;
+    text-shadow: 0px 0px 10px grey;
+    color: #ff9400;
 }
 
 .otherTitle {
     font-size: calc(6px + 2.25vw);
+    text-shadow: 0px 0px 10px grey;
+    color: #ff9400;
 }
 
-.column {
+.subtitle {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-self: baseline;
+    width: 29vw;
+    color: white;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.gap {
+    gap: 2vw;
 }
 
 .title{
@@ -74,8 +184,12 @@
     align-self: flex-start;
     margin-top: 15vh;
     width: 29vw;
-    color: white;
+    /* color: white; */
     font-size: calc(6px + 2.25vw);
+    text-shadow: 0px 0px 10px grey;
+    /* color: #ff9400; */
+    /* color: #2AF598; */
+    color: #77DD66;
 }
 
 .otherPages {
@@ -131,5 +245,35 @@
 
     100% {
         opacity: 100%;
+    }
+}
+
+@keyframes fly-in {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(-15vw);
+    }
+
+    25% {
+        /* transform: scale(1.1); */
+        transform: translateX(-15vw);
+    }
+
+    50% {
+        transform: scale(1);
+        transform: translateX(-15vw);
+    }
+
+    100% {
+        
     }
 }

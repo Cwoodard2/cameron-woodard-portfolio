@@ -1,7 +1,7 @@
 .flipCard {
     background-color: transparent;
-    width: 22.5vw;
-    height: 45vh;
+    width: 16vw;
+    height: 16vw;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -66,8 +66,8 @@
 }
 
 .portfolioPic {
-    width: 22.5vw;
-    height: 45vh;
+    width: 60vw;
+    height: 35vw;
     border-radius: 6px;
     transition: transform .5s;
   }

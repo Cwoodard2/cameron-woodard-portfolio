@@ -16,7 +16,12 @@
     gap: 1.5vw;
     width: 100vw;
     height: 10vh;
-    background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
+    /* background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
+    background-color: #08AEEA; */
+    /* background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 50%, #2AF598 100%); */
+    background-color: rgba(80, 80, 80, 90%);
+
 }
 
 @media screen and (max-width: 600px) {
