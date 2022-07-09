@@ -12,7 +12,7 @@ import AddSkillCardCopy from "../components/skillCard copy";
 import Projects from "../components/ProjectsSection";
 
 export default function Homepage() {
-    var descriptionArray = [<p>This project was built by three students, including me. It was constructed to provide a way to collect data regarding ethnic and racial microaggressions. It utilizes React to build the website and provide functionality.</p>, <p>As an aspect of a Human Computer Interaction class, 3 classmates and I were tasked with creating a product we felt the product was missing. Our idea was Ultra Note, a notetaking app meant to simplfy note taking. In this project we learned about design research, prototyping, and testing in order to produce a design that enables our vison for Ultra Note</p>, <p>As part of web development, students were tasked with creating a database driven website. The database used was mySQL in combination with PHP. Front-end development was done with HTML, JQuery, and CSS. While not the most visually or programmaticly impressive website, it represents the humble beginnings for me in web design. Unfortunately, due to it not being hosted I am only able to provide screenshots.</p>, <p>This is meta isn't it. You can find the source code to my protfolio here!</p>, <p>For this project I was tasked with creating a simple website for a local therapy provider. This website was built using Squarespace as the client had already begun work with it. As a result I had to learn Squarespace to quickly develop the website. Unique to the therapy world, it uses a rustic theme with a darker color palette meant to provide calming sensations as you move throughout the site.</p>, <p>This item is here for a potential project that will be revealed at a later date.</p>];
+    var descriptionArray = [<p>This project was built by three students, including me. It was constructed to provide a way to collect data regarding ethnic and racial microaggressions. It utilizes React to build the website and provide functionality.</p>, <p>As an aspect of a Human Computer Interaction class, 3 classmates and I were tasked with creating a product we felt the product was missing. Our idea was Ultra Note, a notetaking app meant to simplfy note taking. In this project we learned about design research, prototyping, and testing in order to produce a design that enables our vison for Ultra Note</p>, <p>As part of web development, students were tasked with creating a database driven website. The database used was mySQL in combination with PHP. Front-end development was done with HTML, JQuery, and CSS. While not the most visually or programmaticly impressive website, it represents the humble beginnings for me in web design. Unfortunately, due to it not being hosted I am only able to provide screenshots.</p>, <p>This is meta isn't it. You can find the source code to my protfolio here!</p>, <p>This is a simple website created in 3 weeks for a local therapy provider. It was built using Squarespace as the client was already using it. It also features some custom CSS and HTML. The goal was to practice design ideas with most programming elements being done for me by Squarespace.</p>, <p>This item is here for a potential project that will be revealed at a later date.</p>];
 
     var previousPosition = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -44,9 +44,8 @@ export default function Homepage() {
                             <p className="subtitle">I am a computer science student at SIUE and a freelance web developer. I have an interest in simple but effective UI/UX design. I believe every website should a tell story.</p>
                             {/* <p className="subtitle">Let me tell you a story.</p> */}
                             <div className="row gap">
-                                <NavButton page="skills" thisPage="About Me" thisStyle="navButtonLearnMore" />
-                                <NavButton page="adventures" thisPage="Portfolio" thisStyle="navButtonLearnMore" />
-                                {/* <NavButton page="/Playground" thisPage="Playground" thisStyle="navButtonLearnMore" /> */}
+                                <NavButton page="adventures" thisPage="Adventures" thisStyle="navButtonLearnMore" />
+                                <NavButton page="skills" thisPage="Skills" thisStyle="navButtonLearnMore" />
                             </div>
                         </div>
                         {/* <h2 className="title">Hello there, I'm Cameron! <br></br><p>Thanks for vising my portfolio. I'm a computer science major at Southern Illinois University Edwardsville. I also plan to obtain a degree in psychology and become a web developer. Take a look around, I hope you enjoy!</p></h2> */}
@@ -56,19 +55,14 @@ export default function Homepage() {
                         </div> */}
                         
                     </div>
+                </div>
                     <h1 id="adventures" className="title">Adventures</h1>
                     <p className="subtitle">Each hero goes through many adventures, here are some of mine.</p>
-                </div>
                 <div className="row2">
                     <Projects project = "MindWorks Mental Health" description = {descriptionArray[4]} image="5" duration="May 2022 - July 2022, Providing updates as needed"/>
                     <Projects project = "Portfolio" description = {descriptionArray[3]} image="4" duration="May 2022 - Current"/>
                     <Projects project = "URCA" description = {descriptionArray[0]} image="1" duration="January 2022 - May 2022"/>
                     <Projects project = "HCI" description = {descriptionArray[1]} image="2" duration="January 2022 - May 2022"/>
-                    {/* <ProjectsCopy project = "Portfolio" description = {descriptionArray[3]} image="4" duration="May 2022 - Current"/>
-                    <ProjectsCopy project = "MindWorks Mental Health" description = {descriptionArray[4]} image="5" duration="May 2022 - July 2022, Providing updates as needed"/>
-                    <ProjectsCopy project = "URCA" description = {descriptionArray[0]} image="1" duration="January 2022 - May 2022"/>
-                    <ProjectsCopy project = "HCI" description = {descriptionArray[1]} image="2" duration="January 2022 - May 2022"/>
-                    <ProjectsCopy project = "234" description = {descriptionArray[2]} image="3" duration="August 2020 - December 2020"/> */}
                 </div>
                 <div id="skills">
                     <h1>And a hero is not complete without their tools</h1>

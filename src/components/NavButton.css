@@ -17,19 +17,22 @@
     transition-duration: 0.5s;
     place-items: center;
     font-weight: bolder;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, border-color 0.5s;
 }
 
 @media screen and (max-width: 600) {
     .navButton {
         display: none;
     }
+
+    .navButtonLearnMore{
+      font-size: 0.5rem;
+      height: 5vw;
+    }
 }
 
 .navButtonHome {
     background: none;
-    width: 7vw;
-    height: 4vh;
     border: solid;
     border-width: 0.25vw;
     border-radius: 6px;
@@ -43,8 +46,7 @@
 
 .navButtonLearnMore {
     background: none;
-    width: 7vw;
-    height: 4vh;
+    transform: scale(1.25);
     border: solid;
     border-radius: 20px;
     border-color: white;
@@ -56,7 +58,8 @@
 }
 
 .navButton:hover {
-    background-color: var(--otherBlueBackgroundColor);
+    /* background-color: var(--otherBlueBackgroundColor); */
+    border-color: #08AEEA;
 }
 
 .navButtonHome:hover {
@@ -64,5 +67,5 @@
 }
 
 .navButtonLearnMore:hover {
-    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    background-color: #44D362;
 }
