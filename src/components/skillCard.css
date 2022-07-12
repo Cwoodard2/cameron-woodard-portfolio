@@ -11,9 +11,9 @@
 
 .skillCard {
         display: flex;
-        width: 15vw;
-        height: 20vh;
-        background-color: white;
+        width: 5vw;
+        height: 5vw;
+        /* background-color: white; */
         transition: background-color 1s;
         justify-content: center;
         overflow-y: hidden;

@@ -4,9 +4,9 @@ html {
 
 .divTest1 {
    display: flex;
-   z-index: 2; 
-   transform: skew(20deg);
-   background-color: #2AF598;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 85vw;
 }
 
 .divTest2 {
@@ -32,7 +32,7 @@ html {
 }
 
 .testNewIdea {
-   
+    background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
 }
 
 .skillsContent {
@@ -68,16 +68,21 @@ html {
     animation-name: fadeIn;
     animation-duration: 2s;
     flex-wrap: wrap;
+    margin: 2vw;
+    gap: 1vw;
 }
 
 .skillsWrapper {
-    background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
+    /* background: linear-gradient(180deg, hsla(4, 94%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%); */
     border-radius: 12px;
+    border: solid white;
+    /* background-color: rgba(80, 90, 80, 90%); */
+    background: linear-gradient(30deg, hsla(133, 62%, 55%, 1) 0%, hsla(196, 93%, 47%, 1) 100%);
 }
 
 .homeMain {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -121,7 +126,6 @@ html {
     animation-name: fly-in;
     animation-duration: 2s;
     color: white;
-    
 }
 
 .homepageNav2 {
@@ -182,14 +186,15 @@ html {
     display: flex;
     justify-content: flex-end;
     align-self: flex-start;
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
     width: 29vw;
     /* color: white; */
-    font-size: calc(6px + 2.25vw);
+    /* font-size: calc(6px + 2.25vw); */
     text-shadow: 0px 0px 10px grey;
     /* color: #ff9400; */
     /* color: #2AF598; */
-    color: #77DD66;
+    /* color: #77DD66; */
+    color: #44D362;
 }
 
 .otherPages {
@@ -228,14 +233,37 @@ html {
         font-size: 0.75rem;
     }
 
-    .homepageNav {
-        width: 60vw;
-        height: 30vh;
+    .homepageNav2 {
+        width: 95vw;
+        flex-direction: column-reverse;
     }
 
-    /* .otherPages {
-        flex-direction: column;
+    .gap {
+        width: 10vw;
+    }
+
+    .logo {
+        width: 60vw;
+    }
+
+    /* .divTest1 {
+        width: 95vw;
     } */
+
+    .titleText {
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .subtitle {
+        width: auto;
+    }
 }
 
 @keyframes fadeIn{

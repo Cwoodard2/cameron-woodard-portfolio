@@ -10,38 +10,42 @@ import javascriptLogo from "../Images/javascriptLogo.png";
 import "./skillCard.css";
 
 export default function AddSkillCard(props) {
+    console.log(props.style);
     var numExperience = props.experience;
     var skill = props.whichSkill;
     var imageToUse;
+    var time;
     var comfort = props.howComfort;
-    var time = props.length;
+    var style = "top content " + props.style;
     var numProjects = props.projects;
     var pluralProjects;
+    console.log(style);
+
 
     switch(skill) {
         case "React":
-            imageToUse = <img src={reactLogo} className="topContent skillPic2"/>
+            imageToUse = <img src={reactLogo} className={style}/>
             break;
         case "HTML":
-            imageToUse = <img src={htmlLogo} className="topContent skillPic2"/>
+            imageToUse = <img src={htmlLogo} className={style}/>
             break;
         case "CSS":
-            imageToUse = <img src={cssLogo} className="topContent skillPic2"/>
+            imageToUse = <img src={cssLogo} className={style}/>
             break;
         case "Firebase":
-            imageToUse = <img src={firebaseLogo} className="topContent skillPic2"/>
+            imageToUse = <img src={firebaseLogo} className={style}/>
             break;
         case "Github Pages":
-            imageToUse = <img src={githubLogo} className="topContent skillPic2"/>
+            imageToUse = <img src={githubLogo} className={style}/>
             break;
         case "Git":
-            imageToUse = <img src={gitLogo} className="topContent skillPic2"/>
+            imageToUse = <img src={gitLogo} className={style}/>
             break;
         case "Java":
-            imageToUse = <img src={javaLogo} className="topContent skillPic2"/>
+            imageToUse = <img src={javaLogo} className={style}/>
             break;
         case "Javascript":
-            imageToUse = <img src={javascriptLogo} className="topContent skillPic2"/>
+            imageToUse = <img src={javascriptLogo} className={style}/>
             break;
         default:
             break;

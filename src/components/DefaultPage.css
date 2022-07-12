@@ -1,5 +1,9 @@
 :root{
     --orangeColor: #ff9400;
+    --mainGreenColor: #44D362;
+    --mainBlueColor: #08AEEA;
+    --otherMainBlue: #0483ea;
+    --finalBlue: #4f9cdc;
 }
 
 .defaultPage {
@@ -10,5 +14,5 @@
     align-items: center;
     /* background: linear-gradient(0deg, hsl(194, 91%, 44%) 0%, hsl(201, 74%, 47%) 100%); */
     /* background-color: rgb(80, 80, 80); */
-    background-color: slategray;
+    background-color: rgb(43, 77, 109);
 }
