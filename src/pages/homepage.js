@@ -10,6 +10,10 @@ import ProjectsCopy from "../components/ProjectsSection copy";
 import AddSkillCard from "../components/skillCard";
 import AddSkillCardCopy from "../components/skillCard copy";
 import Projects from "../components/ProjectsSection";
+import resume from "./ResumeWoodardprofessional.pdf";
+import linkedIn from "../Images/linkedinImage.png";
+import "../components/skillCard.css";
+import githubLogo from "../Images/githubLogo.png";
 
 export default function Homepage() {
     var descriptionArray = [<p>This project was built by three students, including me. It was constructed to provide a way to collect data regarding ethnic and racial microaggressions. It utilizes React for the front-end and uses Firebase for theback-end.</p>, <p>As an aspect of a Human Computer Interaction class, 3 classmates and I were tasked with creating a product we felt the product was missing. Our idea was Ultra Note, a notetaking app meant to simplfy note taking. In this project we learned about design research, prototyping, and testing in order to produce a design that enables our vison for Ultra Note. <i>Note: Ultra Note is not a functioning app but rather a design mockup for an app.</i></p>, <p>As part of web development, students were tasked with creating a database driven website. The database used was mySQL in combination with PHP. Front-end development was done with HTML, JQuery, and CSS. While not the most visually or programmaticly impressive website, it represents the humble beginnings for me in web design. Unfortunately, due to it not being hosted I am only able to provide screenshots.</p>, <p>This is meta isn't it. You can find the source code to my protfolio here!</p>, <p>This is a simple website created in 3 weeks for a local therapy provider. It was built using Squarespace as the client was already using it. It also features some custom CSS and HTML. The goal was to practice design ideas with most programming elements being done for me by Squarespace.</p>];
@@ -39,17 +43,42 @@ export default function Homepage() {
                 <div className="column">
                     <div className="homepageNav2">
                         <div className="titleText">
-                            <h1 id="welcome" className="title">Hello there, I'm Cameron!<br></br></h1>
+                            <p>Making stories on the web since it was cool... which was always.</p>
+                            <h1 id="welcome" className="title">Hello there, I'm Cameron.<br></br>I'm a rocking front-end developer.</h1>
                             {/* <p className="subtitle">Thanks for vising my portfolio. I'm a computer science major at Southern Illinois University Edwardsville. I also plan to obtain a degree in psychology and become a web developer. Take a look around, I hope you enjoy!</p> */}
-                            <p className="subtitle">I am a computer science student at SIUE and a freelance web developer. I have an interest in simple but effective UI/UX design. I believe every website should a tell story.</p>
-                            <div className="row gap">
-                                <NavButton page="adventures" thisPage="Adventures" thisStyle="navButtonLearnMore" />
-                                <NavButton page="skills" thisPage="Skills" thisStyle="navButtonLearnMore" />
-                                <NavButton page="aboutme" thisPage="About Me" thisStyle="navButtonLearnMore" />
+                            {/* <p className="subtitle">I am a computer science student at SIUE and a freelance web developer. I have an interest in simple but effective UI/UX design. I believe every website should a tell story.</p> */}
+                            <p className="subtitle">Providing beautiful and functional websites is a core pillar of my philosophy. Each product should be unique and with its own flair. Bringing a psychological background to the table, I keep the human brain happy with my work.</p>
+                            <div className="row gap2">
+                                <div className="column">
+                                    <h4>Forge Ahead!</h4>
+                                    <div className="row gap">
+                                        <NavButton page="adventures" thisPage="Adventures" thisStyle="navButtonLearnMore" />
+                                        <NavButton page="skills" thisPage="Skills" thisStyle="navButtonLearnMore" />
+                                        <NavButton page="aboutme" thisPage="About Me" thisStyle="navButtonLearnMore" />
+                                    </div>
+                                </div>
+                                <div className="column">
+                                    <h4>Skills I Specialize In</h4>
+                                    <div className="row gap">
+                                        <AddSkillCardCopy experience="1" whichSkill="HTML" howComfort="50"  style="skillPic2" projects="4" />
+                                        <AddSkillCardCopy experience="6" whichSkill="CSS" howComfort="30"  style="skillPic2" projects="2" />
+                                        <AddSkillCardCopy experience="6" whichSkill="React" howComfort="40"  style="skillPic2" projects="2" />
+                                        <AddSkillCardCopy experience="3" whichSkill="Javascript" howComfort="70"  style="skillPic2" projects="many" />
+                                        <AddSkillCardCopy experience="3" whichSkill="Firebase" howComfort="70"  style="skillPic2" projects="many" />
+                                    </div>
+                                </div>
+                                <div className="column">
+                                    <h4>Check This Stuff Out</h4>
+                                    <div className="row gap">
+                                        <a href="https://github.com/Cwoodard2" target="_blank" rel='noopener noreferrer'><img src={githubLogo} className="skillPic2"/></a>
+                                        <a href="https://www.linkedin.com/in/cameron-woodard-4565661a3/" target="_blank" rel='noopener noreferrer'><img src={linkedIn} className="skillPic2"/></a>
+                                        <a href={resume} target="_blank" rel='noopener noreferrer'><button className="aboutMeButton">View Resume</button></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         {/* <h2 className="title">Hello there, I'm Cameron! <br></br><p>Thanks for vising my portfolio. I'm a computer science major at Southern Illinois University Edwardsville. I also plan to obtain a degree in psychology and become a web developer. Take a look around, I hope you enjoy!</p></h2> */}
-                        <img src={logo} className="logo"/>                       
+                        {/* <img src={logo} className="logo"/>                        */}
                     </div>
                 </div>
                 <div id="adventures" className="dividerLine"></div>
