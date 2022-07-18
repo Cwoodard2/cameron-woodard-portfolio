@@ -1,6 +1,6 @@
 import React from "react";
 import reactLogo from "../Images/reactLogo.png";
-import htmlLogo from "../Images/htmlLogo.jpeg";
+import htmlLogo from "../Images/htmlLogo2.png";
 import cssLogo from "../Images/cssLogo.jpeg";
 import firebaseLogo from "../Images/firebaseLogo.png";
 import githubLogo from "../Images/githubLogo.png";
@@ -10,38 +10,42 @@ import javascriptLogo from "../Images/javascriptLogo.png";
 import "./skillCard.css";
 
 export default function AddSkillCard(props) {
+    console.log(props.style);
     var numExperience = props.experience;
     var skill = props.whichSkill;
     var imageToUse;
+    var time;
     var comfort = props.howComfort;
-    var time = props.length;
+    var style = "top content " + props.style;
     var numProjects = props.projects;
     var pluralProjects;
+    console.log(style);
+
 
     switch(skill) {
         case "React":
-            imageToUse = <img src={reactLogo} className="topContent skillPic"/>
+            imageToUse = <img src={reactLogo} className={style}/>
             break;
         case "HTML":
-            imageToUse = <img src={htmlLogo} className="topContent skillPic"/>
+            imageToUse = <img src={htmlLogo} className={style}/>
             break;
         case "CSS":
-            imageToUse = <img src={cssLogo} className="topContent skillPic"/>
+            imageToUse = <img src={cssLogo} className={style}/>
             break;
         case "Firebase":
-            imageToUse = <img src={firebaseLogo} className="topContent skillPic"/>
+            imageToUse = <img src={firebaseLogo} className={style}/>
             break;
         case "Github Pages":
-            imageToUse = <img src={githubLogo} className="topContent skillPic"/>
+            imageToUse = <img src={githubLogo} className={style}/>
             break;
         case "Git":
-            imageToUse = <img src={gitLogo} className="topContent skillPic"/>
+            imageToUse = <img src={gitLogo} className={style}/>
             break;
         case "Java":
-            imageToUse = <img src={javaLogo} className="topContent skillPic"/>
+            imageToUse = <img src={javaLogo} className={style}/>
             break;
         case "Javascript":
-            imageToUse = <img src={javascriptLogo} className="topContent skillPic"/>
+            imageToUse = <img src={javascriptLogo} className={style}/>
             break;
         default:
             break;
@@ -60,12 +64,8 @@ export default function AddSkillCard(props) {
     }
  
     return (
-        <div className="skillCard">
-            {/* <p className="topContent">{skill}</p> */}
+        <div>
             {imageToUse}
-            <div className="hoverContent">
-                <p className="hoverDescript">{skill} <br></br> <br></br>{numExperience} {time} of Experience <br></br> Used on {numProjects} {pluralProjects} <br></br> Comfortability: {comfort}%</p>
-            </div>
         </div>
     )
 }

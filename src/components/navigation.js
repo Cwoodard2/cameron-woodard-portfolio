@@ -6,12 +6,10 @@ import NavButton from "./NavButton";
 export default function Navigation() {
     return (
         <div className="navbar">
-                <img src={logo} className="navLogo"></img>
-                <NavButton page="welcome" thisPage="Welcome" thisStyle="navButton" />
-                <NavButton page="adventures" thisPage="Adventures" thisStyle="navButton" />
-                <NavButton page="skills" thisPage="Skills" thisStyle="navButton" />
-                {/* <NavButton page="/Resume" thisPage="Resume" thisStyle="navButton" /> */}
-                {/* <NavButton page="/Playground" thisPage="Playground" thisStyle="navButton" /> */}
+                <img src={logo} className="nav-logo"></img>
+                <NavButton page="welcome" thisPage="Welcome" thisStyle="nav-button" />
+                <NavButton page="adventures" thisPage="Adventures" thisStyle="nav-button" />
+                <NavButton page="skills" thisPage="Skills" thisStyle="nav-button" />
         </div>
     )
 }

@@ -4,7 +4,7 @@ import './DefaultPage.css';
 export default function StandardPage(props) {
 
     return (
-        <div className="defaultPage">
+        <div className="default-page">
             {props.children}
         </div>
     );

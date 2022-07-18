@@ -5,7 +5,7 @@
     --otherBlueBackgroundColor: rgb(2, 100, 112);
 }
 
-.navButton {
+.nav-button {
     height: calc(4px + 4vh);;
     background: none;
     border-radius: 4px;
@@ -21,51 +21,12 @@
 }
 
 @media screen and (max-width: 600) {
-    .navButton {
+    .nav-button {
         display: none;
     }
-
-    .navButtonLearnMore{
-      font-size: 0.5rem;
-      height: 5vw;
-    }
 }
 
-.navButtonHome {
-    background: none;
-    border: solid;
-    border-width: 0.25vw;
-    border-radius: 6px;
-    border-color: #44D362;
-    color: #44D362;
-    margin-left: 1.5vw;
-    margin-bottom: 1.5vh;
-    transition: background-color 0.5s;
-    cursor: pointer;
-}
-
-.navButtonLearnMore {
-    background: none;
-    transform: scale(1.25);
-    border: solid;
-    border-radius: 20px;
-    border-color: white;
-    color: white;
-    transition: background-color 0.5s;
-    cursor: pointer;
-    background-color: #08AEEA;
-    /* background-color: 	#44D362; */
-}
-
-.navButton:hover {
+.nav-button:hover {
     /* background-color: var(--otherBlueBackgroundColor); */
     border-color: #08AEEA;
-}
-
-.navButtonHome:hover {
-    background-color: var(--blueBackgroundColor);
-}
-
-.navButtonLearnMore:hover {
-    background-color: #44D362;
 }

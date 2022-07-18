@@ -3,17 +3,13 @@ import {Link} from "react-scroll";
 import Navigation from '../components/navigation';
 import StandardPage from "../components/DefaultPage";
 import '../components/navigation.css';
-import NavButton from "../components/NavButton";
 import './homepage.css';
 import logo from '../Images/logoWithColorBrain.png';
 import cameronImage from '../Images/cameronwoodard.jpg';
-import ProjectsCopy from "../components/ProjectsSection copy";
 import AddSkillCard from "../components/skillCard";
-import AddSkillCardCopy from "../components/skillCard copy";
 import Projects from "../components/ProjectsSection";
 import resume from "./ResumeWoodardprofessional.pdf";
 import linkedIn from "../Images/linkedinImage.png";
-import "../components/skillCard.css";
 import githubLogo from "../Images/githubLogo.png";
 
 export default function Homepage() {
@@ -40,40 +36,30 @@ export default function Homepage() {
     return (
         <StandardPage>
             <Navigation />
-            <div id="welcome" className="homeMain">
+            <div id="welcome" className="home-main">
                 <div className="column">
-                    <div className="homepageNav2">
-                        <div className="titleText">
+                    <div className="homepage-nav">
+                        <div className="intro-wrapper">
                             <p>Making stories on the web since it was cool... which was always.</p>
                             <h1 className="title">Hello there, I'm Cameron.<br></br>I'm a rocking front-end developer.</h1>
-                            {/* <p className="subtitle">Thanks for vising my portfolio. I'm a computer science major at Southern Illinois University Edwardsville. I also plan to obtain a degree in psychology and become a web developer. Take a look around, I hope you enjoy!</p> */}
-                            {/* <p className="subtitle">I am a computer science student at SIUE and a freelance web developer. I have an interest in simple but effective UI/UX design. I believe every website should a tell story.</p> */}
                             <p className="subtitle">Providing beautiful and functional websites is a core pillar of my philosophy. Each product should be unique and with its own flair. Bringing a psychological background to the table, I keep the human brain happy with my work.</p>
-                            <div className="row gap2">
-                                {/* <div className="column">
-                                    <h4>Forge Ahead!</h4>
-                                    <div className="row gap">
-                                        <NavButton page="adventures" thisPage="Adventures" thisStyle="navButtonLearnMore" />
-                                        <NavButton page="skills" thisPage="Skills" thisStyle="navButtonLearnMore" />
-                                        <NavButton page="aboutme" thisPage="About Me" thisStyle="navButtonLearnMore" />
-                                    </div>
-                                </div> */}
+                            <div className="row gap2" style={{gap: "10vw"}}>
                                 <div className="column">
                                     <h4>Skills I Specialize In</h4>
                                     <div className="row gap">
-                                        <AddSkillCardCopy experience="1" whichSkill="HTML" howComfort="50"  style="skillPic2" projects="4" />
-                                        <AddSkillCardCopy experience="6" whichSkill="CSS" howComfort="30"  style="skillPic2" projects="2" />
-                                        <AddSkillCardCopy experience="6" whichSkill="React" howComfort="40"  style="skillPic2" projects="2" />
-                                        <AddSkillCardCopy experience="3" whichSkill="Javascript" howComfort="70"  style="skillPic2" projects="many" />
-                                        <AddSkillCardCopy experience="3" whichSkill="Firebase" howComfort="70"  style="skillPic2" projects="many" />
+                                        <AddSkillCard experience="1" whichSkill="HTML" howComfort="50"  style="skill-pic" projects="4" />
+                                        <AddSkillCard experience="6" whichSkill="CSS" howComfort="30"  style="skill-pic" projects="2" />
+                                        <AddSkillCard experience="6" whichSkill="React" howComfort="40"  style="skill-pic" projects="2" />
+                                        <AddSkillCard experience="3" whichSkill="Javascript" howComfort="70"  style="skill-pic" projects="many" />
+                                        <AddSkillCard experience="3" whichSkill="Firebase" howComfort="70"  style="skill-pic" projects="many" />
                                     </div>
                                 </div>
                                 <div className="column">
-                                    <h4>Check This Stuff Out</h4>
+                                    <h4>Check These Links Out</h4>
                                     <div className="row gap">
-                                        <a href="https://github.com/Cwoodard2" target="_blank" rel='noopener noreferrer'><img src={githubLogo} className="skillPic2"/></a>
-                                        <a href="https://www.linkedin.com/in/cameron-woodard-4565661a3/" target="_blank" rel='noopener noreferrer'><img src={linkedIn} className="skillPic2"/></a>
-                                        <a href={resume} target="_blank" rel='noopener noreferrer'><button className="aboutMeButton">View Resume</button></a>
+                                        <a href="https://github.com/Cwoodard2" target="_blank" rel='noopener noreferrer'><img src={githubLogo} className="skill-pic"/></a>
+                                        <a href="https://www.linkedin.com/in/cameron-woodard-4565661a3/" target="_blank" rel='noopener noreferrer'><img src={linkedIn} className="skill-pic"/></a>
+                                        <a href={resume} target="_blank" rel='noopener noreferrer'><button className="about-me-button">View Resume</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -82,98 +68,80 @@ export default function Homepage() {
                             <br></br>
                             <Link to="adventures" spy={true} smooth={true}>
                                 <div className="row" style={{justifyContent: "center"}}>
-                                    <button className="downButton">&#8595;</button>
+                                    <button className="down-button">&#8595;</button>
                                 </div>
                             </Link>
                         </div>
-                        {/* <h2 className="title">Hello there, I'm Cameron! <br></br><p>Thanks for vising my portfolio. I'm a computer science major at Southern Illinois University Edwardsville. I also plan to obtain a degree in psychology and become a web developer. Take a look around, I hope you enjoy!</p></h2> */}
-                        {/* <img src={logo} className="logo"/>                        */}
                     </div>
                 </div>
-                <div id="adventures" className="dividerLine"></div>
-                <div className="divTest1">
+                <div id="adventures" className="divider-line"></div>
+                <div className="section-title-description-wrapper">
                     <h1 style={{color: "#77DD66"}}><u>Adventures</u></h1>
                     <p style={{color: "white", width: "35vw"}}>Each hero goes through many adventures, here are some of mine. They showcase different challenges I've faced. All in all each tells it's own story.</p>
                 </div>
-                <div className="row2">
+                <div className="row" style={{justifyContent: "center"}}>
                     <Projects project = "MindWorks Mental Health" description = {descriptionArray[4]} image="5" duration="May 2022 - July 2022, Providing updates as needed"/>
                     <Projects project = "Portfolio" description = {descriptionArray[3]} image="4" duration="May 2022 - Current"/>
                     <Projects project = "URCA" description = {descriptionArray[0]} image="1" duration="January 2022 - May 2022"/>
                     <Projects project = "HCI" description = {descriptionArray[1]} image="2" duration="January 2022 - May 2022"/>
                 </div>
-                <div id="skills" className="dividerLine"></div>
-                <div className="divTest1">
+                <div id="skills" className="divider-line"></div>
+                <div className="section-title-description-wrapper">
                     <h1 style={{color: "#77DD66"}}>And a hero is not complete without their tools</h1>
                     <p style={{color: "white", width: "35vw"}}>Without the skills and tools i learned and took on each adventure I never would have completed them. They are the key to future endeavors and they only continue to grow.</p>
                 </div>
-                <div className="row allSkillsWrapper">
-                    <div className="skillsWrapper">
-                        <div className="skillsContent">
-                            <h2 className="testNewIdea">Skills and Tools</h2>
-                            <div className="moreSkillContent">
-                                <AddSkillCardCopy experience="6" whichSkill="React" howComfort="40" style="skillCard" projects="2" />
-                                <AddSkillCardCopy experience="1" whichSkill="HTML" howComfort="50"  style="skillCard" projects="4" />
-                                <AddSkillCardCopy experience="6" whichSkill="CSS" howComfort="30"  style="skillCard" projects="2" />
-                                <AddSkillCardCopy experience="3" whichSkill="Java" howComfort="70"  style="skillCard" projects="4" />
-                                <AddSkillCardCopy experience="3" whichSkill="Javascript" howComfort="70"  style="skillCard" projects="many" />
+                <div className="row all-skills-wrapper">
+                    <div className="skills-wrapper">
+                        <div className="skills-content">
+                            <h2>Skills and Tools</h2>
+                            <div className="more-skill-content">
+                                <AddSkillCard experience="6" whichSkill="React" howComfort="40" style="skill-card" projects="2" />
+                                <AddSkillCard experience="1" whichSkill="HTML" howComfort="50"  style="skill-card" projects="4" />
+                                <AddSkillCard experience="6" whichSkill="CSS" howComfort="30"  style="skill-card" projects="2" />
+                                <AddSkillCard experience="3" whichSkill="Java" howComfort="70"  style="skill-card" projects="4" />
+                                <AddSkillCard experience="3" whichSkill="Javascript" howComfort="70"  style="skill-card" projects="many" />
                             </div>
                         </div>
                     </div>
-                    <div className="skillsWrapper">
-                        <div className="skillsContent">
-                            <h2 className="testNewIdea">Skills and Tools</h2>
-                            <div className="moreSkillContent">
-                                <AddSkillCardCopy experience="1" whichSkill="Firebase" howComfort="30"  style="skillCard" projects="2" />
-                                <AddSkillCardCopy experience="6" whichSkill="Github Pages" howComfort="30"  style="skillCard" projects="1" />
-                                <AddSkillCardCopy experience="1" whichSkill="Git" howComfort="60"  style="skillCard" projects="3" />
+                    <div className="skills-wrapper">
+                        <div className="skills-content">
+                            <h2>Skills and Tools</h2>
+                            <div className="more-skill-content">
+                                <AddSkillCard experience="1" whichSkill="Firebase" howComfort="30"  style="skill-card" projects="2" />
+                                <AddSkillCard experience="6" whichSkill="Github Pages" howComfort="30"  style="skill-card" projects="1" />
+                                <AddSkillCard experience="1" whichSkill="Git" howComfort="60"  style="skill-card" projects="3" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="aboutme" className="dividerLine"></div>
-            <div className="aboutMeMain">
-            <h1 className="titles">Who is this Cameron guy?</h1>
-                <div className="aboutMeSection">
-                    {/* <div className="aboutMeContent leftItem">
-                        <h1 className="titles">Background</h1>
-                       <p>I am a junior computer science student at SIUE also studying psychology. A core idea in my life is to provide for others. I believe in technology as a medium to enhance others lives, while not being a detriment. A focus on simple to use, appealing, and interesting technology is where I plan to focus my efforts.</p>
-                        <p>You may be wondering who Cameron is. Well, I'm a senior computer science student at Southern Illinois University Edwardsville, a quant university with a blooming CS program. I also work as a freelance web developer, doing mostly full stack development. I also enjoy doing a little bit of design focusing on the psychological side of interaction with the UI. Oh, I forgot to mention, I'm also pursuing a psychology degree for use in computer science.</p>
-                    </div> */}
-                    <div className="aboutMeContent">
+                <div id="aboutme" className="divider-line"></div>
+            <div className="about-me-main">
+                <h1 className="titles">Who is this Cameron guy?</h1>
+                <div className="about-me-section">
+                    <div className="about-me-content">
                     <p>I am a computer science student and freelance web developer bent on conquering the world... if I were a supervillain. But the reality is I prefer a philosophy that goes for the opposite. My philosohy to developing applications can be summed up in three parts:</p>
-                    <div className="aboutMeContent3">
-                    <div className="aboutMeContent2">
+                    <div className="about-me-content3">
+                    <div className="about-me-content2">
                         <div className="circle"> <p>Simple UI</p></div>
                         <p>I focus on UI that is meant to be intuitive and easy to use</p>
                     </div>
-                    <div className="aboutMeContent2">
+                    <div className="about-me-content2">
                         <div className="circle"><p>Excellent User Experience</p></div>
                         <p>I want the experience of the user to be above and beyond what they've had before</p>
                     </div>
-                    <div className="aboutMeContent2">
+                    <div className="about-me-content2">
                         <div className="circle"><p>For Others, Not Me</p></div>
                         <p>Create products meant to help the world, not to abuse the people that use it</p>
                     </div>
                     </div>
                 </div>
-                </div>
-                <div className="aboutMeSection">
-                    <div className="aboutMeContent">
-                        {/* <h1 className="titles">How I got here</h1> */}
-                        {/* <p>I didn't always want to be in tech but after an oppurtunity to take part in a school event, I found a passion for computer science. Cultivated through many years of work I developed computer science skills. Through the early years in university, I developed a love for helping others and a passion to improve mental health services. With this in my mind I began pursuing psychology in hopes that I pursue clinical psychology and combine it with computer science to produce software meant to help persons with psychological disorders live a better life.</p> */}
-                        {/* <p>When I was younger I always had a fascination with video games and how they worked, often "making" my own games and designing the game. As I grew older I drifted away but after participating in a high school competition where I had to create a game of my own and placing in it, I found a passion for computer science. Once I started college I also fell in love with design and helping others. Over the past year or so I've worked hard to improve my web design skills to go into web development, while utilizing psychological ideas to improve user experience. And you may wonder how did I start freelance web development. Well, after being turned down for internships by several companies and finding others who needed websites but didn't want to pay for a whole team, with my MacBook in hand, I went freelance to show off my skills while getting to hone my skills. Which leads us to here. Neat origin story, right?</p> */}
-                    </div>
-                    <div className="aboutMeContent interests">
-                        {/* <h1 className="titles">Interests</h1>
-                        <p>I'm interested in the intersection of psychology and the technology, specifically the effects that technology has had on the human and ways to battle addiction. Additionally, I find design interesting fun though I am still learning about how to make effective designs! </p> */}
-                    </div>
-                </div>
+            </div>
                 <div className="contactForm">
                     <h1 className="titles">Contact Me!</h1>
                     <form action="http://formspree.io/hanolbuddy1@gmail.com" className="contactForm" method="POST">
-                        <input type="text" name="firstname" placeholder="Your name" className="inputBox"/>
+                        <input type="text" name="firstname" placeholder="Your name" className="input-box"/>
                         <br></br>
-                        <input type="text" name="email" placeholder="Email" className="inputBox"/>
+                        <input type="text" name="email" placeholder="Email" className="input-box"/>
                         <br></br>
                         <textarea name="subject" placeholder="Send me a message" className="message"/>
                         <br></br>

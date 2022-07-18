@@ -6,7 +6,7 @@
     --finalBlue: #4f9cdc;
 }
 
-.defaultPage {
+.default-page {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
