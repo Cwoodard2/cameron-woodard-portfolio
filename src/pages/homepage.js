@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import {Link} from "react-scroll";
 import Navigation from '../components/navigation';
 import StandardPage from "../components/DefaultPage";
 import '../components/navigation.css';
@@ -16,7 +17,7 @@ import "../components/skillCard.css";
 import githubLogo from "../Images/githubLogo.png";
 
 export default function Homepage() {
-    var descriptionArray = [<p>This project was built by three students, including me. It was constructed to provide a way to collect data regarding ethnic and racial microaggressions. It utilizes React for the front-end and uses Firebase for theback-end.</p>, <p>As an aspect of a Human Computer Interaction class, 3 classmates and I were tasked with creating a product we felt the product was missing. Our idea was Ultra Note, a notetaking app meant to simplfy note taking. In this project we learned about design research, prototyping, and testing in order to produce a design that enables our vison for Ultra Note. <i>Note: Ultra Note is not a functioning app but rather a design mockup for an app.</i></p>, <p>As part of web development, students were tasked with creating a database driven website. The database used was mySQL in combination with PHP. Front-end development was done with HTML, JQuery, and CSS. While not the most visually or programmaticly impressive website, it represents the humble beginnings for me in web design. Unfortunately, due to it not being hosted I am only able to provide screenshots.</p>, <p>This is meta isn't it. You can find the source code to my protfolio here!</p>, <p>This is a simple website created in 3 weeks for a local therapy provider. It was built using Squarespace as the client was already using it. It also features some custom CSS and HTML. The goal was to practice design ideas with most programming elements being done for me by Squarespace.</p>];
+    var descriptionArray = [<p>This project was built by three students, including me. It was constructed to provide a way to collect data regarding ethnic and racial microaggressions. It utilizes React for the front-end and uses Firebase for theback-end.</p>, <p>As an aspect of a Human Computer Interaction class, 3 classmates and I were tasked with creating a product we felt the product was missing. Our idea was Ultra Note, a notetaking app meant to simplfy note taking. In this project we learned about design research, prototyping, and testing in order to produce a design that enables our vison for Ultra Note. <i>Note: Ultra Note is not a functioning app but rather a design mockup for an app.</i></p>, <p>As part of web development, students were tasked with creating a database driven website. The database used was mySQL in combination with PHP. Front-end development was done with HTML, JQuery, and CSS. While not the most visually or programmaticly impressive website, it represents the humble beginnings for me in web design. Unfortunately, due to it not being hosted I am only able to provide screenshots.</p>, <p>This is meta isn't it. You can find the source code to my portfolio here!</p>, <p>This is a simple website created in 3 weeks for a local therapy provider. It was built using Squarespace as the client was already using it. It also features some custom CSS and HTML. The goal was to practice design ideas with most programming elements being done for me by Squarespace.</p>];
 
     var previousPosition = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -39,24 +40,24 @@ export default function Homepage() {
     return (
         <StandardPage>
             <Navigation />
-            <div className="homeMain">
+            <div id="welcome" className="homeMain">
                 <div className="column">
                     <div className="homepageNav2">
                         <div className="titleText">
                             <p>Making stories on the web since it was cool... which was always.</p>
-                            <h1 id="welcome" className="title">Hello there, I'm Cameron.<br></br>I'm a rocking front-end developer.</h1>
+                            <h1 className="title">Hello there, I'm Cameron.<br></br>I'm a rocking front-end developer.</h1>
                             {/* <p className="subtitle">Thanks for vising my portfolio. I'm a computer science major at Southern Illinois University Edwardsville. I also plan to obtain a degree in psychology and become a web developer. Take a look around, I hope you enjoy!</p> */}
                             {/* <p className="subtitle">I am a computer science student at SIUE and a freelance web developer. I have an interest in simple but effective UI/UX design. I believe every website should a tell story.</p> */}
                             <p className="subtitle">Providing beautiful and functional websites is a core pillar of my philosophy. Each product should be unique and with its own flair. Bringing a psychological background to the table, I keep the human brain happy with my work.</p>
                             <div className="row gap2">
-                                <div className="column">
+                                {/* <div className="column">
                                     <h4>Forge Ahead!</h4>
                                     <div className="row gap">
                                         <NavButton page="adventures" thisPage="Adventures" thisStyle="navButtonLearnMore" />
                                         <NavButton page="skills" thisPage="Skills" thisStyle="navButtonLearnMore" />
                                         <NavButton page="aboutme" thisPage="About Me" thisStyle="navButtonLearnMore" />
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="column">
                                     <h4>Skills I Specialize In</h4>
                                     <div className="row gap">
@@ -76,6 +77,14 @@ export default function Homepage() {
                                     </div>
                                 </div>
                             </div>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <Link to="adventures" spy={true} smooth={true}>
+                                <div className="row" style={{justifyContent: "center"}}>
+                                    <button className="downButton">&#8595;</button>
+                                </div>
+                            </Link>
                         </div>
                         {/* <h2 className="title">Hello there, I'm Cameron! <br></br><p>Thanks for vising my portfolio. I'm a computer science major at Southern Illinois University Edwardsville. I also plan to obtain a degree in psychology and become a web developer. Take a look around, I hope you enjoy!</p></h2> */}
                         {/* <img src={logo} className="logo"/>                        */}
