@@ -236,9 +236,9 @@ html {
     flex-direction: column;
     place-items: center;
     width: 100vw;
-    height: 20vw;
     color: var(--orangeColor);
     background-color: rgb(80, 80, 80);
+    padding-bottom: 1vw;
 }
 
 .aboutMePicture {
@@ -246,11 +246,35 @@ html {
     height: auto;
 }
 
+.submit-button { 
+    height: calc(4px + 4vh);;
+    background: none;
+    border-radius: 4px;
+    border: 0.15vw solid #44D362;
+    cursor: pointer;
+    color: #44D362;
+    font-size: 1rem;
+    transition: color white;
+    transition-duration: 0.5s;
+    place-items: center;
+    font-weight: bolder;
+    transition: background-color 0.5s, border-color 0.5s;
+}
+
 @media  screen and (max-width: 500px) {
 
     .down-button {
         width: 10vw;
         height: 10vw;
+    }
+
+    .input-box {
+        width: 90vw;
+    }
+
+    .message {
+        width: 90vw;
+        height: 10vh;
     }
 
     .homepage-nav {

@@ -17,17 +17,17 @@ export default function Homepage() {
 
     var previousPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-        window.onscroll = function() {
-            var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+        // window.onscroll = function() {
+        //     var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (previousPosition > currentPosition) {
-                console.log('scrolling up');
-            } else {
-                console.log('scrolling down');
-            }
+        //     if (previousPosition > currentPosition) {
+        //         console.log('scrolling up');
+        //     } else {
+        //         console.log('scrolling down');
+        //     }
 
-            previousPosition = currentPosition;
-        };
+        //     previousPosition = currentPosition;
+        // };
 
         useEffect(() => {
             window.scrollTo(0, 0);
@@ -76,8 +76,9 @@ export default function Homepage() {
                 </div>
                 <div id="adventures" className="divider-line"></div>
                 <div className="section-title-description-wrapper">
-                    <h1 style={{color: "#77DD66"}}><u>Adventures</u></h1>
-                    <p style={{color: "white", width: "35vw"}}>Each hero goes through many adventures, here are some of mine. They showcase different challenges I've faced. All in all each tells it's own story.</p>
+                    <h2 style={{color: "#77DD66"}}><u>Projects</u></h2>
+                    <p style={{color: "white"}}>Explore each of my projects of which some focus on design, others on full-stack, and all on excellent programming. All in all each tells it's own story.</p>
+                    {/* Each hero goes through many adventures, here are some of mine. They showcase different challenges I've faced. */}
                 </div>
                 <div className="row" style={{justifyContent: "center"}}>
                     <Projects project = "MindWorks Mental Health" description = {descriptionArray[4]} image="5" duration="May 2022 - July 2022, Providing updates as needed"/>
@@ -87,13 +88,14 @@ export default function Homepage() {
                 </div>
                 <div id="skills" className="divider-line"></div>
                 <div className="section-title-description-wrapper">
-                    <h1 style={{color: "#77DD66"}}>And a hero is not complete without their tools</h1>
-                    <p style={{color: "white", width: "35vw"}}>Without the skills and tools i learned and took on each adventure I never would have completed them. They are the key to future endeavors and they only continue to grow.</p>
+                    <h2 style={{color: "#77DD66"}}>Tools of the Trade</h2>
+                    <p style={{color: "white"}}>I have spent many hours working to improve and build my knowledge and experience in each of these skills and tools. I am happy to tackle any new skill that is needed for a project and enjoy the challenge of quickly learning skills. </p>
+                    {/* Without the skills and tools i learned and took on each adventure I never would have completed them. They are the key to future endeavors and they only continue to grow. */}
                 </div>
                 <div className="row all-skills-wrapper">
                     <div className="skills-wrapper">
                         <div className="skills-content">
-                            <h2>Skills and Tools</h2>
+                            <h3>Skills</h3>
                             <div className="more-skill-content">
                                 <AddSkillCard experience="6" whichSkill="React" howComfort="40" style="skill-card" projects="2" />
                                 <AddSkillCard experience="1" whichSkill="HTML" howComfort="50"  style="skill-card" projects="4" />
@@ -103,9 +105,10 @@ export default function Homepage() {
                             </div>
                         </div>
                     </div>
+                    <div style={{height: "30vh", width: "0.5vw", backgroundColor: "white"}}></div>
                     <div className="skills-wrapper">
                         <div className="skills-content">
-                            <h2>Skills and Tools</h2>
+                            <h3>Tools</h3>
                             <div className="more-skill-content">
                                 <AddSkillCard experience="1" whichSkill="Firebase" howComfort="30"  style="skill-card" projects="2" />
                                 <AddSkillCard experience="6" whichSkill="Github Pages" howComfort="30"  style="skill-card" projects="1" />
@@ -116,11 +119,11 @@ export default function Homepage() {
                 </div>
                 <div id="aboutme" className="divider-line"></div>
             <div className="about-me-main">
-                <h1 className="titles">Who is this Cameron guy?</h1>
+                <h2 className="titles">Who is this Cameron guy?</h2>
                 <div className="about-me-section">
                     <div className="about-me-content">
                     <p>I am a computer science student and freelance web developer bent on conquering the world... if I were a supervillain. But the reality is I prefer a philosophy that goes for the opposite. My philosohy to developing applications can be summed up in three parts:</p>
-                    <div className="about-me-content3">
+                    {/* <div className="about-me-content3">
                     <div className="about-me-content2">
                         <div className="circle"> <p>Simple UI</p></div>
                         <p>I focus on UI that is meant to be intuitive and easy to use</p>
@@ -133,7 +136,7 @@ export default function Homepage() {
                         <div className="circle"><p>For Others, Not Me</p></div>
                         <p>Create products meant to help the world, not to abuse the people that use it</p>
                     </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
                 <div className="contactForm">
@@ -145,7 +148,7 @@ export default function Homepage() {
                         <br></br>
                         <textarea name="subject" placeholder="Send me a message" className="message"/>
                         <br></br>
-                        <input type="submit" value="Submit" className="aboutMeButton"></input>
+                        <input type="submit" value="Submit" className="submit-button"></input>
                     </form>
                 </div>
             </div>

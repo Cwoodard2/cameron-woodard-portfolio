@@ -22,7 +22,7 @@
     border-radius: 12px;
     gap: 2vw;
     width: 40vw;
-    height: 35vw;
+    /* height: 35vw; */
     overflow: auto;
     flex-wrap: wrap;
     border: solid;
@@ -40,13 +40,6 @@
   .picture-div {
     display: flex;
     justify-content: center;
-  }
-
-  @media screen and (max-width: 600px) {
-    .portfolio-pic {
-      width: 60vw;
-      height: 45vh;
-    }
   }
 
   .project-name {
