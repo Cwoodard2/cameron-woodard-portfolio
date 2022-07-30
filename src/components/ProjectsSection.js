@@ -28,19 +28,19 @@ export default function Projects(props) {
     switch(projectToShow) {
         case "MindWorks Mental Health":
             showImage = <img src={mindworksHome} className="portfolio-pic" />;
-            skillsToShow = <div className="skills-used">{skills[0]}{skills[1]}<a href="https://www.mindworksmentalhealth.net/"><button className="live-site-button liveButton">Live Site</button></a></div>
+            skillsToShow = <div className="skills-used">{skills[0]}{skills[1]}<a href="https://www.mindworksmentalhealth.net/" target="_blank" rel='noopener noreferrer'><button className="live-site-button liveButton" target="_blank" rel='noopener noreferrer'>Live Site</button></a></div>
             break;
         case "Portfolio":
             showImage = <img src={portfolioPic} className="portfolio-pic" />;
-            skillsToShow = <div className="skills-used">{skills[0]}{skills[1]}{skills[2]}{skills[4]}<a href="https://github.com/Cwoodard2/Cwoodard2.github.io"><button className="live-site-button source-code-button">Source Code</button></a></div>
+            skillsToShow = <div className="skills-used">{skills[0]}{skills[1]}{skills[2]}{skills[4]}<a href="https://github.com/Cwoodard2/Cwoodard2.github.io" target="_blank" rel='noopener noreferrer'><button className="live-site-button source-code-button" target="_blank" rel='noopener noreferrer'>Source Code</button></a></div>
             break;
         case "HCI":
             showImage = <img src={ultraLogo} className="portfolio-pic" />;
-            skillsToShow = <div className="skills-used"><a href="https://ultranotes.weebly.com/"><button className="live-site-button liveButton">Live Site</button></a></div>
+            skillsToShow = <div className="skills-used"><a href="https://ultranotes.weebly.com/" target="_blank" rel='noopener noreferrer'><button className="live-site-button liveButton">Live Site</button></a></div>
             break;
         case "URCA":
             showImage = <img src={urcaDash} className="portfolio-pic" />;
-            skillsToShow = <div className="skills-used">{skills[0]}{skills[1]}{skills[2]}{skills[4]}{skills[5]}<a href="https://mattaurca-s22.github.io/MicrAgg-WebApp/"><button className="live-site-button liveButton">Live Site</button></a><a href="https://github.com/MattaURCA-S22/MicrAgg-WebApp"><button className="live-site-button source-code-button" >Source Code</button></a></div>
+            skillsToShow = <div className="skills-used">{skills[0]}{skills[1]}{skills[2]}{skills[4]}{skills[5]}<a href="https://mattaurca-s22.github.io/MicrAgg-WebApp/" target="_blank" rel='noopener noreferrer'><button className="live-site-button liveButton" >Live Site</button></a><a href="https://github.com/MattaURCA-S22/MicrAgg-WebApp" target="_blank" rel='noopener noreferrer'><button className="live-site-button source-code-button" >Source Code</button></a></div>
             break;
     }
 

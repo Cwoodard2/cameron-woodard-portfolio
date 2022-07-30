@@ -148,6 +148,7 @@ html {
 .about-me-button {
     background: none;
     border: solid;
+    height: 2vw;
     border-width: 0.25vw;
     border-radius: 6px;
     border-color: white;
@@ -192,7 +193,7 @@ html {
 .message {
     border-radius: 6px;
     border: solid;
-    border-color: var(--orangeColor);
+    border-color: #44D362;
     width: 30vw;
     height: 5vw;
 }
@@ -259,6 +260,12 @@ html {
     place-items: center;
     font-weight: bolder;
     transition: background-color 0.5s, border-color 0.5s;
+}
+
+@media screen and (max-width: 750px) {
+    .about-me-button {
+        height: 5vw;
+    }
 }
 
 @media  screen and (max-width: 500px) {
