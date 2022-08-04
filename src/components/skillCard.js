@@ -7,6 +7,7 @@ import githubLogo from "../Images/githubLogo.png";
 import gitLogo from "../Images/gitLogo.png";
 import javaLogo from "../Images/javaLogo.png";
 import javascriptLogo from "../Images/javascriptLogo.png";
+import allLogos from "../Images/html-css-js-logos.png";
 import "./skillCard.css";
 
 export default function AddSkillCard(props) {
@@ -66,6 +67,9 @@ export default function AddSkillCard(props) {
     return (
         <div>
             {imageToUse}
-        </div>
+            {/* <img src={allLogos} className={style}/>
+            <h5>Languages</h5>
+            <p>Using these langauges I form the foundations of my websites and applications. They allow me to create the form and function of the webpage setting each project up for success from the start.</p> */}
+        </div>   
     )
 }

@@ -218,13 +218,13 @@ html {
     background-color: white;
 }
 
-.skill-collage {
+/* .skill-collage {
     display: flex;
     flex-direction: column;
     position: relative;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .about-me-section {
     display: flex;

@@ -6,6 +6,7 @@ import StandardPage from "../components/DefaultPage";
 import '../components/navigation.css';
 import './homepage.css';
 import logo from '../Images/logoWithColorBrain.png';
+import Skills from "../components/Skills";
 import cameronImage from '../Images/cameronwoodard.jpg';
 import AddSkillCard from "../components/skillCard";
 import Projects from "../components/ProjectsSection";
@@ -46,20 +47,10 @@ export default function Homepage() {
                             <h1 className="title">Hello there, I'm Cameron.</h1>
                             <h2 className="subtitle">I'm a rocking front-end developer.</h2>
                             <div className="row gap2" style={{gap: "10vw"}}>
-                                {/* <div className="column">
-                                    <h4>Skills I Specialize In</h4>
-                                    <div className="row gap">
-                                        <AddSkillCard experience="1" whichSkill="HTML" howComfort="50"  style="skill-pic" projects="4" />
-                                        <AddSkillCard experience="6" whichSkill="CSS" howComfort="30"  style="skill-pic" projects="2" />
-                                        <AddSkillCard experience="6" whichSkill="React" howComfort="40"  style="skill-pic" projects="2" />
-                                        <AddSkillCard experience="3" whichSkill="Javascript" howComfort="70"  style="skill-pic" projects="many" />
-                                        <AddSkillCard experience="3" whichSkill="Firebase" howComfort="70"  style="skill-pic" projects="many" />
-                                    </div>
-                                </div> */}
-                                    <div className="row gap">
-                                        <a href="https://github.com/Cwoodard2" target="_blank" rel='noopener noreferrer'><img src={githubLogo} className="skill-pic"/></a>
-                                        <a href="https://www.linkedin.com/in/cameron-woodard-4565661a3/" target="_blank" rel='noopener noreferrer'><img src={linkedIn} className="skill-pic"/></a>
-                                    </div>
+                                <div className="row gap">
+                                    <a href="https://github.com/Cwoodard2" target="_blank" rel='noopener noreferrer'><img src={githubLogo} className="skill-pic"/></a>
+                                    <a href="https://www.linkedin.com/in/cameron-woodard-4565661a3/" target="_blank" rel='noopener noreferrer'><img src={linkedIn} className="skill-pic"/></a>
+                                </div>
                             </div>
                             <br></br>
                             <br></br>
@@ -78,28 +69,22 @@ export default function Homepage() {
                     <div className="about-me-main">
                         <h2 className="titles">About Me</h2>
                         <div style={{backgroundColor: "white", width: "2vw", height: "0.25vw", alignSelf: "flex-start", borderRadius: "3px"}}></div>
-                        {/* <p>I am a computer science student and freelance web developer bent on conquering the world... if I were a supervillain. But the reality is I prefer a philosophy that goes for the opposite. My philosohy to developing applications can be summed up in three parts:</p> */}
-                        <p>I am a software developer looking to make your vision come true. With ideas, images, designs, and solutions constantly floating in my head, I am always ready to offer you something, whether it be completely original or just a quick fix. I've been developing personal items for several years and it's time I make your vision come to fruition.</p>
-                        {/* Providing beautiful and functional websites is a core pillar of my philosophy. Each product should be unique and with its own flair. Bringing a psychological background to the table, I keep the human brain happy with my work. */}
-                        <a href={resume} target="_blank" rel='noopener noreferrer'><button className="about-me-button">View Resume</button></a>
-                        </div>
+                            <p>I am a software developer looking to make your vision come true. With ideas, images, designs, and solutions constantly floating in my head, I am always ready to offer you something, whether it be completely original or just a quick fix. I've been developing personal items for several years and it's time I make your vision come to fruition.</p>
+                            {/* Providing beautiful and functional websites is a core pillar of my philosophy. Each product should be unique and with its own flair. Bringing a psychological background to the table, I keep the human brain happy with my work. */}
+                            <a href={resume} target="_blank" rel='noopener noreferrer'><button className="about-me-button">View Resume</button></a>
                     </div>
                 </div>
                 <div className="column" style={{justifyContent: "center", alignItems: "center"}}>
                     <h4>Skills I Specialize In</h4>
                     <div className="row gap">
-                        <div className="skill-collage">
-                            <AddSkillCard whichSkill="HTML" style="skill-card"/>
-                            <AddSkillCard whichSkill="CSS"  style="skill-card"  />
-                            <AddSkillCard whichSkill="Javascript"  style="skill-card" />
-                        </div>
-                        <AddSkillCard whichSkill="React"  style="skill-card" />
-                        <AddSkillCard whichSkill="Firebase" style="skill-card" />
+                            <Skills skill="languages"/>
+                            <Skills skill="frameworks"/>
+                            <Skills skill="database"/>
                     </div>
+                </div>
                 <div className="section-title-description-wrapper">
                     <h2 style={{color: "#77DD66"}}><u>Projects</u></h2>
                     <p style={{color: "white"}}>Explore each of my projects of which some focus on design, others on full-stack, and all on excellent programming. All in all each tells it's own story.</p>
-                    {/* Each hero goes through many adventures, here are some of mine. They showcase different challenges I've faced. */}
                 </div>
                 <div className="row" style={{justifyContent: "center"}}>
                     <Projects project = "MindWorks Mental Health" description = {descriptionArray[4]} image="5" duration="May 2022 - July 2022, Providing updates as needed"/>
@@ -107,50 +92,6 @@ export default function Homepage() {
                     <Projects project = "URCA" description = {descriptionArray[0]} image="1" duration="January 2022 - May 2022"/>
                     <Projects project = "HCI" description = {descriptionArray[1]} image="2" duration="January 2022 - May 2022"/>
                 </div>
-                {/* <div id="skills" className="divider-line"></div> */}
-                {/* <div className="section-title-description-wrapper">
-                    <h2 style={{color: "#77DD66"}}>Tools of the Trade</h2>
-                    <p style={{color: "white"}}>I have spent many hours working to improve and build my knowledge and experience in each of these skills and tools. I am happy to tackle any new skill that is needed for a project and enjoy the challenge of quickly learning skills. </p>
-                </div>
-                <div className="row all-skills-wrapper">
-                    <div className="skills-wrapper">
-                        <div className="skills-content">
-                            <h3>Skills</h3>
-                            <div className="more-skill-content">
-                                <AddSkillCard whichSkill="React" style="skill-card" />
-                                <AddSkillCard whichSkill="HTML"  style="skill-card" />
-                                <AddSkillCard whichSkill="CSS" style="skill-card" /> */}
-                                {/* <AddSkillCard experience="3" whichSkill="Java" howComfort="70"  style="skill-card" projects="4" /> */}
-                                {/* <AddSkillCard whichSkill="Javascript"  style="skill-card" />
-                                <AddSkillCard whichSkill="Firebase"  style="skill-card" /> */}
-                                {/* <AddSkillCard experience="6" whichSkill="Github Pages" howComfort="30"  style="skill-card" projects="1" /> */}
-                                {/* <AddSkillCard whichSkill="Git" style="skill-card" /> */}
-                            {/* </div> */}
-                        {/* </div> */}
-                    {/* </div> */}
-                {/* </div> */}
-                {/* <div id="aboutme" className="divider-line"></div> */}
-                {/* <div className="about-me-section">
-                    <div><img src={cameronImage} className="aboutMePicture"/></div>
-                    <div className="about-me-main">
-                        <h2 className="titles">About Me</h2>
-                        <div style={{backgroundColor: "white", width: "2vw", height: "0.25vw", alignSelf: "flex-start", borderRadius: "3px"}}></div>
-                        <p>I am a computer science student and freelance web developer bent on conquering the world... if I were a supervillain. But the reality is I prefer a philosophy that goes for the opposite. My philosohy to developing applications can be summed up in three parts:</p>
-                        <p>I am a software developer looking to make your vision come true. With ideas, images, designs, and solutions constantly floating in my head, I am always ready to offer you something, whether it be completely original or just a quick fix. I've been developing personal items for several years and it's time I make your vision come to fruition.</p>
-                        Providing beautiful and functional websites is a core pillar of my philosophy. Each product should be unique and with its own flair. Bringing a psychological background to the table, I keep the human brain happy with my work.
-                        <a href={resume} target="_blank" rel='noopener noreferrer'><button className="about-me-button">View Resume</button></a>
-                        <div className="column" style={{justifyContent: "center", alignItems: "center"}}>
-                            <h4>Skills I Specialize In</h4>
-                            <div className="row gap">
-                                <AddSkillCard whichSkill="HTML" style="skill-card"/>
-                                <AddSkillCard whichSkill="CSS"  style="skill-card"  />
-                                <AddSkillCard whichSkill="React"  style="skill-card" />
-                                <AddSkillCard whichSkill="Javascript"  style="skill-card" />
-                                <AddSkillCard whichSkill="Firebase" style="skill-card" />
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
                 <div className="contactForm">
                     <h1 className="titles">Contact Me!</h1>
                     <form onSubmit={handleSubmit} className="contactForm" method="POST">
@@ -162,8 +103,8 @@ export default function Homepage() {
                         <br></br>
                         <input type="submit" disabled={state.submitting} className="submit-button"></input>
                     </form>
-                </div>
-            </div>                                                                                            
+                </div> 
+                </div>                                                                                     
         </StandardPage>
     );
 };
