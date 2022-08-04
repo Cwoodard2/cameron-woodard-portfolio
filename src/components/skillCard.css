@@ -1,11 +1,17 @@
 .skill-card {
         display: flex;
-        width: 5vw;
+        /* width: 5vw; */
         height: 5vw;
         /* background-color: white; */
         transition: background-color 1s;
         justify-content: center;
         overflow-y: hidden;
+}
+
+.skill-card-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skill-pic {
@@ -21,7 +27,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background-color: rgba(80, 80, 80, 1);
+  /* background-color: rgba(80, 80, 80, 1); */
+  background-color: #422d2d6b;
+  box-shadow: 0px 3px 5px 0px black;
   padding: 2vw;
   height: auto;
   width: 25vw;
@@ -38,5 +46,10 @@
   @media screen and (max-width: 500px) {
     .skill-collage {
       width: 80vw;
+      padding: 4vw;
+    }
+
+    .skill-card {
+      height: 10vw;
     }
   } 

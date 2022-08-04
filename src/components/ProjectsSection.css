@@ -8,9 +8,9 @@
     /* border-color: #ff9400; */
     border-color: #44D362;
     /* background-color: rgb(2, 100, 112); */
-    transform: scale(1.05);
+    transform: translateY(-10px);
     border-width: 0.25vw;
-    box-shadow: 0px 0px 10px 10px #08AEEA;
+    /* box-shadow: 0px 0px 10px 10px #08AEEA; */
   }
 
   .persepctive-item {
@@ -18,8 +18,10 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(80, 80, 80, .30);
+    /* background-color: rgba(80, 80, 80, .30); */
+    background-color: #422d2d6b;
     backdrop-filter: blur(20px);
+    box-shadow: 0px 3px 5px 0px black;
     padding: 1vw;
     border-radius: 12px;
     gap: 2vw;
@@ -27,8 +29,9 @@
     /* height: 35vw; */
     overflow: auto;
     flex-wrap: wrap;
-    border: solid;
-    border-color: white;
+    padding: 3vw;
+    /* border: solid; */
+    /* border-color: white; */
     transition: border-color 0.5s, transform 0.5s, background-color 0.5s, box-shadow 0.5s, border-width 0.5s;
   }
 
@@ -80,7 +83,7 @@
     transition-duration: 0.5s;
     place-items: center;
     font-weight: bolder;
-    transition: background-color 0.5s, box-shadow 0.5s;
+    transition: all 0.5s;
     justify-self: flex-end;
     text-decoration: none;
   }
@@ -88,11 +91,12 @@
   .source-code-button {
     color: #08AEEA;
     border-color: #08AEEA;
-    transition: box-shadow 0.5s;
+    transition: all 0.5s;
   }
 
   .live-site-button:hover {
-    box-shadow: 0px 0px 5px 5px white;
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 5px 0px white;
   }
 
   @media screen and  (max-width: 750px) {

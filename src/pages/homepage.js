@@ -82,15 +82,17 @@ export default function Homepage() {
                             <Skills skill="database"/>
                     </div>
                 </div>
-                <div className="section-title-description-wrapper">
-                    <h2 style={{color: "#77DD66"}}><u>Projects</u></h2>
-                    <p style={{color: "white"}}>Explore each of my projects of which some focus on design, others on full-stack, and all on excellent programming. All in all each tells it's own story.</p>
-                </div>
-                <div className="row" style={{justifyContent: "center"}}>
-                    <Projects project = "MindWorks Mental Health" description = {descriptionArray[4]} image="5" duration="May 2022 - July 2022, Providing updates as needed"/>
-                    <Projects project = "Portfolio" description = {descriptionArray[3]} image="4" duration="May 2022 - Current"/>
-                    <Projects project = "URCA" description = {descriptionArray[0]} image="1" duration="January 2022 - May 2022"/>
-                    <Projects project = "HCI" description = {descriptionArray[1]} image="2" duration="January 2022 - May 2022"/>
+                <div>
+                    <div className="section-title-description-wrapper">
+                        <h2 style={{color: "#77DD66"}}><u>Projects</u></h2>
+                        <p style={{color: "white"}}>Explore each of my projects of which some focus on design, others on full-stack, and all on excellent programming. All in all each tells it's own story.</p>
+                    </div>
+                    <div className="row" style={{justifyContent: "center"}}>
+                        <Projects project = "MindWorks Mental Health" description = {descriptionArray[4]} image="5" duration="May 2022 - July 2022, Providing updates as needed"/>
+                        <Projects project = "Portfolio" description = {descriptionArray[3]} image="4" duration="May 2022 - Current"/>
+                        <Projects project = "URCA" description = {descriptionArray[0]} image="1" duration="January 2022 - May 2022"/>
+                        <Projects project = "HCI" description = {descriptionArray[1]} image="2" duration="January 2022 - May 2022"/>
+                    </div>
                 </div>
                 <div className="contactForm">
                     <h1 className="titles">Contact Me!</h1>

@@ -1,4 +1,6 @@
 html {
+    /* this color might be good for background of cards */
+    /* background-color: #422d2d6b; */
     scroll-behavior: smooth;
 }
 
@@ -218,18 +220,12 @@ html {
     background-color: white;
 }
 
-/* .skill-collage {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-} */
-
 .about-me-section {
     display: flex;
     flex-direction: row;
-    background-color: rgb(80, 80, 80);
+    /* background-color: rgb(80, 80, 80); */
+    background-color: #422d2d6b;
+    box-shadow: 0px 3px 5px 0px black;
     border-radius: 12px;
     gap: 5vh;
     width: 80vw;
