@@ -9,6 +9,8 @@ html {
    flex-direction: column;
    justify-content: flex-start;
    width: 85vw;
+   margin-left: 5vw;
+   margin-right: 5vw;
 }
 
 .row {
@@ -152,15 +154,18 @@ html {
 }
 
 .about-me-button {
+    height: calc(4px + 4vh);;
     background: none;
-    border: solid;
-    height: 2vw;
-    border-width: 0.25vw;
-    border-radius: 6px;
-    border-color: white;
-    color: white;
-    transition: color 0.5s, border-color 0.5s;
+    border-radius: 4px;
+    border: 0.15vw solid #44D362;
     cursor: pointer;
+    color: #44D362;
+    font-size: 1rem;
+    transition: color white;
+    transition-duration: 0.5s;
+    place-items: center;
+    font-weight: bolder;
+    transition: background-color 0.5s, border-color 0.5s;
 }
 
 .about-me-content {
@@ -282,6 +287,18 @@ html {
 }
 
 @media  screen and (max-width: 500px) {
+
+    #about-me-text {
+        width: 80vw;
+    }
+
+    .aboutMePicture {
+        border-radius: 50%;
+    }
+
+    .about-me-section {
+        flex-direction: column;
+    }
 
     .down-button {
         width: 10vw;

@@ -65,17 +65,18 @@ export default function Homepage() {
                 </div>
                 <div id="adventures" className="divider-line"></div>
                 <div className="about-me-section">
-                    <div><img src={cameronImage} className="aboutMePicture"/></div>
+                    <div style={{display: "flex", justifyContent: "center"}}><img src={cameronImage} className="aboutMePicture"/></div>
                     <div className="about-me-main">
                         <h2 className="titles">About Me</h2>
                         <div style={{backgroundColor: "white", width: "2vw", height: "0.25vw", alignSelf: "flex-start", borderRadius: "3px"}}></div>
-                            <p>I am a software developer looking to make your vision come true. With ideas, images, designs, and solutions constantly floating in my head, I am always ready to offer you something, whether it be completely original or just a quick fix. I've been developing personal items for several years and it's time I make your vision come to fruition.</p>
+                            <p id="about-me-text">I am a software developer looking to make your vision come true. With ideas, images, designs, and solutions constantly floating in my head, I am always ready to offer you something, whether it be completely original or just a quick fix. I've been developing personal items for several years and it's time I make your vision come to fruition.</p>
                             {/* Providing beautiful and functional websites is a core pillar of my philosophy. Each product should be unique and with its own flair. Bringing a psychological background to the table, I keep the human brain happy with my work. */}
                             <a href={resume} target="_blank" rel='noopener noreferrer'><button className="about-me-button">View Resume</button></a>
                     </div>
                 </div>
                 <div className="column" style={{justifyContent: "center", alignItems: "center"}}>
-                    <h4>Skills I Specialize In</h4>
+                    <h2 style={{alignSelf: "flex-start"}} className="titles">My Skills</h2>
+                    {/* <div style={{backgroundColor: "white", width: "2vw", height: "0.25vw", alignSelf: "flex-start", borderRadius: "3px"}}></div> */}
                     <div className="row gap">
                             <Skills skill="languages"/>
                             <Skills skill="frameworks"/>
@@ -95,7 +96,8 @@ export default function Homepage() {
                     </div>
                 </div>
                 <div className="contactForm">
-                    <h1 className="titles">Contact Me!</h1>
+                    <h2 className="titles" style={{alignSelf: "center"}}>Contact Me</h2>
+                    <p>Looking to hire me or just want to send a message? Use the form below to contact me.</p>
                     <form onSubmit={handleSubmit} className="contactForm" method="POST">
                         <input type="text" name="firstname" placeholder="Your name" className="input-box"/>
                         <br></br>

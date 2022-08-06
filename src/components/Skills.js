@@ -47,7 +47,7 @@ export default function Skills(props) {
         case "database":
             cardToShow = (
                 <div className="skill-collage">
-                    <h3>Database</h3>
+                    <h3>Backend</h3>
                     <div className="skill-card-column">
                         <img src={firebaseLogo} className="skill-card"/>
                         <p style={{textAlign: "center"}}>Firebase</p>
@@ -60,11 +60,6 @@ export default function Skills(props) {
     }
 
     return (
-        // <div className="skill-collage">
-        //     <img src={allLogos} className="skill-card"/>
-        //     <h5>Languages</h5>
-        //     <p>Using these langauges I form the foundations of my websites and applications. They allow me to create the form and function of the webpage setting each project up for success from the start.</p>
-        // </div>
         <>
             {cardToShow}
         </>   
