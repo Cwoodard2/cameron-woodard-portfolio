@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a14173b4.css",
-    "main.js": "/static/js/main.e9166762.js",
+    "main.css": "/static/css/main.e2121835.css",
+    "main.js": "/static/js/main.b6b94076.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/mindworks_home.png": "/static/media/mindworks_home.aaf9b3afa0fd87586166.png",
     "static/media/cameronwoodard.jpg": "/static/media/cameronwoodard.06cade285ac8fa18c797.jpg",
@@ -20,12 +20,12 @@
     "static/media/home-icon.png": "/static/media/home-icon.6f760da0798e1ddd19c3.png",
     "static/media/javascriptLogo.png": "/static/media/javascriptLogo.7fd00635e6a9bd777dde.png",
     "index.html": "/index.html",
-    "main.a14173b4.css.map": "/static/css/main.a14173b4.css.map",
-    "main.e9166762.js.map": "/static/js/main.e9166762.js.map",
+    "main.e2121835.css.map": "/static/css/main.e2121835.css.map",
+    "main.b6b94076.js.map": "/static/js/main.b6b94076.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a14173b4.css",
-    "static/js/main.e9166762.js"
+    "static/css/main.e2121835.css",
+    "static/js/main.b6b94076.js"
   ]
 }
