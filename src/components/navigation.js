@@ -7,9 +7,11 @@ export default function Navigation() {
     return (
         <div className="navbar">
                 <img src={logo} className="nav-logo"></img>
-                <NavButton page="welcome" thisPage="Welcome" thisStyle="nav-button" />
-                <NavButton page="adventures" thisPage="Adventures" thisStyle="nav-button" />
-                <NavButton page="skills" thisPage="Skills" thisStyle="nav-button" />
+                <div>
+                    <NavButton page="welcome" thisPage="Welcome" thisStyle="nav-button" />
+                    <NavButton page="adventures" thisPage="Projects" thisStyle="nav-button" />
+                    <NavButton page="skills" thisPage="Skills" thisStyle="nav-button" />
+                </div>
         </div>
     )
 }

@@ -168,6 +168,11 @@ html {
     transition: background-color 0.5s, border-color 0.5s;
 }
 
+.resume {
+    background-color: #44D362;
+    color: rgb(66, 45, 45);
+}
+
 .about-me-content {
     display: flex;
     flex-direction: column;

@@ -69,9 +69,17 @@ export default function Homepage() {
                     <div className="about-me-main">
                         <h2 className="titles">About Me</h2>
                         <div style={{backgroundColor: "white", width: "2vw", height: "0.25vw", alignSelf: "flex-start", borderRadius: "3px"}}></div>
-                            <p id="about-me-text">Providing beautiful and functional websites is a core pillar of my philosophy. Each product should be unique and with its own flair. Bringing a psychological background to the table, I keep the human brain happy with my work.</p>
+                            {/* <p id="about-me-text">Providing beautiful and functional websites is a core pillar of my philosophy. Each product should be unique and with its own flair. Bringing a psychological background to the table, I keep the human brain happy with my work.</p> */}
+                            <p id="about-me-text">I am a software developer with 3 years of experience building websites and applications alike. From a person or company's initial vision, I create something unique and useful bringing their ideas to life. Being able to quickly and accurately translate a concept, allows me to iterate faster and deliver sooner. It's time your vision came to fruition, with me.</p>
                             {/* I am a software developer looking to make your vision come true. With ideas, images, designs, and solutions constantly floating in my head, I am always ready to offer you something, whether it be completely original or just a quick fix. I've been developing personal items for several years and it's time I make your vision come to fruition. */}
-                            <a href={resume} target="_blank" rel='noopener noreferrer'><button className="about-me-button">View Resume</button></a>
+                            <div className="row" style={{gap: "2vw"}}>
+                                <a href={resume} target="_blank" rel='noopener noreferrer'><button className="about-me-button resume">View Resume</button></a>
+                                <Link to="adventures" spy={true} smooth={true}>
+                                    <div className="row" style={{justifyContent: "center"}}>
+                                        <button className="about-me-button">My Work</button>
+                                    </div>
+                                </Link>
+                            </div>
                     </div>
                 </div>
                 <div className="column" style={{justifyContent: "center", alignItems: "center"}}>
@@ -91,8 +99,8 @@ export default function Homepage() {
                     </div>
                     <div className="row" style={{justifyContent: "center"}}>
                         <Projects project = "MindWorks Mental Health" description = {descriptionArray[4]} image="5" duration="May 2022 - July 2022, Providing updates as needed"/>
-                        <Projects project = "Portfolio" description = {descriptionArray[3]} image="4" duration="May 2022 - Current"/>
                         <Projects project = "URCA" description = {descriptionArray[0]} image="1" duration="January 2022 - May 2022"/>
+                        <Projects project = "Portfolio" description = {descriptionArray[3]} image="4" duration="May 2022 - Current"/>
                         <Projects project = "HCI" description = {descriptionArray[1]} image="2" duration="January 2022 - May 2022"/>
                     </div>
                 </div>

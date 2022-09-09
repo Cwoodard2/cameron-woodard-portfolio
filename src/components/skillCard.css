@@ -6,6 +6,14 @@
         transition: background-color 1s;
         justify-content: center;
         overflow-y: hidden;
+        transition: transform 3s;
+}
+
+.skill-card:hover {
+  animation-name: App-logo-spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .skill-card-column {
@@ -34,6 +42,15 @@
   height: auto;
   width: 25vw;
   color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 750px) {
