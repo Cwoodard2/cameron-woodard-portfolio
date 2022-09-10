@@ -94,8 +94,8 @@ export default function Homepage() {
                 </div>
                 <div>
                     <div className="section-title-description-wrapper">
-                        <h2 style={{color: "#77DD66"}}><u>Projects</u></h2>
-                        <p style={{color: "white"}}>Explore each of my projects of which some focus on design, others on full-stack, and all on excellent programming. All in all each tells it's own story.</p>
+                        <h2 style={{color: "#77DD66"}}><u>My Work</u></h2>
+                        <p style={{color: "white"}}>Explore each of my projects of which some focus on design, others on full-stack, and all on excellent programming.</p>
                     </div>
                     <div className="row" style={{justifyContent: "center"}}>
                         <Projects project = "MindWorks Mental Health" description = {descriptionArray[4]} image="5" duration="May 2022 - July 2022, Providing updates as needed"/>
@@ -104,7 +104,7 @@ export default function Homepage() {
                         <Projects project = "HCI" description = {descriptionArray[1]} image="2" duration="January 2022 - May 2022"/>
                     </div>
                 </div>
-                <div className="contactForm">
+                <div className="contactForm color">
                     <h2 className="titles" style={{alignSelf: "center"}}>Contact Me</h2>
                     <p>Looking to hire me or just want to send a message? Use the form below to contact me.</p>
                     <form onSubmit={handleSubmit} className="contactForm" method="POST">

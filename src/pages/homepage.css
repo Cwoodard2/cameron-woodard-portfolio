@@ -255,8 +255,11 @@ html {
     width: 100vw;
     color: white;
     /* background-color: rgb(80, 80, 80); */
-    background-color: #422d2d6b;
     padding-bottom: 1vw;
+}
+
+.color {
+    background-color: #422d2d6b;
 }
 
 .aboutMePicture {
