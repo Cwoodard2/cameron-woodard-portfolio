@@ -17,7 +17,7 @@
     transition-duration: 0.5s;
     place-items: center;
     font-weight: bolder;
-    transition: background-color 0.5s, border-color 0.5s;
+    transition: all 0.5s;
 }
 
 @media screen and (max-width: 600) {
@@ -27,6 +27,6 @@
 }
 
 .nav-button:hover {
-    /* background-color: var(--otherBlueBackgroundColor); */
-    border-color: #08AEEA;
+    transform: translateY(-2px);
+    box-shadow: -3px 3px 5px 0px white;
 }

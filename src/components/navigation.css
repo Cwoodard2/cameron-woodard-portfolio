@@ -16,7 +16,6 @@
     gap: 1.5vw;
     width: 100vw;
     height: 10vh;
-    /* background-color: rgba(80, 80, 80, 80%); */
     background-color: #422d2d6b;
     backdrop-filter: blur(10px);
 }

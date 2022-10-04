@@ -7,10 +7,10 @@ export default function Navigation() {
     return (
         <div className="navbar">
                 <img src={logo} className="nav-logo"></img>
-                <div>
+                <div style={{display: "flex", flexDirection: "row", gap: "2vw"}}>
                     <NavButton page="welcome" thisPage="Welcome" thisStyle="nav-button" />
-                    <NavButton page="adventures" thisPage="Projects" thisStyle="nav-button" />
                     <NavButton page="skills" thisPage="Skills" thisStyle="nav-button" />
+                    <NavButton page="adventures" thisPage="Projects" thisStyle="nav-button" />
                 </div>
         </div>
     )

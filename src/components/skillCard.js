@@ -67,9 +67,6 @@ export default function AddSkillCard(props) {
     return (
         <div>
             {imageToUse}
-            {/* <img src={allLogos} className={style}/>
-            <h5>Languages</h5>
-            <p>Using these langauges I form the foundations of my websites and applications. They allow me to create the form and function of the webpage setting each project up for success from the start.</p> */}
         </div>   
     )
 }

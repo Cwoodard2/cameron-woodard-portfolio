@@ -2,13 +2,13 @@ import React from "react";
 import "./ProjectsSection.css";
 import portfolioPic from "../Images/portImage.png";
 import ultraLogo from "../Images/ultranotelogo.jpg";
-import urcaDash from "../Images/urca.png";
+import urcaDash from "../Images/urca2.png";
 import mindworksHome from "../Images/mindworks_home.png";
 import AddSkillCard from "./skillCard";
 
 export default function Projects(props) {
 
-    var projectToShow = props.project;
+    var projectToShow = "";
     var projectDecription = props.description;
     var projectImage = props.image;
     var projectTime = props.duration;
@@ -25,20 +25,24 @@ export default function Projects(props) {
         <AddSkillCard experience="3" whichSkill="Firebase" howComfort="70"  style="skill-pic" projects="many" />
     ]
 
-    switch(projectToShow) {
+    switch(props.project) {
         case "MindWorks Mental Health":
+            projectToShow = props.project;
             showImage = <img src={mindworksHome} className="portfolio-pic" />;
             skillsToShow = <div className="skills-used">{skills[0]}{skills[1]}<a href="https://www.mindworksmentalhealth.net/" target="_blank" rel='noopener noreferrer'><button className="live-site-button liveButton" target="_blank" rel='noopener noreferrer'>Live Site</button></a></div>
             break;
         case "Portfolio":
+            projectToShow = props.project;
             showImage = <img src={portfolioPic} className="portfolio-pic" />;
             skillsToShow = <div className="skills-used">{skills[0]}{skills[1]}{skills[2]}{skills[4]}<a href="https://github.com/Cwoodard2/Cwoodard2.github.io" target="_blank" rel='noopener noreferrer'><button className="live-site-button source-code-button" target="_blank" rel='noopener noreferrer'>Source Code</button></a></div>
             break;
         case "HCI":
+            projectToShow = "Ultra Note"
             showImage = <img src={ultraLogo} className="portfolio-pic" />;
             skillsToShow = <div className="skills-used"><a href="https://ultranotes.weebly.com/" target="_blank" rel='noopener noreferrer'><button className="live-site-button liveButton">Live Site</button></a></div>
             break;
         case "URCA":
+            projectToShow = "Microaggression Web App"
             showImage = <img src={urcaDash} className="portfolio-pic" />;
             skillsToShow = <div className="skills-used">{skills[0]}{skills[1]}{skills[2]}{skills[4]}{skills[5]}<a href="https://mattaurca-s22.github.io/MicrAgg-WebApp/" target="_blank" rel='noopener noreferrer'><button className="live-site-button liveButton" >Live Site</button></a><a href="https://github.com/MattaURCA-S22/MicrAgg-WebApp" target="_blank" rel='noopener noreferrer'><button className="live-site-button source-code-button" >Source Code</button></a></div>
             break;

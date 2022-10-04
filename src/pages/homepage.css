@@ -165,7 +165,7 @@ html {
     transition-duration: 0.5s;
     place-items: center;
     font-weight: bolder;
-    transition: background-color 0.5s, border-color 0.5s;
+    transition: all 0.5s;
 }
 
 .resume {
@@ -281,6 +281,11 @@ html {
     place-items: center;
     font-weight: bolder;
     transition: background-color 0.5s, border-color 0.5s;
+}
+
+.about-me-button:hover {
+    transform: translateY(-2px);
+    box-shadow: -3px 3px 5px 0px white;
 }
 
 @media screen and (max-width: 750px) {

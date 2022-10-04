@@ -1,8 +1,6 @@
 .skill-card {
         display: flex;
-        /* width: 5vw; */
         height: 5vw;
-        /* background-color: white; */
         transition: background-color 1s;
         justify-content: center;
         overflow-y: hidden;
@@ -24,8 +22,6 @@
 
 .skill-pic {
     height: 2vw;
-    width: 2vw;
-    border-radius: 6px;
 }
 
 .skill-collage {
@@ -35,7 +31,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  /* background-color: rgba(80, 80, 80, 1); */
   background-color: #422d2d6b;
   box-shadow: 0px 3px 5px 0px black;
   padding: 2vw;

@@ -31,7 +31,6 @@ export default function Skills(props) {
                     </div>
                 </div>
                 <p>I use HTML, CSS/SCSS, and javascript to create attractive and functional websites and apps.</p>
-                {/* <p>Using these langauges I form the foundations of my websites and applications. They allow me to create the form and function of the webpage setting each project up for success from the start.</p> */}
             </div>);
             break;
         case "frameworks":
@@ -43,7 +42,6 @@ export default function Skills(props) {
                         <p style={{textAlign: "center"}}>React</p>
                     </div>
                     <p>I use frameworks to speed up development of projects and increase the amount of clean code produced.</p>
-                    {/* <p>React allows me to quickly and easily make javascript applications and websites by providing tools that take away the tiresome use of vanilla javascript.</p> */}
                 </div>);
             break;
         case "database":
@@ -55,7 +53,6 @@ export default function Skills(props) {
                         <p style={{textAlign: "center"}}>Firebase</p>
                     </div>
                     <p>My use of databases provide simple and clean database setup and easy interfacing. While focused on front-end, I am flexible and able to provide backend services as needed.</p>
-                    {/* <p>Experience with Firebase lays the groundwork to using other similar databases and provides me with experience in dealing with them should I need to interface with one.</p> */}
                 </div>);
             break;
         default:
