@@ -1,50 +1,50 @@
 .navbar {
-    animation-name: showNavBar;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    border-bottom-style: solid;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    border-bottom: 0.25vw white;
-    gap: 1.5vw;
-    width: 100vw;
-    height: 10vh;
-    background-color: #422d2d6b;
-    backdrop-filter: blur(10px);
+  animation-name: showNavBar;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  /* border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; */
+  border-bottom: 0.25vw solid black;
+  gap: 1.5vw;
+  width: 100vw;
+  height: 10vh;
+  /* background-color: #422d2d6b; */
+  background-color: white;
+  backdrop-filter: blur(10px);
 }
 
 .nav-content {
-    width: 95vw;
+  width: 95vw;
 }
 
 .nav-logo {
-    width: 7vw;
-    height: auto;
-    justify-self: flex-start;
+  width: 7vw;
+  height: auto;
+  justify-self: flex-start;
 }
 
 @media screen and (max-width: 600px) {
-    .navbar {
-        height: 7.5vh;
-        gap: 7.5vw;
-        border-bottom-left-radius: 0%;
-        border-bottom-right-radius: 0%;
-    }
+  .navbar {
+    height: 7.5vh;
+    gap: 7.5vw;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
 }
 
-@keyframes showNavBar{
-    0% {
-        transform: translateY(-20vh);
-    }
+@keyframes showNavBar {
+  0% {
+    transform: translateY(-20vh);
+  }
 
-    100% {
-        transform: translateY(0vh);
-    }
+  100% {
+    transform: translateY(0vh);
+  }
 }

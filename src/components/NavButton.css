@@ -1,32 +1,35 @@
 :root {
-    --blueColor: #3fdb92;
-    --burntOrange: #ff6f00;
-    --blueBackgroundColor: hsl(201, 74%, 47%);
-    --otherBlueBackgroundColor: rgb(2, 100, 112);
+  --blueColor: #3fdb92;
+  --burntOrange: #ff6f00;
+  --blueBackgroundColor: hsl(201, 74%, 47%);
+  --otherBlueBackgroundColor: rgb(2, 100, 112);
 }
 
 .nav-button {
-    height: calc(4px + 4vh);;
-    background: none;
-    border-radius: 4px;
-    border: 0.15vw solid #44D362;
-    cursor: pointer;
-    color: #44D362;
-    font-size: 1rem;
-    transition: color white;
-    transition-duration: 0.5s;
-    place-items: center;
-    font-weight: bolder;
-    transition: all 0.5s;
+  height: calc(4px + 4vh);
+  background: none;
+  border-radius: 4px;
+  /* border: 0.15vw solid #44D362; */
+  border: 0.15vw solid var(--burntOrange);
+  cursor: pointer;
+  /* color: #44D362; */
+  color: var(--burntOrange);
+  font-size: 1rem;
+  transition: color white;
+  transition-duration: 0.5s;
+  place-items: center;
+  font-weight: bolder;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 600) {
-    .nav-button {
-        display: none;
-    }
+  .nav-button {
+    display: none;
+  }
 }
 
 .nav-button:hover {
-    transform: translateY(-2px);
-    box-shadow: -3px 3px 5px 0px white;
+  transform: translateY(-2px);
+  /* box-shadow: -3px 3px 5px 0px white; */
+  box-shadow: -3px 3px 0px 0px black;
 }
