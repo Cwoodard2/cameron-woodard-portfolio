@@ -47,7 +47,7 @@ const projects = {
     description:
       "As part of this project I worked closely with an SIUE CS professor and another graduate to determine the effects of COVID and HIV in the LGBTQ+ community. I utilized the machine learning algorithm, K-Nearest Neighbors in order to determine the what attributes provided the largest effect. We then examined if there were any connections between them. The result is a conference paper published in EMBC. This project was submitted to EMBC and was accepted.",
     skills: [pythonLogo, machineLearning],
-    sourceCode: "",
+    sourceCode: "https://github.com/SIUEComplexNetworksLab/BOHComplexNetworks",
     liveSite: "",
     projectPic: samplePic,
   },
