@@ -1,17 +1,10 @@
 .skill-card {
-        display: flex;
-        height: 5vw;
-        transition: background-color 1s;
-        justify-content: center;
-        overflow-y: hidden;
-        transition: transform 3s;
-}
-
-.skill-card:hover {
-  animation-name: App-logo-spin;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  display: flex;
+  height: 5vw;
+  transition: background-color 1s;
+  justify-content: center;
+  overflow-y: hidden;
+  transition: transform 3s;
 }
 
 .skill-card-column {
@@ -21,7 +14,7 @@
 }
 
 .skill-pic {
-    height: 2vw;
+  height: 2vw;
 }
 
 .skill-collage {
@@ -31,7 +24,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background-color: #422d2d6b;
+  /* background-color: #422d2d6b; */
   box-shadow: 0px 3px 5px 0px black;
   padding: 2vw;
   height: auto;
@@ -39,29 +32,20 @@
   color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 750px) {
+  .skill-pic {
+    width: 5vw;
+    height: 5vw;
   }
 }
 
-@media screen and (max-width: 750px) {
-    .skill-pic {
-      width: 5vw;
-      height: 5vw;
-    }
+@media screen and (max-width: 500px) {
+  .skill-collage {
+    width: 80vw;
+    padding: 4vw;
   }
 
-  @media screen and (max-width: 500px) {
-    .skill-collage {
-      width: 80vw;
-      padding: 4vw;
-    }
-
-    .skill-card {
-      height: 10vw;
-    }
-  } 
+  .skill-card {
+    height: 10vw;
+  }
+}
