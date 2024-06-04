@@ -1,16 +1,20 @@
-:root{
-    --orangeColor: #ff9400;
-    --mainGreenColor: #44D362;
-    --mainBlueColor: #08AEEA;
-    --otherMainBlue: #0483ea;
-    --finalBlue: #4f9cdc;
+:root {
+  --orangeColor: #ff9400;
+  --mainGreenColor: #44d362;
+  --mainBlueColor: #08aeea;
+  --otherMainBlue: #0483ea;
+  --finalBlue: #4f9cdc;
 }
 
 .default-page {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    background-color: rgb(43, 77, 109);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  /* background-color: rgb(43, 77, 109); */
+  /* background-color: white; */
+  background-color: rgba(255, 148, 0, 0.25);
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
