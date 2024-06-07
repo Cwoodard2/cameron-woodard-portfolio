@@ -3,12 +3,9 @@ import "./ProjectsSection.css";
 import AddSkillCard from "./skillCard";
 
 export default function Projects(props) {
-  var showImage;
-  var sourceCode;
 
   function base64ToImage() {
     var img = new Image();
-    console.log(props["imageTwo"]["o-RDS"]["projectPic"]);
     img.src = props["imageTwo"]["o-RDS"]["projectPic"];
     return img.src;
   }
@@ -17,26 +14,32 @@ export default function Projects(props) {
     <div className="project-div">
       <div className="persepctive-item">
         <div className="additionalItems">
-          <div>
+          <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
             <div className="picture-div">
-              <img src={base64ToImage()} />
+              <img src={props.imageTwo} style={{width: "100%", borderRadius: "6px", border: "2px black solid", objectFit: "cover" }}/>
             </div>
-            <h3 className="project-name">
+            <br></br>
+            <h3 className="project-name" style={{textAlign: "center"}}>
               {props.title} <br></br>
               {props.duration}
             </h3>
+            <div className="" style={{textAlign: "center", color: "#08aeea", border: "2px #08aeea solid", borderRadius: "1000px", padding: "5px", paddingLeft: "10px", paddingRight: "10px"}}>
+                    {props.type}
+                  </div>
+                  <br></br>
             <div className="project-description">
-              <hr></hr>
               {props.description}
-              <ul className="skills-used">
+              <ul className="skills-used" style={{paddingLeft: "0"}}>
                 {props.skills.map((skill, i) => {
                   return (
-                    <li key={i} className="row">
+                    <li key={i} className="row" style={{listStyle: "none"}}>
                       <AddSkillCard whichSkill={skill} style="skill-pic" />
                     </li>
                   );
                 })}
-                {props.liveSite && <a
+                 </ul>
+                 <div className="skills-used">
+                 {props.liveSite && <a
                   href={props.liveSite}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -54,7 +57,7 @@ export default function Projects(props) {
                     Source Code
                   </button>
                 </a>}
-              </ul>
+                 </div>
             </div>
           </div>
         </div>
