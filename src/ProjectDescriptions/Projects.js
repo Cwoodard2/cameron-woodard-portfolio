@@ -15,7 +15,6 @@ import oRds from "../Images/o-rds_pic.png";
 import mindworksPic from "../Images/mindworks_pic.png";
 import cvwfdnPic from "../Images/cvwfdn_pic.png";
 
-
 export const devProjects = {
   "o-RDS": {
     title: "o-RDS",
@@ -67,7 +66,7 @@ export const devProjects = {
   //     projectPic: samplePic
   // },
   "SMTP Server & Client": {
-    title: "SMTP Server & Client",
+    title: "SMTP Server and Client",
     duration: "Fall of 2022",
     description:
       "In the networking class at SIUE I was tasked with creating an email server and client running on the SMTP and UDP protocol. Additionally, we were required to have the server be able to accept and handle multiple requests from many different clients simultaneously. The result is 1200 lines of code meant to provide this solution in addition to security provisions such as password generation and encoding and decoding pf passwords. Additionally, care was given to ensure the user has a great experience interacting with a command line.",
@@ -84,30 +83,25 @@ export const designProjects = {
     title: "Mindworks Mental Health",
     duration: "Summer 2021",
     description:
-      "o-RDS (Open-Source Respondent Driven Sampling) is a survey creation and management tool and was developed as a request from a Computer Science professor at SIUE, looking to expand the selection of software available for Respondent Driven Sampling. Working with 3 other students, we developed a full stack application that included a survey builder (built by me), survey management area, participant survey application, and the ability to automate rewards payouts to participants. This project taught collaboration and how to write well written code and was deemed commerical grade by reviewers of the project. This project was submitted to EMBC for review and was accepted.",
+      "In summer of 2021 I was approached by a local therapist to help design a website. As part of the design it was asked that the site not feel like a therapy website and instead instill feelings of peace. As such, a nature theme was decided. The earthy tones provide comfort, something important for a person who is likely seeking help with major life issues. Some custom HTML and CSS was added to give the site a unique look.",
     skills: [
       htmlLogo,
       cssLogo,
-      typescriptLogo,
-      expressLogo,
-      reactLogo,
-      tailwindLogo,
-      firebaseLogo,
     ],
     sourceCode: "",
     liveSite: "https://www.mindworksmentalhealth.net/",
     projectPic: mindworksPic,
-    type: "Design",
+    type: "Website Development",
   },
-  "cvwfdn": {
+  cvwfdn: {
     title: "The Clayton and Virginia Williams Foundation",
     duration: "Summer 2024",
     description:
-      "In December of 2022, I was approached by a professor at UMSL with the opportunity to create a website that highlights their work. In an effort to reduce reoccuring costs it was decided I would create the project from scratch, implementing a CMS system for the professor to use to keep dynamic content up to date. This resulted in a React application that works extremely fast but also enables the ability to modify the website with just a few clicks of a button.",
-    skills: [reactLogo, typescriptLogo, firebaseLogo, tailwindLogo],
+      "The Clayton and Virginia Williams Foundation brought me on to redesign their current website as it had become outdated. To develop the website, I first learned more about the organization and derived what would a style that would help drive the foundation's message home. The blue and yellow signify trust and hope, giving the foundation credit for their mission. The website was given a formal, yet friendly feel in order to maintain professionalism, while inviting collaboration amongst communities.",
+    skills: [],
     sourceCode: "",
     liveSite: "https://www.cvwfdn.org",
     projectPic: cvwfdnPic,
-    type: "Design",
+    type: "Website Redesign",
   },
 };
