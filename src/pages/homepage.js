@@ -6,16 +6,18 @@ import StandardPage from "../components/DefaultPage";
 import "../components/navigation.css";
 import "./homepage.css";
 import Skills from "../components/Skills";
-import projects from "../ProjectDescriptions/Projects";
+import {devProjects, designProjects} from "../ProjectDescriptions/Projects";
 import cameronImage from "../Images/cameronwoodard.jpg";
 import Projects from "../components/ProjectsSection";
 import resume from "./ResumeWoodard-Professional.pdf";
 import linkedIn from "../Images/linkedinImage.png";
 import githubLogo from "../Images/githubLogo.png";
+import skillData from "../ProjectDescriptions/SkillPics";
+import FocusSection from "../components/focusSection";
+import codePic from "../Images/code.png";
+import designPic from "../Images/design.png";
 
 export default function Homepage() {
-  var previousPosition =
-    window.pageYOffset || document.documentElement.scrollTop;
   const [state, handleSubmit] = useForm("xgeqwogq");
   if (state.succeeded) {
   }
@@ -27,8 +29,8 @@ export default function Homepage() {
         <div className="column">
           <div className="homepage-nav">
             <div className="intro-wrapper">
-              <h1 className="title">Hi, I'm Cameron Woodard.</h1>
-              <h2 className="subtitle">
+              <h1 className="title" style={{position: "relative", zIndex: "2"}}>Hi, I'm Cameron Woodard.</h1>
+              <h2 className="subtitle" style={{position: "relative", zIndex: "2"}}>
                 I develop beautiful and functional full stack applications.
               </h2>
               <div className="row gap2" style={{ gap: "10vw" }}></div>
@@ -40,10 +42,16 @@ export default function Homepage() {
                   <button className="down-button">&#8595;</button>
                 </div>
               </Link> */}
+              <div className="row floatingBubblesContainer" style={{justifyContent: "space-between", width: "80dvw"}}>
+                <div className="floatingBubbles"></div>
+                <div className="floatingBubbles"></div>
+                <div className="floatingBubbles"></div>
+                <div className="floatingBubbles"></div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="divider-line"></div>
+        {/* <div className="divider-line"></div> */}
         <div className="about-me-section">
           {/* <div style={{ display: "flex", justifyContent: "center" }}>
             <img src={cameronImage} className="aboutMePicture" />
@@ -59,15 +67,20 @@ export default function Homepage() {
                 borderRadius: "3px",
               }}
             ></div>
-            <p id="about-me-text" style={{ color: "black" }}>
-              I am a software developer with 3 years of experience building
+            <p id="about-me-text" style={{ color: "black", width: "60%", lineHeight: "1.5rem" }}>
+              {/* I am a software developer with 3 years of experience building
               applications. From a person or company's initial vision, I create
               something unique and useful bringing their ideas to life. Being
               able to quickly and accurately translate a concept, allows me to
               iterate faster and deliver sooner. It's time your vision came to
-              fruition, with me.
+              fruition, with me. */}
+              I am a passionate web developer specializing in full stack applications and UI/UX. My expertise lies in developing bespoke solutions to complex problems. This includes not only developing feature complete solutions but ones that also result in a great user experience.
             </p>
-            <div className="row" style={{ gap: "2vw" }}>
+            <div className="row" style={{color: "black", justifyContent: "space-evenly", width: "100%", gap: "10vw"}}>
+              <FocusSection title="Full Stack Developer" description="I enjoy writing simple and elegant solutions to interesting problems." skill="Languages I write With" headImg={codePic} />
+              <FocusSection title="Web Designer" description="I believe in crafting intuitive, interesting, and thoughtful UI." skill="What I Design" headImg={designPic}/>
+            </div>
+            {/* <div className="row" style={{ gap: "2vw" }}>
               <a href={resume} target="_blank" rel="noopener noreferrer">
                 <button className="about-me-button resume">View Resume</button>
               </a>
@@ -87,52 +100,77 @@ export default function Homepage() {
                   <img src={linkedIn} className="skill-pic" />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <div
           id="skills"
           className="column"
-          style={{ justifyContent: "center", alignItems: "center" }}
+          style={{ justifyContent: "center", alignItems: "center", width: "80vw" }}
         >
           <h2 style={{ alignSelf: "flex-start" }} className="titles">
             My Skills
           </h2>
-          <p style={{ color: "white", alignSelf: "flex-start" }}>
-            Over the course of my 6 years in development, I have cultivated many
-            skills necessary to perform effectively and effiecently. They mainly
-            consist of Full Stack Skills such as React and Express JS but I have
-            also dabbled in others such as C and Flutter.
+          <p style={{ color: "black", alignSelf: "flex-start", width: "60%" }}>
+            Below you will find the skills I currently possess in order to complete my project. They include everything from web and app development skills to machine learning skills. Each allow me to adapt to circumstances in which I am needed.
           </p>
           <div className="row gap">
             <Skills skill="languages" />
             <Skills skill="frameworks" />
             <Skills skill="database" />
+            {skillData.map((skill, i) => {
+              return <Skills image={skill.image} skill={skill.skill} />
+            })}
           </div>
         </div> */}
-        <div>
+        <div style={{backgroundColor: "#08aeea"}}>
           <div id="adventures" className="section-title-description-wrapper">
-            <h2 style={{ color: "#77DD66" }}>My Work</h2>
-            <p style={{ color: "white" }}>
+            <h2 className="titles" style={{color: "white"}}>My Work</h2>
+            <p style={{ color: "black", width: "60%", lineHeight: "1.5rem", textAlign: "center" }}>
+              Below you will find a curated list of projects demostrating various areas of work.
               Here are a mix of projects that demonstrate a wide variety of
               skills. They are meant to help me develop as a well rounded
               developer.
             </p>
           </div>
           <div className="row" style={{ justifyContent: "center" }}>
-            {Object.values(projects).map((project, i) => {
+            {Object.values(devProjects).map((project, i) => {
               console.log(project);
               return (
-                <li key={i}>
+                <li key={i} style={{listStyle: "none"}}>
                   <Projects
                     title={project.title}
                     description={project.description}
                     image={project.projectPic}
                     duration={project.duration}
-                    imageTwo={projects}
+                    imageTwo={project.projectPic}
                     skills={project.skills}
                     sourceCode={project.sourceCode}
                     liveSite={project.liveSite}
+                    type={project.type}
+                  />
+                </li>
+              );
+            })}
+          </div>
+          <div className="section-title-description-wrapper">
+          <h3 className="titles" style={{color: "white", textAlign: "center"}}>Design Projects</h3>
+          </div>
+          <div className="row" style={{ justifyContent: "center" }}>
+            {Object.values(designProjects).map((project, i) => {
+              console.log(project);
+              return (
+                <li key={i} style={{listStyle: "none"}}>
+                  <Projects
+                    title={project.title}
+                    description={project.description}
+                    image={project.projectPic}
+                    duration={project.duration}
+                    imageTwo={project.projectPic}
+                    skills={project.skills}
+                    sourceCode={project.sourceCode}
+                    liveSite={project.liveSite}
+                    type={project.type}
                   />
                 </li>
               );

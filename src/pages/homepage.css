@@ -22,7 +22,8 @@ svg {
 .section-title-description-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 85vw;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -92,7 +93,7 @@ svg {
   align-items: center;
   /* background-color: orangered; */
   background-color: white;
-  gap: 5vw;
+  /* gap: 5vw; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -176,7 +177,7 @@ svg {
   flex-direction: column;
   /* background-color: rgb(80, 80, 80); */
   width: 90vw;
-  align-items: flex-start;
+  align-items: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: white;
@@ -244,10 +245,10 @@ svg {
 
 .message {
   border-radius: 6px;
-  border: solid;
-  border-color: #44d362;
+  border: 3px solid black;
   width: 30vw;
   height: 5vw;
+  padding: 5px;
 }
 
 .circle {
@@ -269,23 +270,74 @@ svg {
 .about-me-section {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   /* background-color: rgb(80, 80, 80); */
   /* background-color: #422d2d6b; */
-  /* box-shadow: 0px 3px 5px 0px black; */
+  /* box-shadow: -6px 6px 0px 0px black;
+  border: 3px solid #08aeea;
   border-radius: 12px;
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px; */
   gap: 5vh;
   width: 80vw;
   padding: 2vw;
+  margin: 0 auto;
+}
+
+.focusSection {
+  box-shadow: -6px 6px 0px 0px black;
+  border: 3px solid #08aeea;
+  border-radius: 12px;
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  /* color: "black"; 
+  justify-content: "center"; 
+  width: "100%"; 
+  gap: "10vw" */
+}
+
+.floatingBubbles {
+  width: 50px; 
+  border: 5px solid white; 
+  height: 70px;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 500px;
+  border-bottom-left-radius: 500px;
+}
+
+.floatingBubblesContainer div{
+  animation-name: float;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.floatingBubblesContainer div:nth-child(1) {
+  animation-duration: 20s;
+  border-color: #08aeea;
+}
+.floatingBubblesContainer div:nth-child(2) {
+  animation-duration: 16s;
+  border-color: green;
+}
+.floatingBubblesContainer div:nth-child(3) {
+  animation-duration: 18s;
+  border-color: hotpink;
+}
+.floatingBubblesContainer div:nth-child(4) {
+  animation-duration: 11s;
+  border-color: yellow
 }
 
 .titles {
   /* color: #44D362; */
   color: var(--orangeColor);
-  align-self: flex-start;
-  justify-self: flex-start;
   font-family: alba;
-  letter-spacing: 1px;
-  font-size: 36px;
+  letter-spacing: 2px;
+  font-size: 48px;
+  text-align: center;
+  width: "100%";
+  display: inline-block;
 }
 
 .contactForm {
@@ -438,7 +490,7 @@ svg {
 
   50% {
     transform: translateX(0px);
-    transform: translateY(80px);
+    transform: translateY(0px);
     rotate: 0deg;
   }
 
@@ -470,5 +522,32 @@ svg {
   }
 
   100% {
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0vw);
+  }
+
+  50% {
+    transform: translateY(-45vw);
+    width: 30px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 600px;
+    border-top-left-radius: 1200px;
+  }
+
+  75% {
+    width: 100px;
+    border-bottom-left-radius: 1250px;
+    border-bottom-right-radius: 300px;
+    border-top-right-radius: 800px;
+    border-top-left-radius: 60px;
+  }
+
+  100% {
+    transform: translateY(0vw);
   }
 }

@@ -17,3 +17,9 @@ code {
   src: local('Alba'), url(./fonts/ALBA____.TTF)
   format('tff')
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(./fonts/Roboto-Regular.ttf)
+  format('tff')
+}

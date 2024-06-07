@@ -10,9 +10,13 @@ import firebaseLogo from "../Images/firebase_logo.png";
 import htmlLogo from "../Images/html_logo.png";
 import cLogo from "../Images/c_logo.png";
 import linuxLogo from "../Images/linux_logo.png";
+import umslPic from "../Images/umsl_prof_pic.png";
+import oRds from "../Images/o-rds_pic.png";
+import mindworksPic from "../Images/mindworks_pic.png";
+import cvwfdnPic from "../Images/cvwfdn_pic.png";
 
 
-const projects = {
+export const devProjects = {
   "o-RDS": {
     title: "o-RDS",
     duration: "Fall 0f 2022 - Spring of 2023",
@@ -29,7 +33,8 @@ const projects = {
     ],
     sourceCode: "https://github.com/o-RDS",
     liveSite: "https://o-rds.com/",
-    projectPic: samplePic,
+    projectPic: oRds,
+    type: "Web Development",
   },
   "Professor Personal Website": {
     title: "Professor Personal Website",
@@ -39,7 +44,8 @@ const projects = {
     skills: [reactLogo, typescriptLogo, firebaseLogo, tailwindLogo],
     sourceCode: "https://github.com/Cwoodard2/umsl-professor-web",
     liveSite: "umsl-professor-website.web.app",
-    projectPic: samplePic,
+    projectPic: umslPic,
+    type: "Web Development",
   },
   "HIV Machine Learning Project": {
     title: "HIV Machine Learning Project",
@@ -50,6 +56,7 @@ const projects = {
     sourceCode: "https://github.com/SIUEComplexNetworksLab/BOHComplexNetworks",
     liveSite: "",
     projectPic: samplePic,
+    type: "Network Science",
   },
   // "Women In STEM Research": {
   //     title: "Women In STEM Research",
@@ -68,7 +75,39 @@ const projects = {
     sourceCode: "https://github.com/Cwoodard2/Email-Server-Client",
     liveSite: "",
     projectPic: samplePic,
+    type: "Backend Development",
   },
 };
 
-export default projects;
+export const designProjects = {
+  "Mindworks Mental Health": {
+    title: "Mindworks Mental Health",
+    duration: "Summer 2021",
+    description:
+      "o-RDS (Open-Source Respondent Driven Sampling) is a survey creation and management tool and was developed as a request from a Computer Science professor at SIUE, looking to expand the selection of software available for Respondent Driven Sampling. Working with 3 other students, we developed a full stack application that included a survey builder (built by me), survey management area, participant survey application, and the ability to automate rewards payouts to participants. This project taught collaboration and how to write well written code and was deemed commerical grade by reviewers of the project. This project was submitted to EMBC for review and was accepted.",
+    skills: [
+      htmlLogo,
+      cssLogo,
+      typescriptLogo,
+      expressLogo,
+      reactLogo,
+      tailwindLogo,
+      firebaseLogo,
+    ],
+    sourceCode: "",
+    liveSite: "https://www.mindworksmentalhealth.net/",
+    projectPic: mindworksPic,
+    type: "Design",
+  },
+  "cvwfdn": {
+    title: "The Clayton and Virginia Williams Foundation",
+    duration: "Summer 2024",
+    description:
+      "In December of 2022, I was approached by a professor at UMSL with the opportunity to create a website that highlights their work. In an effort to reduce reoccuring costs it was decided I would create the project from scratch, implementing a CMS system for the professor to use to keep dynamic content up to date. This resulted in a React application that works extremely fast but also enables the ability to modify the website with just a few clicks of a button.",
+    skills: [reactLogo, typescriptLogo, firebaseLogo, tailwindLogo],
+    sourceCode: "",
+    liveSite: "https://www.cvwfdn.org",
+    projectPic: cvwfdnPic,
+    type: "Design",
+  },
+};
