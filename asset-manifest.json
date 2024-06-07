@@ -1,31 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9149c81.css",
-    "main.js": "/static/js/main.b2fdfb08.js",
+    "main.css": "/static/css/main.4407bf66.css",
+    "main.js": "/static/js/main.75895a70.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
-    "static/media/mindworks_home.png": "/static/media/mindworks_home.aaf9b3afa0fd87586166.png",
+    "static/media/mindworks_pic.png": "/static/media/mindworks_pic.eacfb2cc569314b82868.png",
+    "static/media/cvwfdn_pic.png": "/static/media/cvwfdn_pic.5817930ce3eaee6b2ef6.png",
     "static/media/cameronwoodard.jpg": "/static/media/cameronwoodard.06cade285ac8fa18c797.jpg",
-    "static/media/htmlLogo.png": "/static/media/htmlLogo.dbc3baa7e405494219e6.png",
-    "static/media/urca2.png": "/static/media/urca2.7c768ed960d0a02fb823.png",
-    "static/media/reactLogo.png": "/static/media/reactLogo.da363b94e54e6deee792.png",
-    "static/media/portImage.png": "/static/media/portImage.eaeecb45b75a37211ca3.png",
-    "static/media/javaLogo.png": "/static/media/javaLogo.84e21b5f70bcaf40c161.png",
+    "static/media/umsl_prof_pic.png": "/static/media/umsl_prof_pic.741d2153bbec349f0649.png",
+    "static/media/o-rds_pic.png": "/static/media/o-rds_pic.7ba0912843c10f2688f9.png",
     "static/media/githubLogo.png": "/static/media/githubLogo.00c601f1724a126c1cbd.png",
-    "static/media/firebaseLogo.png": "/static/media/firebaseLogo.6f1a1b336c5d7f5b6a79.png",
-    "static/media/html-css-js-logos.png": "/static/media/html-css-js-logos.5a4203c932e636766035.png",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/logoWithColorBrain.png": "/static/media/logoWithColorBrain.5a31997b4e0765e8cb08.png",
-    "static/media/gitLogo.png": "/static/media/gitLogo.0983b7b8f96629e083f1.png",
     "static/media/ResumeWoodard-Professional.pdf": "/static/media/ResumeWoodard-Professional.451eae8e89eceeea8fc4.pdf",
-    "static/media/cssLogo.png": "/static/media/cssLogo.f303f42dc9a87d520263.png",
-    "static/media/home-icon.png": "/static/media/home-icon.6f760da0798e1ddd19c3.png",
-    "static/media/javascriptLogo.png": "/static/media/javascriptLogo.7fd00635e6a9bd777dde.png",
+    "static/media/ALBA____.TTF": "/static/media/ALBA____.fe3ce9c4861ca17a7582.TTF",
     "index.html": "/index.html",
-    "main.b9149c81.css.map": "/static/css/main.b9149c81.css.map",
-    "main.b2fdfb08.js.map": "/static/js/main.b2fdfb08.js.map",
+    "main.4407bf66.css.map": "/static/css/main.4407bf66.css.map",
+    "main.75895a70.js.map": "/static/js/main.75895a70.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9149c81.css",
-    "static/js/main.b2fdfb08.js"
+    "static/css/main.4407bf66.css",
+    "static/js/main.75895a70.js"
   ]
 }
