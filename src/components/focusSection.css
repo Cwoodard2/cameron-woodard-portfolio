@@ -1,36 +1,36 @@
 .focusSection {
-    box-shadow: -6px 6px 0px 0px black;
-    border: 3px solid #08aeea;
-    border-radius: 12px;
-    border-top-right-radius: 75px;
-    border-bottom-left-radius: 75px;
-    max-width: 30%;
-    padding: 50px;
-    /* color: "black"; 
+  box-shadow: -6px 6px 0px 0px black;
+  border: 3px solid #08aeea;
+  border-radius: 12px;
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  max-width: 30%;
+  padding: 50px;
+  /* color: "black"; 
     justify-content: "center"; 
     width: "100%"; 
     gap: "10vw" */
-  }
+}
 
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .gap {
-    gap: 2vw;
-  }
+.gap {
+  gap: 2vw;
+}
 
-  .focusTitle {
-    /* align-self: baseline; */
-    /* width: 45vw; */
-    color: var(--orangeColor);
-    font-family: Alba;
-    font-size: x-large;
-    letter-spacing: 2px;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+.focusTitle {
+  /* align-self: baseline; */
+  /* width: 45vw; */
+  color: var(--orangeColor);
+  font-family: Alba;
+  font-size: x-large;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

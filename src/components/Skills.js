@@ -72,9 +72,9 @@ export default function Skills(props) {
   //   }
 
   return (
-      <div className="skill-card-column">
-        <img src={props.image} className="skill-card" />
-        <p style={{ textAlign: "center" }}>{props.skill}</p>
-      </div>
+    <div className="skill-card-column">
+      <img src={props.image} className="skill-card" />
+      <p style={{ textAlign: "center" }}>{props.skill}</p>
+    </div>
   );
 }

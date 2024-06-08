@@ -237,7 +237,7 @@ svg {
   border: 3px solid;
   /* border-color: var(--orangeColor); */
   /* border-color: #44d362; */
-  border-color:black;
+  border-color: black;
   width: 30vw;
   height: 5vh;
   padding: 5px;
@@ -297,8 +297,8 @@ svg {
 }
 
 .floatingBubbles {
-  width: 50px; 
-  border: 5px solid white; 
+  width: 50px;
+  border: 5px solid white;
   height: 70px;
   border-top-left-radius: 1000px;
   border-top-right-radius: 1000px;
@@ -306,7 +306,7 @@ svg {
   border-bottom-left-radius: 500px;
 }
 
-.floatingBubblesContainer div{
+.floatingBubblesContainer div {
   animation-name: float;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -326,7 +326,7 @@ svg {
 }
 .floatingBubblesContainer div:nth-child(4) {
   animation-duration: 11s;
-  border-color: yellow
+  border-color: yellow;
 }
 
 .titles {
@@ -378,10 +378,10 @@ svg {
 }
 
 .submit-button:hover {
-    transform: translateY(-2px);
-    /* box-shadow: -3px 3px 5px 0px white; */
-    box-shadow: -3px 3px 0px 0px black;
-  }
+  transform: translateY(-2px);
+  /* box-shadow: -3px 3px 5px 0px white; */
+  box-shadow: -3px 3px 0px 0px black;
+}
 
 .about-me-button:hover {
   transform: translateY(-2px);

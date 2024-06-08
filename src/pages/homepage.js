@@ -37,11 +37,6 @@ export default function Homepage() {
               <br></br>
               <br></br>
               <br></br>
-              {/* <Link to="adventures" spy={true} smooth={true}>
-                <div className="row" style={{ justifyContent: "center" }}>
-                  <button className="down-button">&#8595;</button>
-                </div>
-              </Link> */}
               <div className="row floatingBubblesContainer" style={{justifyContent: "space-between", width: "80dvw"}}>
                 <div className="floatingBubbles"></div>
                 <div className="floatingBubbles"></div>
@@ -51,11 +46,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        {/* <div className="divider-line"></div> */}
         <div className="about-me-section">
-          {/* <div style={{ display: "flex", justifyContent: "center" }}>
-            <img src={cameronImage} className="aboutMePicture" />
-          </div> */}
           <div className="about-me-main">
             <h2 className="titles">About Me</h2>
             <div
@@ -68,61 +59,14 @@ export default function Homepage() {
               }}
             ></div>
             <p id="about-me-text" style={{ color: "black", width: "60%", lineHeight: "1.5rem" }}>
-              {/* I am a software developer with 3 years of experience building
-              applications. From a person or company's initial vision, I create
-              something unique and useful bringing their ideas to life. Being
-              able to quickly and accurately translate a concept, allows me to
-              iterate faster and deliver sooner. It's time your vision came to
-              fruition, with me. */}
               I am a passionate web developer specializing in full stack applications and UI/UX. My expertise lies in developing bespoke solutions to complex problems. This includes not only developing feature complete solutions but ones that also result in a great user experience.
             </p>
             <div className="row" style={{color: "black", justifyContent: "space-evenly", width: "100%", gap: "10vw"}}>
               <FocusSection title="Full Stack Developer" description="I enjoy writing simple and elegant solutions to interesting problems." skill="Languages I write With" headImg={codePic} skills={["HTML, CSS, Typescript, Java, Python"]} tools={["React, Tailwind CSS, Git, Github, Firebase, Express JS"]}/>
               <FocusSection title="Web Designer" description="I believe in crafting intuitive, interesting, and thoughtful UI." skill="What I Design" headImg={designPic} skills={["UI/UX, Web, Logos"]} tools={["Squarespace, Wix, Pen & Paper, Adobe Creative Cloud"]}/>
             </div>
-            {/* <div className="row" style={{ gap: "2vw" }}>
-              <a href={resume} target="_blank" rel="noopener noreferrer">
-                <button className="about-me-button resume">View Resume</button>
-              </a>
-              <div className="row gap">
-                <a
-                  href="https://github.com/Cwoodard2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={githubLogo} className="skill-pic" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/cameron-woodard-4565661a3/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={linkedIn} className="skill-pic" />
-                </a>
-              </div>
-            </div> */}
           </div>
         </div>
-        {/* <div
-          id="skills"
-          className="column"
-          style={{ justifyContent: "center", alignItems: "center", width: "80vw" }}
-        >
-          <h2 style={{ alignSelf: "flex-start" }} className="titles">
-            My Skills
-          </h2>
-          <p style={{ color: "black", alignSelf: "flex-start", width: "60%" }}>
-            Below you will find the skills I currently possess in order to complete my project. They include everything from web and app development skills to machine learning skills. Each allow me to adapt to circumstances in which I am needed.
-          </p>
-          <div className="row gap">
-            <Skills skill="languages" />
-            <Skills skill="frameworks" />
-            <Skills skill="database" />
-            {skillData.map((skill, i) => {
-              return <Skills image={skill.image} skill={skill.skill} />
-            })}
-          </div>
-        </div> */}
         <div style={{backgroundColor: "#08aeea"}}>
           <div id="adventures" className="section-title-description-wrapper">
             <h2 className="titles" style={{color: "white"}}>My Work</h2>
@@ -215,6 +159,22 @@ export default function Homepage() {
               className="submit-button"
             ></input>
           </form>
+          <div className="row gap">
+                <a
+                  href="https://github.com/Cwoodard2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={githubLogo} className="skill-pic" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/cameron-woodard-4565661a3/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={linkedIn} className="skill-pic" />
+                </a>
+              </div>
         </div>
       </div>
     </StandardPage>
