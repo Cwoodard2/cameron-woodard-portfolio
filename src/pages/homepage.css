@@ -189,10 +189,10 @@ svg {
   background: none;
   border-radius: 4px;
   /* border: 0.15vw solid #44D362; */
-  border: 3px solid var(--orangeColor);
+  border: 3px solid var(--burntOrange);
   cursor: pointer;
   /* color: #44D362; */
-  color: var(--orangeColor);
+  color: var(--burntOrange);
   font-size: 1rem;
   transition: color white;
   transition-duration: 0.5s;
@@ -204,7 +204,7 @@ svg {
 .resume {
   /* background-color: #44D362; */
   /* color: rgb(66, 45, 45); */
-  background-color: var(--orangeColor);
+  background-color: var(--burntOrange);
   color: white;
 }
 
@@ -235,7 +235,7 @@ svg {
 .input-box {
   border-radius: 6px;
   border: 3px solid;
-  /* border-color: var(--orangeColor); */
+  /* border-color: var(--burntOrange); */
   /* border-color: #44d362; */
   border-color: black;
   width: 30vw;
@@ -281,7 +281,16 @@ svg {
   gap: 5vh;
   width: 80vw;
   padding: 2vw;
+  padding-bottom: 4vw;
+  padding-top: 4vw;
   margin: 0 auto;
+}
+
+#about-me-text {
+  text-align: center;
+  color: black; 
+  width: 60%; 
+  line-height: 1.5rem; 
 }
 
 .focusSection {
@@ -331,13 +340,14 @@ svg {
 
 .titles {
   /* color: #44D362; */
-  color: var(--orangeColor);
+  color: var(--burntOrange);
   font-family: alba;
   letter-spacing: 2px;
   font-size: 48px;
   text-align: center;
   width: "100%";
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .contactForm {
@@ -396,8 +406,24 @@ svg {
 }
 
 @media screen and (max-width: 500px) {
+  .about-me-main {
+    width: auto;
+  }
+
+  .intro-wrapper {
+    animation-name: none;
+  }
+
+  .floatingBubblesContainer div {
+    animation-name: none;
+  }
+
+  .section-title-description-wrapper {
+    width: auto;
+  }
+
   #about-me-text {
-    width: 80vw;
+    width: auto;
   }
 
   .aboutMePicture {

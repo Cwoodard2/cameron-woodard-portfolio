@@ -26,7 +26,7 @@
 .focusTitle {
   /* align-self: baseline; */
   /* width: 45vw; */
-  color: var(--orangeColor);
+  color: var(--burntOrange);
   font-family: Alba;
   font-size: x-large;
   letter-spacing: 2px;
@@ -34,3 +34,10 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 500px) {
+    .focusSection {
+      max-width: 80%;
+      padding: 20px;
+    }
+  }

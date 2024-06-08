@@ -10,7 +10,7 @@
   background: none;
   border-radius: 4px;
   /* border: 0.15vw solid #44D362; */
-  border: 0.15vw solid var(--burntOrange);
+  border: 3px solid var(--burntOrange);
   cursor: pointer;
   /* color: #44D362; */
   color: var(--burntOrange);

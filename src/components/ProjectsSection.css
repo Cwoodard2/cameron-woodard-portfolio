@@ -9,7 +9,7 @@ a {
 }
 
 .persepctive-item:hover {
-  border-color: var(--orangeColor);
+  border-color: var(--burntOrange);
   /* transform: translateY(-10px); */
   border-width: 0.25vw;
 }
@@ -23,7 +23,7 @@ a {
   /* backdrop-filter: blur(20px); */
   background-color: white;
   box-shadow: -6px 5px 0px 0px black;
-  border: 3px var(--orangeColor) solid;
+  border: 3px var(--burntOrange) solid;
   padding: 1vw;
   border-radius: 12px;
   gap: 2vw;
@@ -53,7 +53,7 @@ a {
   letter-spacing: 2px;
   /* text-shadow: 0px 0px 10px grey; */
   /* color: #44D362; */
-  color: var(--orangeColor);
+  color: var(--burntOrange);
   font-family: alba;
 }
 
@@ -76,10 +76,10 @@ a {
   height: 2vw;
   padding: 10px;
   border-radius: 4px;
-  border: 3px solid var(--orangeColor);
+  border: 3px solid var(--burntOrange);
   cursor: pointer;
   /* color: #44D362; */
-  color: var(--orangeColor);
+  color: var(--burntOrange);
   font-size: 1rem;
   transition: color white;
   transition-duration: 0.5s;
@@ -111,8 +111,15 @@ a {
 @media screen and (max-width: 500px) {
   .persepctive-item {
     flex-direction: column;
-    width: 90vw;
+    width: auto;
     height: auto;
+    box-shadow: none;
+  }
+
+  .project-div {
+    padding-top: 2vw;
+    padding-right: 2vw;
+
   }
 
   .project-description {
