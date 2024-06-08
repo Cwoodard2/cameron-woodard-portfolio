@@ -449,6 +449,10 @@ svg {
     height: 10vh;
   }
 
+  .input-box {
+    width: 90vw;
+  }
+
   .homepage-nav {
     width: 95vw;
     flex-direction: column-reverse;
