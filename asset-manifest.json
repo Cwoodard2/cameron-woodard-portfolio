@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c0f0aea.css",
-    "main.js": "/static/js/main.628d5837.js",
+    "main.css": "/static/css/main.23a3cdc4.css",
+    "main.js": "/static/js/main.e6ef4a48.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/mindworks_pic.png": "/static/media/mindworks_pic.eacfb2cc569314b82868.png",
     "static/media/cvwfdn_pic.png": "/static/media/cvwfdn_pic.5817930ce3eaee6b2ef6.png",
@@ -13,12 +13,12 @@
     "static/media/ResumeWoodard-Professional.pdf": "/static/media/ResumeWoodard-Professional.451eae8e89eceeea8fc4.pdf",
     "static/media/ALBA____.TTF": "/static/media/ALBA____.fe3ce9c4861ca17a7582.TTF",
     "index.html": "/index.html",
-    "main.2c0f0aea.css.map": "/static/css/main.2c0f0aea.css.map",
-    "main.628d5837.js.map": "/static/js/main.628d5837.js.map",
+    "main.23a3cdc4.css.map": "/static/css/main.23a3cdc4.css.map",
+    "main.e6ef4a48.js.map": "/static/js/main.e6ef4a48.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c0f0aea.css",
-    "static/js/main.628d5837.js"
+    "static/css/main.23a3cdc4.css",
+    "static/js/main.e6ef4a48.js"
   ]
 }
