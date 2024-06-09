@@ -47,6 +47,7 @@ export default function Projects(props) {
                 padding: "5px",
                 paddingLeft: "10px",
                 paddingRight: "10px",
+                // fontWeight: "bold",
               }}
             >
               {props.type}

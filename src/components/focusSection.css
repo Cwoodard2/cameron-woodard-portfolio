@@ -23,6 +23,11 @@
   gap: 2vw;
 }
 
+.headImg {
+    width: 20%;
+    height: auto;
+}
+
 .focusTitle {
   /* align-self: baseline; */
   /* width: 45vw; */

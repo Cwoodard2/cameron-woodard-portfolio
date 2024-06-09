@@ -63,8 +63,8 @@ export default function Homepage() {
             </p>
             <br></br>
             <div className="row" style={{color: "black", justifyContent: "space-evenly", width: "100%", gap: "10vw"}}>
-              <FocusSection title="Full Stack Developer" description="I enjoy writing simple and elegant solutions to interesting problems." skill="Languages I write With" headImg={codePic} skills={["HTML, CSS, Typescript, Java, Python"]} tools={["React, Tailwind CSS, Git, Github, Firebase, Express JS"]}/>
-              <FocusSection title="Web Designer" description="I believe in crafting intuitive, interesting, and thoughtful UI." skill="What I Design" headImg={designPic} skills={["UI/UX, Web, Logos"]} tools={["Squarespace, Wix, Pen & Paper, Adobe Creative Cloud"]}/>
+              <FocusSection title="Full Stack Developer" description="I enjoy writing simple and elegant solutions to interesting problems." skill="Languages I Write With" headImg={codePic} skills={["HTML, CSS, Typescript, Java, Python"]} tools={["React, Tailwind CSS, Git, Github, Firebase, Express JS"]}/>
+              <FocusSection title="Designer" description="I believe in crafting intuitive, interesting, and thoughtful UI." skill="What I Design" headImg={designPic} skills={["UI/UX, Web, Logos"]} tools={["Squarespace, Wix, Pen & Paper, Adobe Creative Cloud, Figma, Canva"]}/>
             </div>
           </div>
         </div>

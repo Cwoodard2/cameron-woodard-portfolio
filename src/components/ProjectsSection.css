@@ -8,12 +8,6 @@ a {
   text-decoration: none;
 }
 
-.persepctive-item:hover {
-  border-color: var(--burntOrange);
-  /* transform: translateY(-10px); */
-  border-width: 0.25vw;
-}
-
 .persepctive-item {
   display: flex;
   flex-direction: row;
@@ -67,14 +61,29 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.5vw;
+  gap: 2vw;
+}
+.nav-button {
+  height: calc(4px + 4vh);
+  background: none;
+  border-radius: 4px;
+  /* border: 0.15vw solid #44D362; */
+  border: 3px solid var(--burntOrange);
+  cursor: pointer;
+  /* color: #44D362; */
+  color: var(--burntOrange);
+  font-size: 1rem;
+  transition: color white;
+  transition-duration: 0.5s;
+  place-items: center;
+  font-weight: bolder;
+  transition: all 0.5s;
 }
 
 .live-site-button {
-  display: flex;
   background: none;
-  height: 2vw;
-  padding: 10px;
+  /* padding: 10px; */
+  padding: 5px;
   border-radius: 4px;
   border: 3px solid var(--burntOrange);
   cursor: pointer;
@@ -86,7 +95,6 @@ a {
   place-items: center;
   font-weight: bolder;
   transition: all 0.5s;
-  justify-self: flex-end;
   text-decoration: none;
 }
 
@@ -104,7 +112,7 @@ a {
 @media screen and (max-width: 750px) {
   .live-site-button {
     font-size: 0.9rem;
-    height: 5vw;
+    /* height: 5vw; */
   }
 }
 
@@ -128,7 +136,7 @@ a {
 
   .live-site-button {
     font-size: 0.9rem;
-    height: 5vw;
+    /* height: 5vw; */
   }
 
   .portfolio-pic {

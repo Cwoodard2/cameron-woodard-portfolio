@@ -13,8 +13,8 @@
   border-bottom-right-radius: 6px; */
   border-bottom: 0.25vw solid black;
   gap: 1.5vw;
-  width: 100vw;
-  height: 10vh;
+  width: 100dvw;
+  height: 10dvh;
   /* background-color: #422d2d6b; */
   background-color: white;
   backdrop-filter: blur(10px);

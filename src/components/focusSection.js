@@ -6,7 +6,7 @@ import "./focusSection.css";
 export default function FocusSection(props) {
   return (
     <div className="focusSection" style={{ textAlign: "center" }}>
-      <img src={props.headImg} />
+      <img src={props.headImg} className="headImg"/>
       <h3 className="focusTitle">{props.title}</h3>
       <p style={{ margin: "10px", lineHeight: "1.5rem" }}>{props.description}</p>
       <br></br>

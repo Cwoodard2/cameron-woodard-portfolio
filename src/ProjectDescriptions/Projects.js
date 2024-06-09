@@ -14,6 +14,8 @@ import umslPic from "../Images/umsl_prof_pic.png";
 import oRds from "../Images/o-rds_pic.png";
 import mindworksPic from "../Images/mindworks_pic.png";
 import cvwfdnPic from "../Images/cvwfdn_pic.png";
+import paperPic from "../Images/paper_pic.png";
+import serverPic from "../Images/server_client_pic.png";
 
 export const devProjects = {
   "o-RDS": {
@@ -50,11 +52,11 @@ export const devProjects = {
     title: "HIV Machine Learning Project",
     duration: "Summer of 2023",
     description:
-      "As part of this project I worked closely with an SIUE CS professor and another graduate to determine the effects of COVID and HIV in the LGBTQ+ community. I utilized the machine learning algorithm, K-Nearest Neighbors in order to determine the what attributes provided the largest effect. We then examined if there were any connections between them. The result is a conference paper published in EMBC. This project was submitted to EMBC and was accepted.",
+      "As part of this project I worked closely with an SIUE CS professor and another graduate to determine the effects of COVID and HIV in the LGBTQ+ community. I utilized the machine learning algorithm, K-Nearest Neighbors in order to determine what attributes provided the largest effect. We then examined if there were any connections between them. The result is a conference paper published in International Conference on Complex Networks and Their Applications.",
     skills: [pythonLogo, machineLearning],
     sourceCode: "https://github.com/SIUEComplexNetworksLab/BOHComplexNetworks",
     liveSite: "",
-    projectPic: samplePic,
+    projectPic: paperPic,
     type: "Network Science",
   },
   // "Women In STEM Research": {
@@ -73,7 +75,7 @@ export const devProjects = {
     skills: [cLogo, linuxLogo],
     sourceCode: "https://github.com/Cwoodard2/Email-Server-Client",
     liveSite: "",
-    projectPic: samplePic,
+    projectPic: serverPic,
     type: "Backend Development",
   },
 };
