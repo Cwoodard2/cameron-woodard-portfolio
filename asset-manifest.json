@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.37c0c01f.css",
-    "main.js": "/static/js/main.e6ef4a48.js",
+    "main.css": "/static/css/main.7090015e.css",
+    "main.js": "/static/js/main.059d2744.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/mindworks_pic.png": "/static/media/mindworks_pic.eacfb2cc569314b82868.png",
     "static/media/cvwfdn_pic.png": "/static/media/cvwfdn_pic.5817930ce3eaee6b2ef6.png",
     "static/media/cameronwoodard.jpg": "/static/media/cameronwoodard.06cade285ac8fa18c797.jpg",
+    "static/media/server_client_pic.png": "/static/media/server_client_pic.3ee2099d181748941683.png",
+    "static/media/paper_pic.png": "/static/media/paper_pic.f72cdab54dcc5d655ff4.png",
     "static/media/umsl_prof_pic.png": "/static/media/umsl_prof_pic.741d2153bbec349f0649.png",
     "static/media/o-rds_pic.png": "/static/media/o-rds_pic.7ba0912843c10f2688f9.png",
     "static/media/githubLogo.png": "/static/media/githubLogo.00c601f1724a126c1cbd.png",
@@ -13,12 +15,12 @@
     "static/media/ResumeWoodard-Professional.pdf": "/static/media/ResumeWoodard-Professional.451eae8e89eceeea8fc4.pdf",
     "static/media/ALBA____.TTF": "/static/media/ALBA____.fe3ce9c4861ca17a7582.TTF",
     "index.html": "/index.html",
-    "main.37c0c01f.css.map": "/static/css/main.37c0c01f.css.map",
-    "main.e6ef4a48.js.map": "/static/js/main.e6ef4a48.js.map",
+    "main.7090015e.css.map": "/static/css/main.7090015e.css.map",
+    "main.059d2744.js.map": "/static/js/main.059d2744.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37c0c01f.css",
-    "static/js/main.e6ef4a48.js"
+    "static/css/main.7090015e.css",
+    "static/js/main.059d2744.js"
   ]
 }
