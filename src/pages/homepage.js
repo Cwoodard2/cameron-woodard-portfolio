@@ -68,7 +68,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        <div style={{backgroundColor: "#08aeea"}}>
+        <div style={{backgroundColor: "#08aeea", display: "flex", flexDirection: "column", alignItems: "center"}}>
           <div id="adventures" className="section-title-description-wrapper">
             <h2 className="titles" style={{color: "white"}}>My Work</h2>
             <p id="about-me-text" style={{fontWeight: "bold"}}>
