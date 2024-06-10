@@ -49,13 +49,13 @@ export const devProjects = {
     type: "Web Development",
   },
   "HIV Machine Learning Project": {
-    title: "HIV Machine Learning Project",
+    title: "Economic and Health Burdens of HIV and COVID-19",
     duration: "Summer of 2023",
     description:
-      "As part of this project I worked closely with an SIUE CS professor and another graduate to determine the effects of COVID and HIV in the LGBTQ+ community. I utilized the machine learning algorithm, K-Nearest Neighbors in order to determine what attributes provided the largest effect. We then examined if there were any connections between them. The result is a conference paper published in International Conference on Complex Networks and Their Applications.",
+      "As part of this project I worked closely with an SIUE CS professor and another graduate to determine the effects of COVID and HIV in the LGBTQ+ community. I utilized the machine learning algorithm, K-Nearest Neighbors in order to determine what attributes provided the largest effect. We then examined if there were any connections between them. The result is a conference paper titled \"Economic and Health Burdens of HIV and COVID-19: Insights from a Survey of Underserved Communities in Semi-Urban and Rural Illinois\" and published in the International Conference on Complex Networks and Their Applications.",
     skills: [pythonLogo, machineLearning],
     sourceCode: "https://github.com/SIUEComplexNetworksLab/BOHComplexNetworks",
-    liveSite: "",
+    liveSite: "https://link.springer.com/chapter/10.1007/978-3-031-53468-3_16",
     projectPic: paperPic,
     type: "Network Science",
   },
