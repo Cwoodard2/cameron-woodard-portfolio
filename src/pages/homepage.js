@@ -46,7 +46,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        <div className="about-me-section">
+        <div className="about-me-section" id="aboutme-section">
           <div className="about-me-main">
             <h2 className="titles">About Me</h2>
             <div
@@ -72,10 +72,9 @@ export default function Homepage() {
           <div id="adventures" className="section-title-description-wrapper">
             <h2 className="titles" style={{color: "white"}}>My Work</h2>
             <p id="about-me-text" style={{fontWeight: "bold"}}>
-              Below you will find a curated list of projects demostrating various areas of work.
               Here are a mix of projects that demonstrate a wide variety of
-              skills. They are meant to help me develop as a well rounded
-              developer.
+              skills. All projects have helped me develop as a well rounded
+              programmer adn learn to apply concepts across different environments.
             </p>
           </div>
           <div className="row" style={{ justifyContent: "center" }}>

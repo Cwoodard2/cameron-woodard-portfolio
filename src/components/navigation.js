@@ -16,7 +16,7 @@ export default function Navigation() {
           paddingRight: "10px",
         }}
       >
-        <NavButton page="skills" thisPage="Skills" thisStyle="nav-button" />
+        <NavButton page="aboutme-section" thisPage="About Me" thisStyle="nav-button" />
         <NavButton
           page="adventures"
           thisPage="Projects"
