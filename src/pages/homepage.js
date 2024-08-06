@@ -74,7 +74,7 @@ export default function Homepage() {
             <p id="about-me-text" style={{fontWeight: "bold"}}>
               Here are a mix of projects that demonstrate a wide variety of
               skills. All projects have helped me develop as a well rounded
-              programmer adn learn to apply concepts across different environments.
+              programmer and learn to apply concepts across different environments.
             </p>
           </div>
           <div className="row" style={{ justifyContent: "center" }}>
