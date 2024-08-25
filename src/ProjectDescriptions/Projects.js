@@ -39,12 +39,12 @@ export const devProjects = {
   },
   "Professor Personal Website": {
     title: "Professor Personal Website",
-    duration: "December 2022 - Current",
+    duration: "December 2022 - Currently Supporting",
     description:
       "In December of 2022, I was approached by a professor at UMSL with the opportunity to create a website that highlights their work. In an effort to reduce reoccuring costs it was decided I would create the project from scratch, implementing a CMS system for the professor to use to keep dynamic content up to date. This resulted in a React application that works extremely fast but also enables the ability to modify the website with just a few clicks of a button.",
     skills: [reactLogo, typescriptLogo, firebaseLogo, tailwindLogo],
     sourceCode: "https://github.com/Cwoodard2/umsl-professor-web",
-    liveSite: "umsl-professor-website.web.app",
+    liveSite: "",
     projectPic: umslPic,
     type: "Web Development",
   },
@@ -102,7 +102,7 @@ export const designProjects = {
       "The Clayton and Virginia Williams Foundation brought me on to redesign their current website as it had become outdated. To develop the website, I first learned more about the organization and derived what would a style that would help drive the foundation's message home. The blue and yellow signify trust and hope, giving the foundation credit for their mission. The website was given a formal, yet friendly feel in order to maintain professionalism, while inviting collaboration amongst communities.",
     skills: [],
     sourceCode: "",
-    liveSite: "https://www.cvwfdn.org",
+    liveSite: "",
     projectPic: cvwfdnPic,
     type: "Website Redesign",
   },
